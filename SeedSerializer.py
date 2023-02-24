@@ -1,15 +1,31 @@
 
-from seed import Seed
+from Seed import Seed
 import csv
 
 
 
-class SeedFile:
+class SeedSerializer:
+
+
     def __init__(self, filename=None):
         self.filename = filename
         self.data = []
 
-    def read_csv(self):
+    def read(self):
+        raise NotImplementedError("This is an unimplemented abstract method")
+
+    def write(self):
+        raise NotImplementedError("This is an unimplemented abstract method")
+
+
+
+
+class CsvSerializer(SeedSerializer):
+    def __init__(self, filename=None):
+        self.filename = filename
+        self.data = []
+
+    def read(self):
         with open(self.filename, "r") as f:
             #use of delimeters, can't handle comas otherwise 
             reader = csv.reader(f, delimiter=",")
@@ -25,7 +41,7 @@ class SeedFile:
 # To add more grains
 
 
-    def write_csv(self):
+    def write(self):
         with open(self.filename, mode='w', newline='') as csv_file:
             fieldnames = ['quality', 'spectrum', 'code', 'key', 'index', 'name',
                           'definition', 'begin', 'end', 'place', 'author', 'location',

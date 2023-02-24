@@ -1,15 +1,8 @@
-
+from Seed import Seed
 
 class SeedExtractor:
 
 
-    class Seed:
-
-        def __init__(self):
-            """
-            Constructor
-
-            """
 
 
     def __init__(self):

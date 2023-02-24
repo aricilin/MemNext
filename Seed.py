@@ -1,5 +1,7 @@
 import re
 from datetime import datetime
+
+
 class Seed:
     def __init__(self=None, quality=0, spectrum=None, code=None, key=None, index=None, name=None,
                  definition=None, begin=None, end=None, place=None, author=None, location=None,
