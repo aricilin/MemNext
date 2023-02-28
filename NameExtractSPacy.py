@@ -7,8 +7,14 @@ if (len(sys.argv) != 2):
     exit()
 
 # load the pre-trained languages model
-#spacy.load('fr_dep_news_trf')
-nlp = spacy.load("en_core_web_trf")
+
+#nlp=spacy.load('fr_core_news_sm')# fr rapide extraction nom echec
+#nlp=spacy.load('fr_dep_news_trf') # fr lent extraction nom echec
+
+nlp = spacy.load("en_core_web_trf") #eng lent résultat bon
+#nlp = spacy.load('en_core_web_sm') # eng rapide résultat mauvais
+
+
 # define some text to analyze
 text= open(sys.argv[1],"r")
 
