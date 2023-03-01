@@ -121,6 +121,18 @@ class SeedFile:
             for seed in self.data:
                 writer.writerow(seed.__dict__)
 
+# reading from a json file
+
+    def read_json(self):
+        with open(self.filename, mode='r') as json_file:
+            data = json.load(json_file)
+            for seed in data:
+                self.data.append(Seed(**seed))
+# writing to a json file
+
+    def write_json(self):
+        with open(self.filename, mode='w') as json_file:
+            json.dump([seed.__dict__ for seed in self.data], json_file)
 
 
 seed_file = SeedFile('test.csv')
