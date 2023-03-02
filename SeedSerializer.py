@@ -54,6 +54,11 @@ class CsvSerializer(SeedSerializer):
 
 
 
+class JsonSerializer(SeedSerializer):
+    def __init__(self, filename=None):
+        self.filename = filename
+        self.data = []
+
 
 # reading from a json file
 
