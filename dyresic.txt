@@ -1,0 +1,2266 @@
+Dynamiques  
+des recherches  
+en sciences de l’information  
+et de la communication
+Conférence permanente
+des directeurs·trices des unités de recherche  
+en sciences de l’information  
+et de la communication
+3e édition revue et complétée
+Dynamiques des recherches  
+en sciences de l'information  
+et de la communication
+Équipe rédactionnelle
+Coordination éditoriale
+Bureau de la CPDirSIC
+Jacques Walter (Crem, Université de Lorraine), président
+David Douyère (Prim, Université de Tours), vice-président
+Jean-Luc Bouillon (Prefics, Université Rennes 2), secrétaire
+Caroline Ollivier-Yaniv (Céditec, Université Paris-Est Créteil Val de Marne), trésorière
+Rédacteurs·trices
+Françoise Bernard (Imsic, Aix-Marseille Université)
+Anne Beyaert-Geslin (Mica, Université Bordeaux Montaigne)
+Serge Bouchardon (Costech, Université de technologie de Compiègne)
+Jean-Luc Bouillon (Prefics, Université Rennes 2)
+Jean-François Cerisier (Techné, Université de Poitiers)
+Ghislaine Chabert (LLSETI, Université Savoie Mont Blanc)
+Stéphane Chaudiron (Gériico, Université de Lille)
+Béatrice Damian-Gaillard (Arènes, Université Rennes 1)
+David Douyère (Prim, Université de Tours)
+Béatrice Fleury (Crem, Université de Lorraine)
+Olivier Galibert (Ciméos, Université Bourgogne Franche-Comté)
+Isabelle Garcin-Marrou (Élico, Sciences Po Lyon)
+Frédéric Gimello-Mesplomb (CNE, Université d’Avignon et des Pays de Vaucluse, CNRS)
+Daniel Jacobi (CNE, Université d’Avignon et des Pays de Vaucluse, CNRS)
+Benoit Lafon (Gresec, Université Grenoble Alpes)
+Bertrand Legendre (LabSIC, Université Paris 13)
+Sylvie Leleu-Merviel (DeVisu, Université polytechnique Hauts-de-France)
+Pascal Marchand (Lérass, Université Toulouse 3 Paul Sabatier)
+Christian Marcon (Cerege, Université de Poitiers)
+Louise Merzeau † (Dicen-IDF, Cnam, Université Paris Nanterre)
+Caroline Ollivier-Yaniv (Céditec, Université Paris-Est Créteil Val de Marne)
+Isabelle Pailliart (Gresec, Université Grenoble Alpes)
+Nicolas Pélissier (SIC.Lab Méditerranée, Université Côte d’Azur)
+Paul Rasse (SIC.Lab Méditerranée, Université Côte d’Azur)
+Rémy Rieffel (Carism, Université Paris 2–Panthéon-Assas)
+Sébastien Rouquette (Communication et  sociétés, Université Clermont-Auvergne)
+Ioan Roxin (Élliadd, Université Bourgogne Franche-Comté)
+Guillaume Soulez (Ircav, Université Sorbonne Nouvelle Paris 3)
+Marie-Gabrielle Suraud (Cértop, Université Toulouse Jean Jaurès, CNRS)
+Jacques Walter (Crem, Université de Lorraine)
+Adeline Wrona (Gripic, Sorbonne Université)
+Manuel Zacklad (Dicen-IDF, Cnam)
+Réalisation graphique
+Studio Édicom, Centre de recherche sur les médiations (Université de Lorraine)
+Mélina Charroy
+Rudy Hahusseau
+Laëtitia Le Couédic
+Photographie de couverture 
+Thaddaeus Lim sur Unsplash
+Cet ouvrage est mis à disposition selon les termes  
+de la Licence Creative Commons Attribution -  Pas d'utilisation 
+commerciale - Pas de modification 4.0 International
+Dynamiques des recherches  
+en sciences de l'information  
+et de la communication
+3e édition revue et complétée
+5
+    | 
+Sommaire
+ 
+Introduction. 
+Une discipline, trente-huit unités, dix domaines .....................11
+38 unités ................................................................................................................................12
+10 domaines .........................................................................................................................12
+ 1 | Médias et journalisme .......................................................... 19
+Mutations des environnements organisationnels et de la profession de journaliste ...... 20
+Socio-économie des organisations médiatiques .....................................................21
+Morphologie de la profession journalistique et évolution des cadres d’exercice ...... 21
+Métamorphoses des regards .............................................................................................23
+Représentations médiatiques des événements et des identités sociales .............23
+Les médias, « arènes de débat » .................................................................................25
+Journalisme, médias et frontières disciplinaires .....................................................26
+ 2 | Images, cinéma, médias audiovisuels et industries culturelles ...37
+Étudier les productions : analyses sémiologiques et sociologiques .............................38
+Démultiplication des images, pratiques des publics et intermédialité ................38
+Une croissance des médiatisations par les images ..................................................39
+Les médias de l’image et de l’audiovisuel en mutation ................................................. 40
+Cinéma, audiovisuel, télévision : reconfigurations .................................................41
+Images médiatiques, techniques numériques et jeu vidéo ....................................42
+Des industries culturelles et des filières ..........................................................................43
+Les industries culturelles et médiatiques et leur fonctionnement .......................43
+Les mutations des filières des industries culturelles et la valorisation  
+des biens symboliques .................................................................................................44
+ 3 | Communication publique et politique ................................ 53
+Communication publique et transformations des modes de gouvernement.............54
+Singularisation ou standardisation des territoires ?...............................................54
+Communication, individualisation des responsabilités et gouvernementalité  ........54
+6
+Professionnalisation de la communication publique .............................................. 55
+De l’information de service à l’ouverture des données ........................................... 55
+Circulation et appropriations des consignes institutionnelles .............................56
+Participation civique et émergence d’espaces publics diversifiés ...............................56
+Participation et démocratie numériques .................................................................. 57
+Participation institutionnalisée vs dynamiques sociales et civiques .................... 57
+L’environnement au prisme de la participation .......................................................58
+Dispositifs numériques et formes d’engagements .........................................................58
+Médiactivisme numérique ..........................................................................................59
+Engagement en ligne  ...................................................................................................59
+Militantisme en ligne ..................................................................................................60
+Médias d’information alternatifs  .............................................................................60
+Discours et constructions politiques...............................................................................60
+Logiques des discours .................................................................................................61
+Révélation des dynamiques sociopolitiques ............................................................61
+Des méthodes ...............................................................................................................62
+ 4 | Communications et organisations .......................................71
+Généralisation et professionnalisation de la communication des organisations ......72
+Place croissante de la communication dans une organisation ..............................72
+Métiers, spécialisations et catégorisations professionnelles de la communication  .....73
+Apports de la communication aux organisations ...........................................................74
+La communication génératrice de dynamiques organisationnelles ....................74
+Interroger les transitions numériques ...................................................................... 75
+La portée critique des recherches en communication des organisations ..................76
+Communication, processus de régulation et identités organisationnelles ......... 77
+Communication managériale et participative .........................................................78
+Fabrique des textes et discours ..................................................................................79
+ 5 | Médiations mémorielles, culturelles et patrimoniales ......85
+Médiations mémorielles .................................................................................................... 86
+Du passé qui fait sens dans le présent à la mémoire de demain ........................... 86
+Conflits : d’autres perspectives sur les lieux, les témoignages et les objets ........ 86
+Terrorisme : la mémoire en train de se faire ............................................................87
+Territoires et migrations : des identités en tension ............................................... 88
+7
+Dispositif numérique : l’impossible oubli ? ............................................................. 88
+Médiations culturelles ....................................................................................................... 89
+La matrice des musées ............................................................................................... 89
+Médiation dans les musées et métiers émergents associés ..................................90
+Élargissement de la médiation culturelle en tant que concept  
+et champ de pratiques .................................................................................................91
+Médiations patrimoniales ..................................................................................................92
+Extension du champ aux productions architecturales ou bâties ..........................92
+Patrimoine immatériel et identités ...........................................................................93
+L’émergence du numérique ........................................................................................94
+Des méthodes ...............................................................................................................95
+ 6 | Numérique : stratégies, dispositifs et usages ................... 107
+L’écosystème numérique .................................................................................................108
+Acteurs et stratégies ..................................................................................................108
+Infrastructures, réseaux et objets connectés .........................................................109
+Data, algorithmes, métriques ...................................................................................109
+Intelligence territoriale ............................................................................................. 110
+Usages et non-usages des tic ......................................................................................... 110
+Pratiques et usages : dimensions temporelles, spatiales, sociales, culturelles ........ 110
+Non-usage, déconnexion, addiction .........................................................................111
+Littératie numérique, culture numérique ...............................................................112
+Identités et sociabilités ......................................................................................................113
+Relations numériques (lien social, amitiés, rituels) ...............................................113
+Présence numérique (traces, identité, écritures de soi) ........................................114
+Communs et communautés .......................................................................................116
+L’internet comme objet .....................................................................................................116
+Étudier les dispositifs et design numériques ..........................................................116
+Culture et traitement des données ...........................................................................117
+Corpus et archives numériques ................................................................................117
+ 7 | Information, documents et écritures .................................127
+Information et communication ........................................................................................127
+Information : quelles acceptions ? ............................................................................127
+Un glissement vers les inscriptions .........................................................................129
+Document et matérialité des supports ...........................................................................130
+8
+À l’aune du numérique ..............................................................................................130
+Fonctions du document .............................................................................................130
+Documentarisation et éditorialisation .....................................................................131
+Importance des documents pour l’action et des annotations.............................. 132
+Les écritures numériques ................................................................................................ 132
+Industrialisation et élargissement des écritures ................................................... 132
+Une approche info-communicationnelle ............................................................... 134
+Mutations du travail : connaissance, web 2.0, économie collaborative .............. 136
+ 8 | Design ..................................................................................143
+Design : changement de paradigme ...............................................................................144
+À l’origine ....................................................................................................................144
+Un art de l’ingenium ...................................................................................................144
+Une science du projet ................................................................................................ 145
+Une acception plus contemporaine du design ....................................................... 145
+Enjeux des recherches en design ....................................................................................146
+La réinvention du design, tournant du numérique ...............................................146
+Une organisation du collectif .....................................................................................147
+Un retour aux fondements théoriques des sic ......................................................148
+Des images à l’éditorialisation numérique ....................................................................149
+Images, médiations, dispositifs ................................................................................149
+Usages, expériences, connaissances .......................................................................149
+Éditorialisation numérique ......................................................................................150
+ 9 | Organisation des connaissances ........................................155
+L’organisation des connaissances au cœur des systèmes d’information .................. 156
+Les aspects théoriques de l’organisation des connaissances ..................................... 156
+Approches historiques et culturelles ........................................................................157
+Dimensions normatives, économiques et politiques ............................................ 158
+L’organisation des connaissances pour l’accès à l’information .................................. 158
+Des systèmes classificatoires au web de données ................................................. 159
+L’indexation et la recherche d’information ............................................................160
+Applications en organisation des connaissances .........................................................162
+Des dictionnaires aux ontologies .............................................................................162
+La visualisation de l’information .............................................................................. 163
+9
+10 | Médiation des savoirs, éducation et formation ............... 169
+Éducation et médiation des savoirs : une préoccupation sociétale ...........................169
+Communautés de recherche et industrialisation de la formation ......................170
+Instrumentation et médiation numérique de l’activité apprenante ...........................172
+Les techniques numériques pour des apprentissages tiers  .................................172
+Le pilotage des pratiques pédagogiques et des apprentissages  ..........................172
+Les humanités numériques .......................................................................................173
+La communication scientifique ........................................................................................174
+Vulgarisation scientifique : représentations et mises en récit de la science .........174
+Débats et controverses : un espace public scientifique limité  .............................175
+Action culturelle scientifique et technique, et médiation .................................... 176
+L’éducation aux médias et à l’information ......................................................................177
+Éducation aux médias et citoyenneté ...................................................................... 178
+Éducation au numérique ........................................................................................... 179
+Les revues reconnues du domaine sciences de l’information  
+et de la communication (cnu, cpdirsic, hcéres, sfsic) ...........187
+11
+    |
+ Introduction.  
+ 
+Une discipline, trente-huit unités,  
+dix domaines
+I
+ntroduites dans l’Université française au tournant des années 1970, 
+notamment pour pallier un déficit de connaissance sur les divers processus 
+info-communicationnels à l’œuvre dans les sociétés industrielles et post-
+industrielles, les sciences de l’information et de la communication (sic) n’ont 
+cessé de compter de plus en plus d’enseignant·e·s-chercheur·e·s dans leurs 
+rangs (830 en 2017, dont 108 professeurs, 79 professeures, 281 maîtres de 
+conférences, 362 maîtresses de conférences), de former des docteur·e·s et 
+d’étendre le territoire de leurs investigations. Parallèlement, elles ont affiné 
+leur équipement théorique et méthodologique. Le tout se concrétise par 
+la production de travaux sur des questions de premier plan dans l’agenda 
+scientifique. Pour autant, à la différence de disciplines plus anciennes 
+davantage unifiées en apparence, elles ne sont pas toujours bien identifiées 
+au sein du vaste ensemble des sciences humaines et sociales (shs). D’où une 
+ambition : faire connaître la richesse des domaines qu’elles recouvrent et le 
+potentiel d’innovation scientifique dont elles sont porteuses. Premier du genre, 
+ce volume est le résultat d’une réflexion conduite au sein de la Conférence 
+permanente des directeurs et directrices des unités de recherche en sciences 
+de l’information et de la communication (cpdirsic).
+Avec la 71e section du Conseil national des universités (cnu) et la Société française 
+des sciences de l’information et de la communication (sfsic), la cpdirsic, créée en 
+2009, constitue l’une des trois instances représentatives de la discipline. En 
+quelques lignes, voici ses principaux objectifs :
+• 
+consolider l’interconnaissance entre les unités de recherche de la 
+discipline ;
+• 
+partager des informations sur les pratiques relevant des compétences de 
+celles-ci en matière de formation des doctorant·e·s, de contribution aux 
+activités des écoles doctorales ;
+• 
+favoriser la coopération pour mener des projets scientifiques 
+collectifs, mais aussi pour valoriser la recherche.
+12
+D�namiques des recherches en sciences de l�information et de la communication
+38 unités
+En l’espace de quelques années, ce sont 38 unités qui ont rejoint la cpdirsic (voir 
+la liste des unités ci-après). Ce regroupement est significatif de la maturité de la 
+structuration scientifique de la discipline. Aussi et surtout, il permet de disposer 
+d’un panorama quasi exhaustif des recherches qui y sont conduites.
+Dès leur naissance et compte tenu de leurs origines (études cinématographiques, 
+études littéraires, sciences de la documentation, sciences du langage, sémiologie, 
+sociologie, etc.), les sic se sont définies comme une… «  interdiscipline  ». 
+Concrètement, dans les unités, cette caractéristique s’est renforcée par la 
+collaboration avec des enseignant·e·s-chercheur·e·s provenant d’horizons 
+variés. Non sans risque. En l’occurrence, celui de la dissolution disciplinaire. 
+Or, au contraire et au fil du temps, c’est précisément cette capacité à agencer 
+des théories et des méthodes émanant de plusieurs traditions disciplinaires 
+et épistémologiques qui est devenue une marque de fabrique. Et ceci tout 
+en approfondissant des concepts spécifiques comme ceux de médiation ou 
+de dispositif, ou bien en revisitant en profondeur une pratique. Le risque est 
+ainsi devenu une force.
+S’ensuit une compétence à mettre en œuvre des démarches désormais 
+requises par la plupart des grands programmes de recherche, certes au sein 
+des shs, mais requises aussi dans ce qui est désormais nommé interscience (par 
+exemple, shs et sciences du vivant ou encore shs et numérique). C’est dire que 
+les sic sont non seulement en phase avec l’évolution des pratiques scientifiques 
+mais que cette compétence est inscrite en elles. Ce dont témoigne le présent 
+ouvrage qui établit une cartographie des recherches dans la discipline.
+10 domaines
+Sur la base de l’analyse des résultats d’un questionnaire interne à la cpdirsic, 
+des rapports remis par ses membres à l’Agence d’évaluation de la recherche et 
+de l’enseignement supérieur (aéres) ou au Haut Conseil de l’évaluation de la 
+recherche et de l’enseignement supérieur (hcéres), des informations données 
+par les sites des unités, 10 domaines ont été circonscrits : 
+• 
+médias et journalisme ;
+• 
+images, cinéma, médias audiovisuels et industries culturelles ;
+• 
+communication publique et politique ;
+13
+Introduction. Une discipline, trente-huit unités, dix domaines   
+• 
+communications et organisations ;
+• 
+médiations mémorielles, culturelles et patrimoniales ;
+• 
+le numérique : stratégies, dispositifs et usages ;
+• 
+informations, documents et écritures ;
+• 
+design ;
+• 
+organisation des connaissances ;
+• 
+médiation des savoirs, éducation et formation.
+Dans tous ces domaines, les chercheur·e·s et les doctorant·e·s innovent. Ce sont 
+les avancées de leurs travaux qui sont présentées dans les pages qui suivent. Dans 
+chaque chapitre correspondant à un domaine, on trouvera donc : une synthèse 
+des problématiques, des théories et des méthodes mobilisées ; un aperçu des 
+terrains et/ou des corpus ; une liste des unités particulièrement actives en la 
+matière ; une sélection de programmes et de contrats de recherche régionaux, 
+nationaux et internationaux (2012-2018) ; un choix d’ouvrages collectifs et de 
+dossiers de revues (2012-2018) ; les revues et réseaux francophones spécialisés.
+Les travaux s’emparent de questions sociales sensibles, en émergence ou 
+reconnues comme des problèmes publics, et les éclairent. Ces dernières 
+années, en sic, se sont ainsi multipliées les recherches sur les migrations, sur le 
+fait religieux et la laïcité, sur la souffrance, sur le sensible et le goût, mais encore 
+sur les discriminations, sur le genre, sur l’environnement, sur la santé ou sur les 
+transformations des savoirs et des pratiques induites par le numérique.
+On l’aura compris, c’est bien la dimension collective qui est privilégiée. Au 
+demeurant, la structuration et l’écriture du volume obéissent à une logique 
+tout aussi collective. La lecture montre les passerelles entre les domaines 
+et, plus encore, la mobilisation d’un équipement intellectuel commun 
+traversé par des débats épistémologiques. En outre, on découvrira la liste 
+des associations et instances nationales et internationales du secteur, ainsi 
+que celle des revues généralistes francophones. 
+Répétons-le, cet ouvrage est une première. S’il comble un manque, il ne 
+saurait pour autant être complet. Ne serait-ce que, parce que, forts du 
+capital scientifique ici décrit, d’autres domaines de recherche se dessinent. 
+Gageons qu’ils trouveront place dans une prochaine édition de Dynamiques 
+des recherches en sciences de l’information et de la communication.
+14
+D�namiques des recherches en sciences de l�information et de la communication
+Unités de recherche membres de la cpdirsic
+Arènes 
+ 
+UMR 6051, Université Rennes 1, IEP de Rennes, Université Rennes 2, École des hautes 
+études en santé publique, CNRS 
+ 
+ 
+ 
+ 
+ 
+http://www.arenes.eu 
+C&S  
+Communication et sociétés 
+ 
+EA 4647, Université Clermont-Auvergne  
+http://communication-societes.uca.fr
+Carism 
+Centre d’analyse et de recherche interdisciplinaires sur les médias  
+ 
+EA 2293, Université Paris 2 Panthéon-Assas 
+ 
+http://carism.u-paris2.fr
+Céditec 
+Centre d’étude des discours, images, textes, écrits, communication 
+  
+EA 3119, Université Paris Est-Créteil Val de Marne 
+ 
+http://ceditec.u-pec.fr
+Cémti  
+Centre d’études sur les médias, les technologies et l’internationalisation 
+ 
+EA 3388, Université Paris 8 Vincennes-Saint-Denis  
+https://cemticritic.eu
+Cértop 
+Centre d’étude et de recherche Travail, organisation, pouvoir 
+ 
+UMR 5044, Université Toulouse Jean-Jaurès, Université Toulouse Paul-Sabatier, CNRS 
+http://certop.cnrs.fr
+Cérep  
+Centre d’études et de recherches sur les emplois et les professionnalisations 
+ 
+EA 4692, Université de Reims – Champagne Ardennes 
+ 
+http://www.univ-reims.fr/cerep
+Cérilac  
+Centre d’études et de recherches interdisciplinaires de l’UFR Lac (Lettres, arts, cinéma)  
+EA 4410, Université Paris Diderot 
+ 
+http://ufrlac.lac.univ-paris-diderot.fr/CERILAC
+Cerege  
+Centre de recherche en gestion 
+ 
+EA 1722, Université de Poitiers 
+ 
+https://www.cerege.fr/fr
+CHCSC  
+Centre d’histoire culturelle des sociétés contemporaines 
+ 
+EA 2448, Université Versailles Saint-Quentin-en-Yvelines, Université Paris-Saclay 
+ 
+http://www.chcsc.uvsq.fr
+Cim  
+Communication, information, médias 
+ 
+EA 1484, Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/ea-1484-communication-information-medias-cim--3444.kjsp
+Ciméos 
+Communications, médiations, organisations, savoirs  
+EA 4177, Université Bourgogne Franche-Comté 
+ 
+http://cimeos.u-bourgogne.fr
+15
+Introduction. Une discipline, trente-huit unités, dix domaines   
+CNE 
+Centre Norbert Elias 
+ 
+UMR 8562, EHESS, Université d’Avignon et des Pays de Vaucluse, Aix-Marseille Université, 
+CNRS  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+http://centre-norbert-elias.ehess.fr
+Costech  
+Connaissance, organisation et systèmes techniques  
+EA 2223, Université de technologie de Compiègne 
+ 
+http://www.costech.utc.fr
+Crem 
+Centre de recherche sur les médiations. Communication, langue, art, culture 
+ 
+EA 3476, Université de Lorraine 
+ 
+http://crem.univ-lorraine.fr
+Cresat  
+Centre de recherches sur les économies, les sociétés, les arts et les techniques 
+ 
+EA 3436, Université de Haute-Alsace 
+ 
+https://www.cresat.uha.fr
+DeVisu  
+Laboratoire en design visuel et urbain 
+ 
+EA 2445, Université polytechnique Hauts-de-France  
+http://www.uphf.fr/DEVISU/
+Dicen-IDF  
+Dispositifs d’information et de communication à l’ère numérique – Paris, Île-de-France 
+EA 4420, Cnam, Université Paris Est Marne-la-Vallée, Université Paris Nanterre 
+ 
+http://www.dicen-idf.org
+Élico  
+Équipe de recherche de Lyon en sciences de l’information et de la communication 
+ 
+EA 4147, Université Lyon 2 Lumière, Université Lyon 1 Claude Bernard, Université Lyon 3 
+Jean Moulin, Enssib, IEP de Lyon 
+ 
+ 
+ 
+ 
+ 
+http://www.elico-recherche.eu
+Élliadd  
+Éditions, langages, littératures, informatique, arts, didactiques, discours 
+ 
+EA 4661, Université Bourgogne Franche-Comté 
+ 
+http://elliadd.univ-fcomte.fr
+Gériico  
+Groupe d’études et de recherche interdisciplinaire en information et communication  
+EA 4073, Université de Lille 
+ 
+https://geriico-recherche.univ-lille3.fr
+Gresec  
+Groupe de recherche sur les enjeux de la communication 
+ 
+EA 608, Université Grenoble Alpes 
+ 
+http://gresec.univ-grenoble-alpes.fr
+Gripic  
+Groupe de recherches interdisciplinaires sur les processus d’information et de 
+communication 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+EA 1498, Sorbonne Université  
+http://www.gripic.fr
+Imsic  
+Institut méditerranéen des sciences de l’information et de communication  
+EA 7492, Aix Marseille Université, Université de Toulon 
+ 
+https://ejcam.univ-amu.fr/fr/laboratoire-imsic
+16
+D�namiques des recherches en sciences de l�information et de la communication
+Ircav  
+Institut de recherche sur le cinéma et l’audiovisuel 
+ 
+EA 185, Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/ircav-institut-de-recherche-sur-le-cinema-et-l-
+audiovisuel-ea-185-3445.kjsp
+Irméccen  
+Institut de recherche médias, cultures, communication et numérique 
+ 
+Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/irmeccen-447954.kjsp
+LabSIC  
+Laboratoire des sciences de l’information et de la communication 
+ 
+EA 1803, Université Paris 13 
+ 
+http://labsic.univ-paris13.fr
+LC2S  
+Laboratoire caribéen de sciences sociales 
+ 
+UMR 8053, Université des Antilles, CNRS  
+http://www2.univ-ag.fr/CRPLC
+LCF  
+Laboratoire de recherche sur les espaces créolophones et francophones 
+ 
+EA 7390, Université de La Réunion 
+ 
+https://www.lcf-reunion.fr
+Lérass  
+Laboratoire d’études et de recherches appliquées en sciences sociales 
+ 
+EA 82, Université Toulouse Paul Sabatier, Université Toulouse Jean Jaurès, Université Paul 
+Valéry Montpellier 3 
+ 
+ 
+ 
+ 
+ 
+ 
+https://www.lerass.com 
+Lisa 
+Lieux, identités, espaces et activités 
+ 
+UMR 6240, Université de Corse Pasquale Poli, CNRS  
+http://umrlisa.univ-corse.fr
+LLSETI 
+Laboratoire Langages, littératures, sociétés – Études transfrontalières et internationales 
+EA 3706, Université Savoie Mont Blanc 
+ 
+https://www.llseti.univ-smb.fr
+Mica  
+Médiation, information, communication, arts 
+ 
+EA 4426, Université Bordeaux Montaigne  
+http://mica.u-bordeaux3.fr
+Paragraphe 
+EA 349, Université Paris 8 Vincennes-Saint-Denis, Université de Cergy-Pontoise 
+ 
+http://www.univ-paris8.fr/EA-349-Laboratoire-Paragraphe
+Prefics  
+Plurilinguismes, représentations, expressions francophones, information, communication, 
+sociolinguistique  
+ 
+ 
+ 
+ 
+ 
+EA 4246, Université Rennes 2, Université Bretagne Sud 
+ 
+https://www.univ-rennes2.fr/prefics
+Prim  
+Pratiques et ressources de l’information et des médiations 
+ 
+EA 7503, Université de Tours  
+https://www.univ-tours.fr/site-de-l-universite/pratiques-et-ressources-de-l-
+information-et-des-mediations-prim--576167.kjsp
+17
+Introduction. Une discipline, trente-huit unités, dix domaines   
+SIC.Lab Méditerranée 
+ 
+Laboratoire de recherche en sciences de l’information et de la communication Méditerranée 
+EA 3820, Université Côte d’Azur 
+ 
+http://siclab.fr
+Techné  
+Technologies numériques pour l’éducation 
+ 
+EA 6316, Université de Poitiers 
+ 
+http://techne.labo.univ-poitiers.fr
+Associations et instances nationales et internationales
+• 
+Association internationale des études et recherches sur l’information/International 
+Association for Media and Communication Research 
+ 
+ 
+ 
+https://iamcr.org
+• 
+Conférence permanente des directeurs et directrices d’unités de recherche en 
+sciences de l’information et de la communication 
+ 
+ 
+ 
+http://cpdirsic.fr
+• 
+Conseil national des universités, 71e section, sciences de l’information et de la 
+communication 
+ 
+ 
+ 
+ 
+ 
+ 
+http://www.cpcnu.fr/web/section-71
+• 
+International Communication Association 
+ 
+https://www.icahdq.org
+• 
+International Society for Knowledge Organization, chapitre français 
+ 
+http://isko-france.asso.fr
+• 
+Société française des sciences de l’information et de la communication 
+ 
+https://www.sfsic.org
+Revues généralistes francophones 
+• 
+Communication 
+https://journals.openedition.org/communication/
+• 
+Communication & langages 
+ 
+https://www.puf.com/collections/Communication_et_langages 
+• 
+Enjeux de l’information et de la communication (Les) 
+ 
+https://lesenjeux.univ-grenoble-alpes.fr/
+• 
+Essachess , Journal for Communication Studies  
+http://www.essachess.com/index.php/jcs
+• 
+Études de communication 
+ 
+https://journals.openedition.org/edc/
+• 
+Hermès, La Revue. Cognition, communication, politique 
+ 
+http://documents.irevues.inist.fr/handle/2042/8538
+• 
+¿ Interrogations ? 
+ 
+http://www.revue-interrogations.org/Presentation-de-la-revue
+• 
+MEI. Médiation et information 
+ 
+https://www.mei-info.com/la-revue/ 
+• 
+Politiques de communication 
+ 
+http://www.revuepolitiquesdecom.uvsq.fr
+18
+D�namiques des recherches en sciences de l�information et de la communication
+• 
+Quaderni. Communication, technologies, pouvoir 
+ 
+https://journals.openedition.org/quaderni/423?lang=en
+• 
+Questions de communication 
+ 
+https://journals.openedition.org/questionsdecommunication/ 
+• 
+Recherches en communication 
+ 
+http://sites.uclouvain.be/rec/index.php/rec
+• 
+Revue française des sciences de l’information et de la communication 
+ 
+https://journals.openedition.org/rfsic/
+• 
+Sciences de la société 
+ 
+https://journals.openedition.org/sds/
+• 
+Sociétés et représentations 
+ 
+http://www.publications-sorbonne.fr/fr/revues/?collection_id=46
+19
+ 1 | 
+Médias  
+et journalisme
+Les recherches sur les médias et le journalisme abordent des questions à 
+fort enjeu social et politique. Elles visent à rendre intelligible la fabrique des 
+discours publics, médiatiques et politiques, dont ceux touchant, par exemple, 
+à l’environnement, à la santé, à l’égalité et aux inégalités, aux usages des 
+data, aux violences, aux migrations. Qu’il soit question de la médiatisation du 
+terrorisme ou du rôle des journalistes face à la terreur, des risques industriels, 
+climatiques, sanitaires, de l’influence des discours sur les réseaux sociaux et, 
+plus largement, de l’internet dans la construction des débats publics, sociaux 
+et politiques, les recherches sur le journalisme et les médias permettent de 
+comprendre les processus professionnels et communicationnels qui forgent les 
+représentations communes, les repères sociaux et politiques qui configurent les 
+événements, contribuent à la formation d’espaces publics pluriels et définissent 
+des arènes dans lesquelles les acteurs de la démocratie ont à prendre position.
+Quelques questions travaillées dans des contrats de recherche peuvent ainsi être 
+citées en exemple : les représentations du risque industriel dans les médias et la 
+participation des journalistes aux processus de concertation, la participation 
+des médias à l’émergence des mouvements de malades, l’énergie nucléaire et 
+la dispute médiatique, la médiatisation des violences faites aux femmes, les 
+journalistes et les fake news, les liens entre médias et publicité, la médiatisation 
+de la vie politique, les catastrophes climatiques, la place des femmes dans la vie 
+politique et publique ou dans les rédactions, les identités territoriales ou encore 
+les émotions sociales face aux attentats.
+Les recherches menées en sciences de l’information et de la communication 
+(sic) sur les médias et le journalisme participent par ailleurs de l’appui 
+des formations au journalisme en permettant d’articuler fortement 
+enseignement et recherche. Qu’elles soient dispensées dans des écoles et 
+cursus reconnus par la profession et/ou dans des diplômes de type Master, 
+les préparations aux métiers du journalisme et des médias sont souvent 
+assurées par des enseignant·e·s-chercheur·e·s de la discipline, qui travaillent 
+aux côtés des journalistes. Les approches critiques universitaires forment 
+ainsi un ensemble de savoirs complémentaires des savoirs professionnels 
+dispensés dans les cursus spécialisés. La discipline joue ainsi un rôle 
+20
+D�namiques des recherches en sciences de l�information et de la communication
+majeur dans la formation de celles et ceux qui assureront, dans les années 
+à venir, la mise en scène et en mots des opinions et des débats dans les 
+sociétés démocratiques.
+discours, communication, contenus médiatiques, information, journalisme, 
+médias, problèmes sociaux et politiques, représentations
+E
+n préambule à ce chapitre consacré aux médias comme acteurs des 
+représentations collectives et au «  journalisme  » comme champ 
+professionnel, il faut rappeler qu’un nombre important d’unités de 
+recherche en sciences de l’information et de la communication (sic) consacre 
+des travaux à cette thématique structurante. Quoique son activité ne se réduise 
+pas stricto sensu à cette thématique, on signale l’existence d’une liste de diffusion 
+très active consacrée à l’analyse des médias – le Gram (Groupe de recherche sur 
+l’analyse du discours des médias) – qui compte près de 1 500 abonné·e·s (issu·e·s 
+d’universités françaises et étrangères). On signale également l’existence d’un 
+groupement d’intérêt scientifique – Gis Journalisme – rassemblant plusieurs 
+unités de la discipline (Arènes, Carism, Crem, Élico, Gresec et Gripic).
+Pour rendre compte des travaux constitutifs des recherches sur les médias 
+et le journalisme, le chapitre se propose de présenter cinq sous-ensembles 
+permettant de catégoriser les objets de recherche, les cadres théoriques 
+et les méthodologies déployées. Pour chaque sous-ensemble, les objectifs 
+scientifiques permettent de situer l’utilité sociale des travaux. En fin de 
+chapitre, on rappellera les recherches menées avec d’autres disciplines, qui 
+situent les sic dans l’ensemble plus large des sciences humaines et sociales (shs).
+Mutations des environnements organisationnels 
+et de la profession de journaliste
+Dès la fin des années 1970, au sein des sic, des chercheur·e·s ont construit une 
+théorie des industries culturelles (voir le chapitre « Images, cinéma, médias 
+audiovisuels et industries culturelles »). Selon une perspective relevant de 
+l’économie politique de la communication, ils/elles ont analysé les relations 
+entre industries culturelles et capitalisme, ont tenté d’appréhender les 
+participations de celles-ci à l’ordre politique et marchand. Ces travaux ont 
+permis de caractériser ces industries selon leur logique socio-économique, 
+en se centrant sur la compréhension des modes d’industrialisation et de 
+marchandisation de l’information et la culture. 
+21
+ 1 | 
+Médias et journalisme 
+Socio-économie des organisations médiatiques
+Aujourd’hui encore, cette approche inspire de nombreux travaux portant sur 
+les processus de concentration et les stratégies des acteurs économiques – 
+leurs alliances, leurs conflits, les processus de concentration et les logiques de 
+financiarisation des grands groupes de communication en lien ou non avec la 
+question de la diversité des produits proposés à la consommation. Certaines 
+de ces recherches ont d’ailleurs permis d’évaluer les effets structurants 
+de tels processus sur la production de la culture. Elles ont montré que 
+les stratégies développées par les grands groupes de communication 
+influent sur la structuration du champ médiatique, de ses secteurs, des 
+modes d’industrialisation de la production, articulés à des processus de 
+consommation. Des chercheur·e·s s’attachent ainsi à définir les modes 
+d’organisation industrielle de la presse écrite, différenciant celui de la presse 
+quotidienne et celui de la presse magazine de la presse en ligne. Constamment 
+renouvelées par le choix des terrains d’observation, ces recherches 
+établissent qu’il n’existe pas une seule façon de pratiquer le journalisme, mais 
+une diversité des situations et des pratiques professionnelles. Elles montrent 
+comment celles-ci se complexifient sans cesse sous l’impulsion de politiques 
+financières, industrielles et organisationnelles, telles que la mutualisation ou 
+l’externalisation des activités de production, l’informatisation des rédactions, 
+ou la mise en place de stratégies pluri-médias des groupes de presse. 
+Morphologie de la profession journalistique  
+et évolution des cadres d’exercice
+Les travaux fondés sur une approche sociographique du journalisme abondent 
+en France, en sociologie, en science politique, en histoire, et, plus récemment, 
+en sic. Ainsi les principales recherches sur la profession sont-elles menées via 
+de grandes enquêtes sur les titulaires de la carte de presse. Ces sociographies 
+analysent les mécanismes de différenciation horizontale (répartition des 
+spécialités) et verticale (progression aux postes stables puis de responsabilités) 
+à l’œuvre dans la profession, en lien avec les transformations de l’activité 
+journalistique et des médias. À partir de données collectées et analysées auprès 
+de syndicats d’employeurs et de salariés, les chercheur·e·s présentent une 
+répartition des journalistes encartés selon les supports et les médias, les statuts 
+(pigistes, demandeurs d’emploi, cdd, cdi), les postes de travail (secrétaires de 
+rédaction, rédacteurs, journalistes reporters d’images, grands reporters, 
+etc.) et les fonctions (cadres, non-cadres). La réalisation régulière de ces 
+enquêtes permet aussi de cerner les évolutions morphologiques du groupe des 
+22
+D�namiques des recherches en sciences de l�information et de la communication
+journalistes. C’est pourquoi elles se révèlent d’une grande richesse heuristique 
+pour appréhender les conditions réelles d’intégration dans la profession 
+et dans l’exercice de celle-ci. L’ensemble de ces travaux met en évidence 
+l’hétérogénéité des modes d’exercice du journalisme et l’inadéquation d’une 
+vision universaliste de la profession, supposant l’existence de valeurs partagées 
+et des conditions d’exercice communes. Dans ce cadre, la première difficulté, 
+pour les différent·e·s acteur·rice·s de la profession et pour les chercheur·e·s, 
+est de penser simultanément les modifications, voire l’éclatement des normes 
+dominantes du journalisme, en lien notamment avec les luttes syndicales 
+autour de la définition de la profession, de ses pratiques et de son éthique. 
+La deuxième consiste à identifier les rapports différenciés, ainsi que les 
+diverses stratégies professionnelles, sociales et genrées qu’entretiennent les 
+journalistes avec ces normes dominantes et cette définition du journalisme. La 
+troisième consiste à comprendre ces transformations, à l’aune des évolutions 
+socio-économiques des industries culturelles et des mutations techniques 
+(développement du numérique notamment).
+Durant les années 1990-2010, avec l’essor des médias numériques et des 
+nouveaux supports de communication (ordinateurs portables, smartphones, 
+tablettes, etc.), les recherches sur la production de l’information se sont 
+tournées vers l’étude de l’impact de ces technologies sur de nouvelles 
+modalités de travail des journalistes. En s’inspirant de la sociologie du 
+travail, de la sociologie des réseaux de sociabilité, les enquêtes menées dans 
+différentes rédactions ont mis en lumière l’impact de l’information en continu, 
+le poids de la polyvalence professionnelle, l’essor de l’interactivité avec le 
+public, de plus en plus présent sur les forums de discussion et les réseaux 
+sociaux numériques. Les journalistes doivent désormais dialoguer avec le 
+public, faire participer celui-ci sous certaines conditions à la production de 
+l’information, voire favoriser l’animation de communautés de lecteurs·rice·s 
+et d’internautes (apparition de community managers). Ces évolutions 
+alimentent la question sans cesse renouvelée de l’identité professionnelle 
+des journalistes. En effet, ceux·celles-ci sont contraints de retravailler les 
+formats d’écriture sur le web et de collaborer avec des infographistes, des 
+webmasters, des spécialistes des données, etc. Les études récentes portent 
+donc sur les usages des réseaux sociaux numériques et sur l’influence de 
+Twitter ou sur l’importance du fact checking (vérification des informations, 
+au moment de leur énonciation). Ces études révèlent également des formes 
+de stratégies identitaires chez les journalistes qui se trouvent dans la 
+nécessité de concevoir de nouveaux modes de visibilité et sont conduit.e.s 
+à développer profils individuels ou postures d’auteur·e·s reléguant au second 
+plan leur appartenance à une rédaction. Les travaux sur ces pratiques sont 
+en plein essor. En outre, dans la mesure où le public s’informe de plus en 
+23
+ 1 | 
+Médias et journalisme 
+plus par l’intermédiaire du web (portails, agrégateurs de contenus, sites en 
+ligne, etc.), il est devenu nécessaire de comprendre le poids des infomédiaires 
+sur les pratiques journalistiques. L’objectif de la plupart des rédactions est 
+de capter et de conserver l’attention des internautes : les journalistes sont 
+donc soumis·e·s aux évaluations en temps réel de leur travail (importance 
+des logiciels de calcul de la fréquentation des sites). Les questions éthiques 
+et déontologiques relatives à l’exercice du métier, ou ce qui est aussi 
+désigné comme relevant de la responsabilité sociale des journalistes, sont 
+fréquemment réactivées, comme en témoignent les réactions sociales face 
+au traitement médiatique des attentats en France depuis 2015. En l’espace 
+de quelques années, le métier de journaliste a connu de profondes mutations 
+que les chercheur·e·s en sic scrutent activement.
+Métamorphoses des regards
+Les représentations médiatiques sont analysées dans l’ensemble de leurs 
+supports : presse écrite et en ligne, radio, télévision, cinéma, web. Le plus 
+souvent menées à partir d’approches sémiotiques et/ou discursives, les 
+analyses abordent les médias mainstream comme les médias de niche, les 
+médias grand public ou spécialisés, les médias institutionnels, les médias 
+participatifs ou les espaces médiatisés de la discussion publique. Les différents 
+sous-genres des représentations médiatiques (séries télévisées, journaux 
+télévisés, émissions politiques, tribunes, éditoriaux, reportages, portraits…) 
+font l’objet d’analyses spécifiques ou comparatives, de monographies, de 
+recherches croisant ces sous-genres avec les grandes thématiques sociales, 
+politiques, culturelles, en les reliant à la circulation de l’information dans 
+l’espace social ou à la question de l’offre et de la diversité informationnelles. 
+Les recherches sur la médiatisation des processus politiques, des meetings, 
+de la communication politique et publique appréhendent ainsi les facteurs, 
+les mécanismes et les répercussions de cette communication sur les relations 
+entre politiques, journalistes et espace public par exemple (voir le chapitre 
+« Communication publique et politique »).
+Représentations médiatiques des événements  
+et des identités sociales
+Les représentations médiatiques sont abordées sous plusieurs angles 
+scientifiques selon une double perspective. Des recherches portent un regard 
+diachronique sur l’histoire des formats et formes médiatiques (l’histoire des 
+24
+D�namiques des recherches en sciences de l�information et de la communication
+genres éditoriaux par exemple, ou l’histoire des formes audiovisuelles, des 
+formats télévisuels, des séries, des émissions politiques, du documentaire), 
+ou sur l’histoire des contenus thématiques (histoire des représentations 
+médiatiques des migrations, de la famille, du personnel politique…). D’autres 
+recherches, synchroniques, s’attachent aux modalités de mise en discours 
+des faits sociaux dans les pratiques journalistiques, en prenant en compte les 
+enjeux sémiotiques propres à cette professionnalisation de l’information. Elles 
+analysent notamment les interactions entre technologies de communication, 
+organisations professionnelles et formats de représentation. On trouve ici les 
+travaux sur ce que l’on appelle « le journalisme de données » (data journalisme), 
+ou ceux sur le photojournalisme, le développement des plateformes de vidéo, 
+la circulation des images sur les applications type réseaux sociaux – et leur 
+concurrence vis-à-vis des espaces institutionnels de l’information. Dans 
+cette approche synchronique, les recherches abordent aussi les multiples 
+articulations, construites par les représentations médiatiques, des relations 
+entre les acteurs sociaux. Les représentations médiatiques sont ainsi travaillées 
+comme lieux de mise en scène des rapports de pouvoir politique, des rapports 
+de genre, des rapports de classe ou d’assignation à des identités racialisées. 
+Les identités médiatiques des acteur·rice·s sociaux·les et politiques constituent 
+de la sorte un pan important des recherches (notamment focalisées sur les 
+processus électoraux), de même que les identités territoriales, de plus en plus 
+saisies dans leurs processus de construction communicationnelle. 
+Ces deux dimensions sont analysées à partir des cadres théoriques que 
+constituent, au sein des sic, le constructivisme, la sémiotique et la sémio-
+pragmatique, les approches critiques, ou encore les études de genre. Ces 
+cadres théoriques permettent de déconstruire les représentations médiatiques 
+(d’en éclairer les processus de construction) pour en saisir les normes, les 
+implicites, les enjeux explicites ou discrets. Ils s’articulent à des méthodologies 
+rassemblant les analyses de discours et de contenus, la lexicométrie (comptage 
+des occurrences lexicales), les analyses de l’argumentation et de l’énonciation, 
+les analyses des dispositifs éditoriaux ou encore les analyses iconiques. 
+Ces analyses s’opèrent sur des corpus dont la constitution recouvre des positions 
+méthodologiques diverses (exhaustivité et représentativité, comparatisme, 
+homogénéité et hétérogénéité). Les corpus font appel à des logiques de 
+collecte articulant les archives, le moissonnage en temps réel, la normalisation 
+(en particulier dans le cas des corpus traités par des logiciels d’analyse 
+automatique des discours). Les objectifs scientifiques partagés de l’ensemble 
+de ces recherches sur les représentations médiatiques visent à proposer une 
+meilleure compréhension des dynamiques qui structurent l’espace symbolique 
+des sociétés, notamment contemporaines. 
+25
+ 1 | 
+Médias et journalisme 
+Les médias, « arènes de débat »
+Dans les travaux consacrés aux médias, ceux-ci sont souvent saisis comme des 
+arènes symboliques, où se nouent les débats sociaux et politiques. Les médias 
+peuvent ainsi constituer des espaces publics partiels  ; le débat scientifique 
+entre la notion d’arène et celle d’espace public étant plus spécifiquement traité 
+par les réflexions autour de la communication politique et publique (voir le 
+chapitre « Communication publique et politique »). Plusieurs niveaux d’observation 
+et d’approche sont déployés dans les travaux, allant des observations micro de 
+situation ou discours situés, à des analyses macro, saisissant les structures ou 
+évolutions transversales aux médias ou au journalisme, étudiant conjointement 
+les sources, acteurs et processus de mise en scène. 
+En effet, mener des recherches sur le journalisme et les médias invite à examiner 
+les mécanismes de la production journalistique en tant qu’action collective, 
+nécessitant la coopération de plusieurs acteur·rice·s, et les positions respectives 
+de ces acteur·rice·s dans cet acte de coopération. Ce qui, dans le processus 
+d’information, se situe en amont du journaliste, c’est-à-dire son rapport aux 
+sources et aux autres acteur·rice·s qui participent avec lui·elle à la production de 
+l’information, échappe la plupart du temps à la connaissance du public mais pas à 
+l’intérêt des chercheur·e·s qui ont voulu comprendre les conventions, les conflits, 
+les connivences, structurant les relations et les interactions entre les journalistes, 
+leurs sources et le personnel des médias. Sont ainsi étudiées les caractéristiques 
+sociales et les modalités de production des journalistes eux-mêmes, à savoir 
+les micro-décisions, les opérations successives qui, imbriquées les unes aux 
+autres, définissent et construisent le produit éditorial. Ce travail scientifique 
+est constamment renouvelé, notamment dans le contexte des profondes 
+mutations que connaît l’univers des médias, du fait de la numérisation et de ses 
+conséquences. Ces changements rendent difficilement lisible l’organisation de 
+la production de l’information et le système de relations auquel les journalistes 
+participent. L’identité et l’action des sources se transforment. Des acteur·rice·s 
+nouveaux contribuent au processus, de nouvelles modalités de communication 
+de l’information se développent, les modèles économiques se transforment ; 
+des occasions surgissent. Dans ce contexte, les frontières entre les territoires 
+d’activités des acteur·rice·s deviennent mouvantes. De nouvelles tensions, 
+imbrications, coopérations, rivalités apparaissent, créent de nouvelles zones 
+d’incertitude pour les acteur·rice·s et des zones d’ombre pour les chercheur·e·s. 
+Des études se développent sur le travail des référenceur·se·s dans les sites 
+d’information, intermédiaires entre les journalistes et les partenaires extérieur·e·s 
+(dont l’incontournable Google), à la frontière d’univers et d’imaginaires 
+professionnels parfois en opposition ; on renvoie ici à la collaboration entre 
+journalistes, informaticien·ne·s, militant·e·s et universitaires qui travaillent de 
+concert à la définition et la promotion du data-journalism.
+26
+D�namiques des recherches en sciences de l�information et de la communication
+Analyser la construction de la mise en débat médiatique peut permettre 
+de s’interroger sur les discours fabriqués par les pratiques professionnelles 
+selon plusieurs perspectives. Il est ainsi possible d’éclairer les processus de 
+construction médiatique de catégories ou de minorités sociales ou, de manière 
+plus large, des formes de visibilité de certaines populations dans l’espace public. Il 
+est également possible de comprendre la construction médiatique des problèmes 
+publics, leur mise en mots et en scène à travers des actions et politiques de 
+communication entreprises par les acteurs en vue d’être identifiés dans l’espace 
+public. Il s’agit ainsi d’analyser le rôle du journalisme et des médias en interaction 
+avec des professionnel·le·s de la communication, des organisations-sources dans 
+l’établissement d’espaces de mise en discussion d’enjeux publics, espaces qui 
+sont aussi des lieux de formatage et de définition de sujets à débattre. Les médias 
+sont ici envisagés comme des espaces de publicisation, de confrontation, de 
+justification où se joue sans cesse la définition compétitive de règles communes 
+qui structurent la vie sociale et politique. 
+Journalisme, médias et frontières disciplinaires
+Enfin, il est utile de signaler les travaux plus périphériques et leurs interfaces 
+avec d’autres recherches, qui situent l’activité des sic dans le vaste continuum 
+des travaux en shs. Par exemple, l’activité de la Société pour l’histoire des médias 
+(sphm) a contribué à la structuration, en histoire culturelle, des recherches 
+sur les médias. De nombreux travaux rassemblent ainsi les chercheur·e·s en 
+histoire et en sic et permettent à ces dernières de pratiquer la diachronie 
+avec les précautions propres au travail sur des périodes non contemporaines. 
+Par exemple, ces travaux partagés aboutissent à une meilleure connaissance 
+de l’histoire de la presse et à une historicisation des approches de la 
+communication politique médiatisée. 
+Les travaux menés avec des politistes ou des sociologues permettent d’articuler 
+une approche des logiques d’acteurs avec une approche des représentations 
+autour de questions socio-politiques. Ainsi les recherches sur la construction 
+médiatique des risques, des questions de santé permettent-ils de saisir les 
+logiques des acteurs concernés par les thématiques (politiques, administrations, 
+industriels, institutions sanitaires, associations, ong) et celles des journalistes et 
+des médias confrontés à ces sujets fortement spécialisés, mais impliquant des 
+effets importants pour les populations qui sont aussi les publics des médias. 
+D’autres liens établis avec les approches littéraires du journalisme se sont 
+resserrés dans la dernière décennie, à la faveur d’un fort renouveau d’une 
+approche poétique et historique de la presse, concernant surtout le xixe siècle, 
+27
+ 1 | 
+Médias et journalisme 
+mais s’étendant à la période contemporaine. Un vaste champ de recherche 
+s’amorce ainsi avec la numérisation massive des archives de la presse 
+ancienne, qui ouvre la voie à des analyses combinant exploration des textes 
+et enjeux de savoir renouvelés dans une perspective d’humanités numériques 
+(voir le chapitre « Numérique : stratégies, dispositifs et usages »).
+À la croisée de ces disciplines, les méthodologies d’analyse trouvent des 
+ressources majeures dans l’approche des médias informatisés telle qu’elle 
+a été initiée en sic dès les premiers temps du numérique. Enfin, les travaux 
+situés dans ces interfaces disciplinaires permettent aux unités de recherche 
+en sic de mener des projets avec des unités de psychologie sociale ou de 
+médecine et d’aborder les questions, de plus en plus pressantes du point de 
+vue de leurs enjeux sociaux, des représentations de la santé connectée (la 
+e-santé), du rôle des données massives dans les usages individuels de santé 
+et dans les politiques sanitaires. 
+Tous ces objets-frontières montrent la force des études en sic qui peuvent 
+entraîner d’autres disciplines et produire des recherches ambitieuses et de 
+grande ampleur. Un exemple de ces recherches les plus récentes auxquelles les sic 
+apportent leur écot : l’appel à projets « Attentats-recherche » lancé par le cnrs après 
+les attentats de 2015, auxquels ont répondu les chercheur·e·s de la discipline et des 
+unités travaillant sur les médias et le journalisme. Les recherches se (re)saisissent 
+ainsi des questions de violence et de radicalité, que les productions médiatiques 
+et les pratiques journalistiques affrontent de façon renouvelée.
+*
+On évoquera quelques recherches portant sur les tendances émergentes dans 
+les médias et le journalisme, qui permettent notamment de mettre en évidence 
+l’invisibilité pouvant accompagner un processus de disqualification de pratiques 
+jugées illégitimes ou insignifiantes (comme le journalisme institutionnel, la 
+presse people ou pornographique, les bulletins météo, le groupe professionnel 
+des paparazzi, etc.). La dimension de la visibilité sociale est ici centrale car 
+elle interroge la définition même de ce qu’est le journalisme et son activité 
+de production de la média-réalité. Par exemple, l’analyse des relations entre 
+entreprises de presse et pigistes s’inscrit dans cette perspective d’identification 
+des mécanismes d’invisibilisation sociale. Autre exemple de travaux émergents 
+que les sic accueillent et contribuent à rendre légitimes : ceux consacrés à la 
+« pipolisation » médiatique qui permettent, au-delà du phénomène dénoncé 
+ou décrit dans les médias eux-mêmes, de comprendre les ressorts politiques, 
+sémiotiques et sociologiques de ces contenus si prisés des publics. Dans un 
+28
+D�namiques des recherches en sciences de l�information et de la communication
+ordre d’idée similaire, les recherches consacrées à la presse féminine, qui ont 
+émergé dans les années 1970, voient leur périmètre s’élargir et permettent, 
+dans une perspective que l’on qualifiera rapidement d’intersectionnelle, 
+d’éclairer les phénomènes médiatiques et journalistiques de stigmatisation, 
+de relégation, d’assignation des dominé·e·s, l’évolution ou la permanence des 
+normes dans les représentations des femmes (ou des hommes), des familles 
+ou des structures parentales dans les médias d’information, la publicité ou les 
+productions audiovisuelles.
+Enfin, quelques travaux récents consacrés aux médias et au journalisme saisissent 
+les sujets qui suscitent de vifs débats au sein des sociétés contemporaines. Ainsi 
+sont envisagées les conflictualités dans les espaces publics dans des recherches 
+qui proposent des pistes de compréhension de la structuration des débats – 
+ou de l’absence de débats – ou qui abordent la genèse et la structuration des 
+controverses en articulant analyse des trajectoires professionnelles dans le 
+champ journalistique et analyse de la circulation discursive de ces controverses. 
+De même, les questions sociales et sanitaires cruciales, comme celle de l’antibio-
+résistance ou des violences faites aux femmes, sont envisagées, dans les 
+recherches, comme des problèmes en quête de publics ; les risques industriels, 
+énergétiques ou climatiques sont eux travaillés en articulant analyse des 
+politiques publiques et analyse des représentations médiatiques.
+Unités de recherche 
+Arènes 
+ 
+UMR 6051, Université Rennes 1, IEP de Rennes, Université Rennes 2, École des hautes 
+études en santé publique, CNRS 
+ 
+ 
+ 
+ 
+ 
+http://www.arenes.eu 
+C&S  
+Communication et sociétés 
+ 
+EA 4647, Université Clermont-Auvergne  
+http://communication-societes.uca.fr
+Carism 
+Centre d’analyse et de recherche interdisciplinaires sur les médias  
+ 
+EA 2293, Université Paris 2 Panthéon-Assas 
+ 
+http://carism.u-paris2.fr
+Céditec 
+Centre d’étude des discours, images, textes, écrits, communication 
+  
+EA 3119, Université Paris Est-Créteil Val de Marne 
+ 
+http://ceditec.u-pec.fr
+Cémti  
+Centre d’études sur les médias, les technologies et l’internationalisation 
+ 
+EA 3388, Université Paris 8 Vincennes-Saint-Denis  
+https://cemticritic.eu
+29
+ 1 | 
+Médias et journalisme 
+CHCSC  
+Centre d’histoire culturelle des sociétés contemporaines 
+ 
+EA 2448, Université Versailles Saint-Quentin-en-Yvelines, Université Paris-Saclay 
+ 
+http://www.chcsc.uvsq.fr
+Cim  
+Communication, information, médias 
+ 
+EA 1484, Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/ea-1484-communication-information-medias-cim--3444.kjsp
+Ciméos 
+Communications, médiations, organisations, savoirs  
+EA 4177, Université Bourgogne Franche-Comté 
+ 
+http://cimeos.u-bourgogne.fr
+Costech  
+Connaissance, organisation et systèmes techniques  
+EA 2223, Université de technologie de Compiègne 
+ 
+http://www.costech.utc.fr
+Crem 
+Centre de recherche sur les médiations. Communication, langue, art, culture 
+ 
+EA 3476, Université de Lorraine 
+ 
+http://crem.univ-lorraine.fr
+DeVisu  
+Laboratoire en design visuel et urbain 
+ 
+EA 2445, Université polytechnique Hauts-de-France  
+http://www.uphf.fr/DEVISU/
+Élico  
+Équipe de recherche de Lyon en sciences de l’information et de la communication 
+ 
+EA 4147, Université Lyon 2 Lumière, Université Lyon 1 Claude Bernard, Université Lyon 3 
+Jean Moulin, Enssib, IEP de Lyon 
+ 
+ 
+ 
+ 
+ 
+http://www.elico-recherche.eu
+Élliadd  
+Éditions, langages, littératures, informatique, arts, didactiques, discours 
+ 
+EA 4661, Université Bourgogne Franche-Comté 
+ 
+http://elliadd.univ-fcomte.fr
+Gériico  
+Groupe d’études et de recherche interdisciplinaire en information et communication 
+  
+EA 4073, Université de Lille 
+ 
+https://geriico-recherche.univ-lille3.fr
+Gresec  
+Groupe de recherche sur les enjeux de la communication 
+ 
+EA 608, Université Grenoble Alpes 
+ 
+http://gresec.univ-grenoble-alpes.fr
+Gripic  
+Groupe de recherches interdisciplinaires sur les processus d’information et de 
+communication 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+EA 1498, Sorbonne Université  
+http://www.gripic.fr
+Imsic  
+Institut méditerranéen des sciences de l’information et de communication  
+EA 7492, Aix Marseille Université, Université de Toulon 
+ 
+https://ejcam.univ-amu.fr/fr/laboratoire-imsic
+30
+D�namiques des recherches en sciences de l�information et de la communication
+Ircav  
+Institut de recherche sur le cinéma et l’audiovisuel 
+ 
+EA 185, Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/ircav-institut-de-recherche-sur-le-cinema-et-l-
+audiovisuel-ea-185-3445.kjsp
+Irméccen  
+Institut de recherche médias, cultures, communication et numérique 
+ 
+Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/irmeccen-447954.kjsp
+LabSIC  
+Laboratoire des sciences de l’information et de la communication 
+ 
+EA 1803, Université Paris 13 
+ 
+http://labsic.univ-paris13.fr
+LCF  
+Laboratoire de recherche sur les espaces créolophones et francophones 
+ 
+EA 7390, Université de La Réunion 
+ 
+https://www.lcf-reunion.fr
+Lérass  
+Laboratoire d’études et de recherches appliquées en sciences sociales 
+ 
+EA 82, Université Toulouse Paul Sabatier, Université Toulouse Jean Jaurès, Université Paul 
+Valéry Montpellier 3 
+ 
+ 
+ 
+ 
+ 
+ 
+https://www.lerass.com 
+Mica  
+Médiation, information, communication, arts 
+ 
+EA 4426, Université Bordeaux Montaigne  
+http://mica.u-bordeaux3.fr
+Prim  
+Pratiques et ressources de l’information et des médiations 
+ 
+EA 7503, Université de Tours  
+https://www.univ-tours.fr/site-de-l-universite/pratiques-et-ressources-de-l-
+information-et-des-mediations-prim--576167.kjsp
+SIC.Lab Méditerranée 
+ 
+Laboratoire de recherche en sciences de l’information et de la communication Méditerranée 
+EA 3820, Université Côte d’Azur 
+ 
+http://siclab.fr
+Sélection de travaux
+Programmes et contrats de recherche 
+Presse et industries médiatiques
+• 
+#Live. Écriture et visualisation d’information en direct pour le journalisme numérique 
+(CPER Ariane, Crem, 2016-2018).
+• 
+Giranium. Girardin numérisé ou la naissance des industries médiatiques (Idex Sorbonne 
+Universités, Gripic, 2017-2018).
+31
+ 1 | 
+Médias et journalisme 
+• 
+InfoTransFront. La circulation transfrontalière des informations médiatiques dans la 
+Grande Région (Centre interdisciplinaire d’études et de recherches sur l’Allemagne, 
+Quatropôle, MSH Lorraine, Crem, Université de Lorraine, Université de Haute-Alsace, 
+Université Paris 1, Université de Luxembourg, Universität des Saarlandes, 2011-2014).
+• 
+Ipri. Internet, pluralisme et redondance de l’information (ANR, Cim, 2009-2012).
+• 
+JNT. Jeunes numériques et télévision (Région Nord-Pas-de-Calais, Gériico, Crem, 2013).
+• 
+Festival Littérature et journalisme (Livre à Metz, Crem, 2014-2020).
+• 
+Médias et palmarès : Instrumentations, instrumentalisations, valeurs et opérativité sociale 
+d’une médiation : les pratiques contemporaines d’évaluation dans les palmarès et autres 
+classements médiatiques. Perspectives des sciences sociales sur la quantification (MSH 
+Paris-Nord, ISCC, Université Paris 8, Université Paris 13, Gripic, 2010-2012).
+• 
+Médias locaux et publics (Vosges Télévision, Crem, 2015-2016).
+• 
+Narrer l’actualité sur mobile : médias et réseaux socionumériques (Maison de la création, 
+Université Grenoble Alpes, Gresec, Litt&Arts, 2016-2017).
+• 
+Nouvelles narrations journalistiques : « récits immersifs » et création éditoriale en journalisme 
+(Maison de la création, Université Grenoble Alpes, Gresec, Traverses 19-21, France Bleu 
+Isère, 2015-2016).
+• 
+Numapresse. Pour une histoire littéraire et culturelle de la presse française, du papier à l’écran 
+(ANR, Ihrim, Université Laval-Québec, Université Paris I, Université libre de Bruxelles, 
+Rirra-21, Gripic, 2017-2021).
+• 
+OT-Media. Observatoire transmedia (ANR, Ina, Cim, AFP, Inria, Latts, Lia, Syllabs, 
+2010-2014).
+• 
+Partage numérique et circulation de l’information chez les jeunes (GIS M@rsouin, Crape, 
+Crem, Université Rennes 1, 2015-2017).
+• 
+Pil. Pluralisme de l’information en ligne (ANR, Lego-IMT Atlantique, Irméccen, Cerege, 
+Université de La Rochelle, 2018-2021).
+Journalisme et journalistes
+• 
+Défi. Les décideurs : figures médiatiques de l’autorité (Convergence@Sorbonne Universités, 
+Gripic, Archives nationales, Inséad, 2014-2016).
+• 
+GMMP. La place des femmes dans les médias (Global Media Monitoring Project, Carism, 
+Élico, Lérass, 2015).
+• 
+Innov’Info. Approches innovantes de l’information en contexte de crise du journalisme. 
+Une perspective européenne (meshs – Lille Nord de France, DeVisu, Vrije Universiteit 
+Brussel, Belgique ; Lemme, Université de Liège, Belgique ; Centre for Media Pluralism 
+and Media Freedom- European University Institute, Italie ; School of Journalism & Mass 
+Communications, Aristotle University of Thessaloniki, Grèce, 2017).
+• 
+Jourdain. Journalisme, data, information ou comment on fait du journalisme de données 
+sans le savoir (Peps CNRS, Gripic, LIP6, 2012-2013).
+• 
+L’insertion et les parcours professionnels des diplômés de formations en journalisme 
+(Observatoire des métiers de l’audiovisuel et de la presse, Carism, CPNEF Audiovisuel, 
+CPNEF Journaliste, CPNEF Presse, Afdas, 2015-2017).
+• 
+Obsweb. Création d’un Observatoire du webjournalisme (MSH Lorraine, Crem, Cerefige, 
+2011-2013).
+• 
+Tous journalistes ? Les formations professionnelles au journalisme face aux défis du Web 
+participatif, (CNRS, SIC.Lab Méditerranée, ISCC, 2011-2013). 
+• 
+Twitter aux élections européennes (RNMSH, CNRS, Crem, MSH de Dijon, Til, Ciméos, 
+LE2I, Université de Caen, Cirtai, MSH Lorraine, ISMM, Rheinische Friedrich-Wilhelms-
+Üniversität Bonn, 2014-2015). 
+32
+D�namiques des recherches en sciences de l�information et de la communication
+• 
+UJRS. Usages journalistiques des réseaux sociaux (Service d’information du gouvernement, 
+Crem, 2011-2012).
+• 
+Vijie. Vérification de l’information dans le journalisme, sur internet et dans l’espace 
+public, enjeux sociétaux des dispositifs et outils numériques de lutte contre les « fausses 
+informations » (ANR, Prim EA 7503, Université de Tours, 2018-2021).
+• 
+Webjournalisme (Région Lorraine, Crem, 2016-2017).
+Médias et questions sociales
+• 
+13-Novembre (PIA, CNRS, Inserm, Crem et al., 2016-2028).
+• 
+Alimecs. L’alimentation à l’école entre médiations, éducation et circulation des savoirs : 
+regards interdisciplinaires sur les discours et les pratiques alimentaires dans les écoles 
+primaires de Lille, Bruxelles et Naples (Comue Lille Nord de France, Gériico, Cirel-Théodile, 
+Université libre de Bruxelles, Università degli studi Suor Orsola Benincasa, 2015-2016).
+• 
+Alimentation scolaire. L’alimentation scolaire : acteurs, pratiques et discours en Nord-Pas-
+de-Calais (Lille Métropole communauté urbaine, Gériico, Fondation Louis Bonduelle, Cirel, 
+Ceries, Alithila, 2013).
+• 
+Ancrer le discours sur le genre : commentaires en ligne et fouille d’opinion (Peps Université 
+de Lyon - CNRS, Élico, 2014).
+• 
+Cap Controverse (CPER Ariane, Crem, Université de Lorraine, 2018-2021).
+• 
+Cirs. Circulation des informations au sein des réseaux socionumériques (Région Lorraine, 
+Université de Lorraine, Crem, 2014-2016).
+• 
+Ebola. Rumors of Blame, Disputes and controversies. Perspectives from the online world 
+(IRD-Inserm, Crem, 2014-2016).
+• 
+Expression de soi sur le web et économies politiques des rapports sociaux de genre (Gis 
+M@rsouin, Arènes, 2015-2017).
+• 
+Fil Info. Algorithmes et accès à l’information en ligne : comprendre les fils d’actualité sur 
+les réseaux socionumériques (CPER Ariane, Crem, Université de Lorraine, 2018-2021).
+• 
+Géomédia. Observatoire des flux géomédiatiques internationaux (ANR, Gériico, Gis Collège 
+international des sciences du territoire, Desity Design Lab – Politecnico de Milan, 2012).
+• 
+Info-RSN. Circulation et partage des informations sur les réseaux socionumériques et 
+transformations du journalisme (ANR, Crem, Société Semiocast/LCOMS, 2013-2016).
+• 
+L’Avis des autres. Prescriptions et jugements culturels : la force des réseaux sociaux 
+numériques (Université Lyon 2 – Région Rhône-Alpes, Élico, GRePS, 2013-2016).
+• 
+Les Coprarents. Rencontres en ligne, discours médiatiques autorisés, représentations 
+genrées et vécus de la coparentalité (Gis Genre, Élico, LabSIC, 2016-2017).
+• 
+RSJ-Médis. Responsabilité sociale des journalistes, médias, diversité et sport (ANR, Arènes, 
+Gériico, Pacte, Praxiling, Urepsss, 2016-2018).
+• 
+Vioramil. Violences et radicalités militantes en France, une expertise pluridisciplinaire 
+shs (ANR, Crulh, Cessp, Crem, Inhesj, 2016-2019).
+Ouvrages collectifs et dossiers de revues 
+Albertini F., dir., Des iles, des lieux et des hommes. Approche anthropologique des médias 
+transfrontaliers, A. Michelucci et la Corse, Bastia, Stamperia Sammarcelli, 2014.
+Alves A., Ballarini L., Lamour C., eds, « Free daily newspapers: Professional norms, business 
+model and routinized production in the metropolis », Studies in Communication Sciences, 
+17/1, 2017.
+33
+ 1 | 
+Médias et journalisme 
+Alvès A., Stein M., dirs, Les Mooks. Espaces de renouveau du journalisme littéraire, Paris, Éd. 
+L’Harmattan, 2017.
+Antoine  F., Douyère D., dirs, « Religions et médias », Revue française des sciences de l’information 
+et de la communication, 13, 2018.
+Aubert A., Denouël J., dirs, Médias numériques et participation. Entre engagement citoyen et 
+production de soi, Paris, Mare & Martin, 2014.
+Auboussier J., Goepfert E.-M., Garcin-Marrou I., dirs, « Le risque industriel dans la presse 
+écrite de 1970 à 2010 : une étude dans la vallée du Rhône », Les Cahiers de la sécurité 
+industrielle, 2015.
+Babou I., dir., « Environnement, savoirs, société », Questions de communication, 32, 2016.
+Ballarini L., Delavaud, dirs, Nouveaux territoires médiatiques, Paris, Mare & Martin, 2014.
+Ballarini L., Ségur C., dirs, Devenir public. Modalités et enjeux, Paris, Mare & Martin, 2018.
+Berthelot-Guiet K., Kunert S., dirs, « Les langages du genre : sémiotique et communication », 
+Communication et langages, 177, 2013.
+Blandin C., dir., Manuel d’analyse de la presse magazine, A. Colin, 2018.
+Blandin C., Lévêque S., Massei S., Pavard B., dirs, « Féminismes », Le Temps des médias, 29, 2017.
+Bonaccorsi J., Flon Emilie, dirs, « La «variation» » médiatique : d’un fondamental sémiotique à 
+un enjeu d’innovation industrielle », Les Enjeux de l’information et de la communication, 
+15/3, 2014.
+Bonhomme M., Barry A. O., Fleury B., Walter J., dirs, Les Médias au Maghreb et en Afrique 
+subsaharienne, Nancy, Pun-Éd. universitaires de Lorraine, 2015.
+Bouchard J., Candel É., Cardy H., Gomez-Mejia G., dirs, La Médiatisation de l’évaluation – 
+Evaluation in the Media, Berne, P. Lang, 2015.
+Bousquet F., Smyrnaios N., dirs, « Les mutations de l’information et des médias locaux », 
+Sciences de la société, 84-85, 2012.
+Brousteau N., Jeanne-Perrier V., Le Cam F., Pereira F., dirs, « L’entretien de recherche avec 
+des journalistes », Sur le journalisme, About Journalism, Sobre Jornalismo, vol. 1, 1, 2012.
+Cervulle M., Quemener N., Vörös F., dirs, Matérialismes, culture et communication. Volume 2 
+– Cultural Studies, théories féministes et postcoloniales, Paris, Presses des Mines, 2016.
+Cervulle M., Julliard V., dirs, « Le genre des controverses », Questions de communication, 33, 2018.
+Comby J.-B., dir., Enquêter sur l’internationalisation des biens médiatiques et culturels, 
+Rennes, Presses universitaires de Rennes, 2017.
+Contreras-Gama R., Fragonara A., Gerber N., Kelm B., Thévenot P., coords, « Public, non-
+public : questions de méthodologie », ¿ Interrogations ?, 24, 2017.
+Dakhlia J., dir., À la recherche des publics populaires (1)/Looking for Popular Publics (1), Nancy, 
+Pun-Éditions universitaires de Lorraine, 2015.
+Dakhlia J., Le Nozach D., Ségur C., dirs, À la recherche des publics populaires (2). Être peuple, 
+Nancy, Pun-Éditions universitaires de Lorraine, 2016.
+Dakhlia J., Robinet F., dirs, « Afrique(s) : entre histoire et mémoires », Le Temps des médias, 
+26, 2016.
+Dalibert M., Lamy A., Quemener N., dirs, « Circulation et qualification des discours. Conflictualités 
+dans les espaces publics (1) », Études de communication, 47, 2016.
+Dalibert M., Lamy A., Quemener N., dirs, « Rapports sociaux et hégémonie. Conflictualités dans 
+les espaces publics (2) », Études de communication, 48, 2017.
+Damian-Gaillard B., Charron J., Travancas I., dirs, « Les invisibles du journalisme », Sur le 
+journalisme-About Journalism-Sobre Jornalismo, Vol. 3, 1, 2014.
+Damian-Gaillard B., Montañola S., Olivesi A., dirs, L’Assignation de genre dans les médias. 
+Attentes, perturbations, reconfigurations, Rennes, Presses universitaires de Rennes, 2014.
+De Iulio S., Bardou Boisnier S., Pailliart I., dirs, « L’alimentation : une affaire publique ? », 
+Questions de communication, 27, 2015.
+Di Filippo L., Landais É., dirs, Penser les relations entre médias. Dispositifs transmédiatiques, 
+convergences et constructions des publics, Strasbourg, Éd. Néothèque, 2017.
+Diana J.-F., dir., Spectacles sportifs, dispositifs d’écriture, Nancy, Pun-Éd. universitaires de 
+Lorraine, 2013.
+34
+D�namiques des recherches en sciences de l�information et de la communication
+Diana J.-F., Dereze G., Standaert O., dirs, 2015, Journalisme sportif. Méthodes d’analyse des 
+productions médiatiques, Louvain, De Bœck Université.
+Ferron B., Harvey N., Trédan O., dirs, Des amateurs dans les médias, Paris, Presses des Mines, 2015.
+Fleury B., Walter J., dirs, « État des recherches en sic sur l’information médiatique », Revue 
+française des sciences de l’information et de la communication, 5, 2014.
+Frumusani, D., Pélissier, N., Dragan, I., dirs, Journalisme et transformations sociales : des anciens 
+aux nouveaux médias, Paris, Éd. L’Harmattan, 2016.
+Goulet V., Vatter C., dirs, Champs médiatiques et frontières dans la « Grande Région » SaarLorLux 
+et en Europe/Mediale Felder und Grenzen in der Großregion SaarLorLux und in Europa, 
+Sarrebruck, Universaar, 2013.
+Goulet V., Vatter C., dirs, Circulation transfrontalière des informations médiatiques dans la 
+Grande Région Saar-Lor-Lux. Grenzüberschreitende Informationsflüsse und Medien in 
+der Großregion SaarLorLux, Baden-Baden, Éd. Nomos, 2015.
+Guaaybess T., ed., National Broadcasting and State Policy in Arab Countries, Londres, Palgrave 
+Macmillan, 2013.
+Guaaybess T., dir., Cadrages journalistiques des « révolutions arabes » dans le monde, Paris, 
+Éd. L’Harmattan, 2015.
+Guaaybess T., Chiba Y., coords, « Media in the Middles East: latest issues », Kyoto Bulletin of 
+Islamic Area Studies, 5, 1-2, 2012.
+Guaaybess T., Pélissier N., coords, « TIC et mobilisations », Communication, technologies et 
+développement, 2, 2015.
+Hare I., Tétu J.-F., Touboul A., Rampon J.-M., dirs, Informer avec Internet. Reprises et 
+métamorphoses de l’information, Besançon, Presses universitaires de Franche-Comté, 2016.
+Jeanne-Perrier V., Smyrnaios N., Diaz-Noci J., dirs, « Journalisme et réseaux socionumériques : 
+innovation et mutation professionnelles ou réquisition de «sociabilités»  ?  », Sur le 
+journalisme-About Journalism-Sobre Jornalismo, 4/1, 2015.
+Jeanne-Perrier V., Roginsky S., dirs, « L’Europe sur les réseaux sociaux », Communication & 
+Langages, 186, 2015. 
+Jouet J., Rieffel R., dirs, S’informer à l’ère numérique, Rennes, Presses universitaires de Rennes, 
+2013.
+Joux A., Pélissier M., dirs, L'Information d'actualité au prisme des fake news, Paris, Éd. 
+L'Harmattan, 2018.
+Julliard V., Quemener N., dirs, « Émergences : le genre dans la communication et les médias », 
+Revue française de sciences de l’information et de la communication, 4, 2014.
+Kaciaf N., Nollet J., dirs, « Journalisme : retour aux sources », Politiques de communication, 1, 2013.
+Koch O., Mattelart T., dirs, Géopolitique des télévisions transnationales d’information, Paris, 
+Mare & Martin, 2016.
+Lagneau E., Nicey J., Palmer M., Rebillard F., dirs, « Sources and Flow of News/Sources et flux 
+des nouvelles », Sur le journalisme - About journalism - Sobre Jornalismo, vol. 2/1, 2013.
+Lambert F., dir., « Lectures de la caricature », Communication & Langages, 187, 2016.
+Le Bart C., Leroux P., Ringoot R., dirs, « Les livres des journalistes politiques », Mots. Les 
+langages du politique, 104, 2014.
+Le Cam F., Ruellan D., dirs, Changements et permanence du journalisme, Paris, Éd. L’Harmattan, 
+2014.
+Lécossais S., Quemener N., dirs, En quête d’archives. Bricolages méthodologiques en terrains 
+médiatiques, Paris, Ina Éd., 2018. 
+Legavre J.-B., dir., L’Informel pour informer. Les journalistes et leurs sources, Paris, Éd. Pepper/
+Éd. L’Harmattan, 2014. 
+Legavre J.-B., Touret M., dirs, Louis Guilloux. Un écrivain dans la presse, Rennes, Presses 
+universitaires de Rennes, 2014.
+Legavre J.-B., Rieffel R., dirs, Les 100 mots des sciences de l’information et de la communication, 
+Paris, Presses universitaires de France, 2017.
+Legavre J.-B., Rieffel R., dirs, Le Web dans les rédactions de presse écrite. Processus, appropriations, 
+résistances, Paris, Pepper/L’Harmattan, 2017.
+35
+ 1 | 
+Médias et journalisme 
+Leroux P., Neveu É. dirs, En immersion. Pratiques intensives du terrain en journalisme, 
+Rennes, Presses universitaires de Rennes, 2017.
+Leteinturier C., dir., Les journalistes français et leur environnement : 1990-2012. Le cas de la 
+presse d’information générale et politique, Éd. Panthéon-Assas, 2014.
+Leteinturier C., Frisque C., dirs, Les Espaces professionnels des journalistes. Des corpus 
+quantitatifs aux analyses qualitatives, Paris, Éd. Panthéon-Assas, 2015.
+Martin C., Von Pape T., dirs, Images in Mobile Communication. New Content, New Uses, New 
+Perspectives, Wiesbaden, VS Verlag, 2012.
+Mattelart T., dir., Médias et migrations dans l’espace euro-méditerranéen, Paris, Mare & Martin, 
+2014.
+Mercier A., dir., Médias et opinion publique, Paris, CNRS Éd., 2012.
+Mercier A., éd., Fake news et post-vérité : 20 textes pour comprendre et combattre la menace, 
+Paris, The Conversation France, 2018. 
+Mercier A., Pignard-Cheynel N., éds, #info. Commenter et partager l’actualité sur Twitter et 
+Facebook, Paris, Éd. de la Maison des sciences de l’homme, 2017.
+Montañola S., Olivesi A., dirs, Gender testing in Sport: Ethics, Cases and controversies, Routledge, 
+2016.
+Niemeyer K., dir., Media and Nostalgia. Yearning for the Past, Present and Future, Basingstoke, 
+Palgrave Macmillan, 2014.
+Pélissier N., Maas E., dirs, Vers une culture médi@TIC ? Médias, journalisme et espace public 
+à l’ère numérique, Paris, sfsic/ Éd. L’Harmattan, 2015.
+Publictionnaire. Dictionnaire encyclopédique et critique des publics, Université de Lorraine, 
+Centre de recherche sur les médiations, http://publictionnaire.huma-num.fr/
+Rebillard F., Loicq M., dirs, Pluralisme de l’information et media diversity. Un état des lieux 
+international, Bruxelles, De Boeck, 2013.
+Rebillard F., dir., « Internet et pluralisme de l’information », Réseaux. Communication, technologie, 
+société, 176, 2012.
+Rigoni I., Saitta E., dirs, Mediating cultural diversity in a globalised public space, Basingstoke, 
+Palgrave Macmillan, 2012.
+Ringoot R., Utard J.-M., dirs, Le Journalisme en invention, Rennes, Presses universitaires de 
+Rennes, 2015.
+Ruellan D., Adghirni-Leal Z., Pinson G., dirs, « Foreign correspondents », Sur le journalisme-
+About Journalism-Sobre Jornalismo, vol. 5/1, 2016.
+Seignobos É., Wrona A., dirs, La Fabrique de l’autorité. Figures des décideurs en régime médiatique, 
+Paris, Éd. Les Petits matins, 2017.
+Tétu J.-F., Rieffel R., Ringoot R., Wrona A., dirs, « Le gouvernement des journalistes », Sur le 
+journalisme - About journalisme - Sobre jornalismo, 2/2, 2013.
+Tétu J.-F., Touboul A., dirs, « L’image d’actualité. Entre continuités et transformations », Sur 
+le journalisme-About Journalism-Sobre Jornalismo, 3/1, 2014.
+Théviot A., Mabi C., dirs, « S’engager sur Internet », Politiques de communication, 3, 2014.
+Théviot A., Rigoni I., Bourdaa M., dirs, « Médias, engagements, mouvements sociaux », 
+Sciences de la société, 94, 2015. 
+Wrona A., Lévrier A., dirs, Matière et esprit du journal. Du Mercure galant à Twitter, Paris, 
+Presses de l’Université Paris Sorbonne, 2013.
+Revues et réseaux francophones du domaine
+Revues spécialisées
+• 
+Le Temps des médias. Revue d'histoire  
+http://www.histoiredesmedias.com/-Le-Temps-des-Medias-.html 
+36
+D�namiques des recherches en sciences de l�information et de la communication
+• 
+Sur le journalisme, About journalism, Sobre jornalismo 
+ 
+http://surlejournalisme.com/rev/index.php/slj/index 
+Réseaux de recherche 
+• 
+Arppej, Alliance internationale de recherche sur les pratiques et la pédagogie en journalisme 
+https://www.arppej.net/
+• 
+Cejer, Chercheurs en journalisme des écoles reconnues par la profession 
+ 
+http://www.net1901.org/association/CHERCHEURS-EN-JOURNALISME-DES-
+ECOLES-RECONNUES-CEJER,921906.html
+• 
+Gis Journalisme 
+ 
+https://gisjournalisme.wordpress.com/ 
+• 
+Gis M@rsouin 
+ 
+https://www.marsouin.org/
+• 
+Relicom. Communication et espaces du religieux 
+ 
+https://relicom.hypotheses.org
+• 
+SPHM, Société pour l’histoire des médias 
+ 
+http://www.histoiredesmedias.com/ 
+37
+ 2 | 
+Images, cinéma,  
+médias audiovisuels  
+et industries culturelles
+Les médias centrés sur la production et la diffusion des images – fixes 
+et animées  – sont un objet essentiel des sciences de l’information et de la 
+communication (sic). Cinéma, audiovisuel (en particulier télévision), édition 
+(en particulier bd) et, désormais, jeu vidéo et webvidéos sont autant de médias 
+qui ont intéressé les chercheur·e·s en sic par le prisme de l’analyse de leurs 
+productions et consommations, largement industrialisées. Ces multiples 
+analyses ont permis de prendre la mesure des enjeux socio-culturels et socio-
+politiques de ces médias aux prises avec des mutations sociales et techniques, 
+dont le passage au « numérique » et la densification des réseaux ne sont pas les 
+moindres. Sans cesse renouvelées par les innovations, les images audiovisuelles 
+et cinématographiques ont ainsi été un objet d’analyse central des sic depuis 
+leur constitution au milieu des années 1970. Ce domaine des sic s’appuie 
+sur plusieurs traditions de recherche : sémiologie de l’image, du cinéma et 
+de l’audiovisuel, économie politique de la communication, analyses socio-
+économiques et socio-politiques des médias. Les travaux sur la télévision, 
+média dominant des années 1980-1990, ont particulièrement marqué le 
+domaine et permis le croisement de nombreuses approches. 
+Trois questions orientent la réflexion : la première est centrée sur la prise en 
+compte des formes et contenus médiatiques, considérés dans la majeure partie 
+des travaux comme des « discours » sur le monde et sur la société ; la deuxième 
+s’interroge sur les études spécifiques à ces médias de l’image et du son, études 
+renouvelées dans le contexte de mutations techniques actuel ; tandis que la 
+troisième prend en considération le caractère industriel des médias audiovisuels 
+et du cinéma, fortement marqués par leur structuration en filières et leur 
+insertion dans un cadre légal.
+audiovisuel numérique, cinéma, filières, image, industries culturelles, jeu 
+vidéo, médias, médiatisation, transmédia, télévision
+38
+D�namiques des recherches en sciences de l�information et de la communication
+Étudier les productions :  
+analyses sémiologiques et sociologiques
+L
+es approches relatives aux images et médias de l’image, fondées dans 
+l’après-guerre dans l’optique de développer une sémiologie de l’image 
+et du cinéma, ont fait le lien entre les logiques sociales de la « culture 
+de masse », et l’analyse des images fixes et animées comme langage. Les 
+échanges ont toujours existé entre praticiens de l’image et de l’audiovisuel, 
+spécialistes de théories littéraires en évolution et sociologues intéressés 
+par les mutations symboliques des médias audiovisuels. Par rapport à 
+d’autres approches (esthétique, histoire, histoire de l’art, physiologie, 
+psychologie, etc.), les sic envisagent donc les images (fixes, animées) et 
+les rapports image/son comme des phénomènes de communication en 
+eux-mêmes (et non pas seulement comme des stimuli ou des supports), en 
+s’appuyant sur la sémiologie de l’image et de l’audiovisuel qui met aujourd’hui 
+l’accent sur les jeux d’énonciation (voir les images éditorialisées par les Unes 
+de presse, les lancements télévisuels ou les like), la variation du sens selon les 
+contextes de réception (voir les enjeux des caricatures de Charlie Hebdo), ou les 
+dynamiques rhétoriques (transformation des images en discours, lecture des 
+images en tant que discours) et, parfois, les recherches cognitives (scénarios 
+de lecture par exemple). En outre, les chercheur·e·s développent de manière 
+croissante la prise en compte des contextes médiatique de production et 
+de réception des images et sons  : analyse pragmatique des grands genres 
+cinématographiques et audiovisuels, développement d’une analyse médiatique 
+des productions iconographiques et infographiques de la presse et de la bande-
+dessinée, développement d’une socio-sémiologie de la télévision (d’une théorie 
+du dispositif à une théorie des genres et des programmes), développement 
+de l’analyse de l’ « image actée » (du cd-rom aux œuvres interactives), des jeux 
+vidéos et des interfaces audiovisuelles sur le web (sites, plateformes...) en lien 
+avec l’analyse des pratiques des spectateurs et des professionnels-médiateurs.
+Démultiplication des images, pratiques des publics  
+et intermédialité
+Les médias de l’image et du son (radio, cinéma, télévision, webvidéos ou 
+webradios) produisent des contenus destinés à être consommés par des 
+publics, ceux-ci construisent des significations propres, inséparables de 
+contextes sociaux. De plus, ces médias se situent dans des systèmes de 
+plus en plus interconnectés, d’où l’essor de nouvelles notions telle que celle 
+d’intermédialité, c’est-à-dire l’analyse des relations (d’emprunt, de reprise, de 
+39
+2 | 
+Images, cinéma, médias audiovisuels et industries culturelles  
+différenciation) entre les médias (la télévision emprunte au cinéma et à la radio 
+leurs langages, mais s’en distingue tout autant en créant de nouvelles formes, de 
+nouveaux genres, de nouvelles relations au public, etc.). Penser les espaces de 
+communication inter-médiatiques – voire trans-médiatiques – est désormais 
+indispensable pour les chercheur·e·s en sic, qui considèrent les médias du son et 
+de l’image de manière interdépendante. Les apports de l’anthropologie comme 
+de la microsociologie ont été sur ce point déterminants. Cette démarche, 
+intéressée aux évolutions des cultures médiatiques, prend désormais en compte 
+les contraintes de productions professionnalisées et, de ce fait, largement 
+industrialisées, de même qu’elle a considéré les individus comme actifs dans la 
+construction des messages médiatiques. L’essor des recherches sur la sérialité, 
+notamment à l’occasion de l’explosion des séries télévisées au début des années 
+2000, illustre bien ce croisement entre questions sémiologiques, approche 
+anthropologique de la ritualité et des mythes réactualisés, et modes de 
+production des industries culturelles (formats, franchises, séries dérivées). On 
+note aussi l’apport des travaux en cultural, gender ou visual studies qui viennent 
+croiser les sic sur les questions de construction des représentations sociales 
+et des rôles sociaux, c’est-à-dire des cadres d’expérience dans la société. Cet 
+exemple des séries a donné lieu à une multiplicité de publications au cours 
+de la dernière décennie, mettant notamment en évidence l’intermédialité 
+croissante des productions culturelles contemporaines (une même figure, 
+un même noyau narratif circule sur les écrans du cinéma et de la télévision, 
+sur les réseaux sociaux et les mobiles, etc.). Les approches socio-sémiotiques 
+sont donc à même d’apporter des éclairages utiles sur le développement de 
+formes culturelles renouvelées, en voie de légitimation (séries), considérées 
+comme illégitimes (culture populaire de type télé-réalité ou presse à scandale, 
+pornographie…) ou encore fortement légitimées depuis des décennies (presse 
+d’information, jt, émissions politiques…). 
+Une croissance des médiatisations par les images
+Au demeurant, les formes médiatisées légitimes de débat public ont contribué 
+largement à l’essor des approches socio-sémiotiques. Le discours politique 
+médiatisé par les médias audiovisuels (interviews et allocutions, débats radio 
+et télévisés, talk-shows, campagnes audiovisuelles, documentaires) a été étudié 
+de manière approfondie depuis les années 1980, notamment les modes de 
+figuration des acteurs politiques, leurs stratégies d’accès aux médias, de même 
+que les transformations du métier politique en découlant. La liaison entre 
+sémiologie de l’audiovisuel et analyse de discours (interaction, argumentation) 
+a ainsi permis d’étudier les dispositifs audiovisuels d’une façon nouvelle qui 
+40
+D�namiques des recherches en sciences de l�information et de la communication
+articule stratégie des acteurs et analyse des matériaux verbaux et visuels 
+(gestion de la parole, scénographie). Émissions politiques, talk-shows, journaux 
+télévisés  : autant de programmes télévisuels qui sont l’objet d’attentions 
+approfondies de la part des chercheur·e·s en sciences de la communication, 
+attentions renouvelées par l’extension du domaine médiatique vers de nouveaux 
+outils de médiatisation tels que les médias sociaux. Ceci étant, le débat public ne 
+se réduit pas au seul débat politique institutionnalisé. Les médias de l’image ont 
+largement pris part à la construction de questions publiques et sociétales telles 
+que la santé, l’alimentation, le genre, etc. (voir le chapitre « Communication 
+publique et politique »). Les mécanismes de médiatisation sont ici au cœur des 
+préoccupations des chercheur·e·s, qui mettent alors en évidence les modes 
+de construction des événements médiatiques (media events) qui, par leur 
+dimension collective, participent de la structuration sociale.
+On note enfin que les recherches en ce domaine ont été facilitées par des 
+politiques publiques d’accès aux archives : l’instauration d’un dépôt légal de 
+l’audiovisuel dans les années 1990, géré par l’Inathèque de France, a favorisé 
+le développement de telles approches. Profitant d’une meilleure accessibilité 
+des archives du cinéma et des médias audiovisuels (dépôt légal de la radio, 
+de la télévision puis du web, archives du documentaire et de la vidéo à la bnf, 
+rôle clé de l’ina), des liens se développent avec les travaux des sociologues, 
+des politologues ainsi que des historiens du cinéma, des médias et des 
+représentations. L’approche multi-dimensionnelle des sic reste cependant 
+précieuse en ce qu’elle permet d’établir des liens entre mutations techniques, 
+pratiques sociales et enjeux symboliques des langages et images.
+Les médias de l’image et de l’audiovisuel  
+en mutation
+Les différents médias, organisés en filières, ont fait l’objet de recherches 
+spécifiques depuis les années 1970. En effet, images fixes et animées sont 
+omniprésentes dans ces médias dits traditionnels, qui voient leur rôle encore 
+accru par la numérisation de leurs techniques de production et de leurs 
+modes de diffusion. Édition (livre), presse (presse écrite et web), cinéma, 
+audiovisuel (radio et télévision) et, désormais, jeu vidéo, sont autant de filières 
+médiatiques ayant vu croître la présence des images – notamment par l’usage 
+généralisé de la téléphonie mobile et des dispositifs connectés –  et, par voie 
+de conséquence, leur analyse scientifique.
+41
+2 | 
+Images, cinéma, médias audiovisuels et industries culturelles  
+Cinéma, audiovisuel, télévision : reconfigurations
+Le cinéma suscite l’intérêt d’analystes en sciences de la communication, à 
+la fois sur les plans de la création, de la production et des publics (diffusion 
+et usages sociaux des films). Toute une socio-économie du cinéma s’est 
+développée dans le but d’étudier les modes de financement, publics et 
+privés, de ce dernier. Les questions relatives à l’organisation territorialisée 
+et en réseau de la distribution cinématographique, les mécanismes relatifs 
+aux aides publiques, les statuts des professionnel·le·s du secteur sont autant 
+de questions intéressant les sic au niveau de l’approche dite des « industries 
+culturelles » qui touchent à l’économie politique et symbolique d’une société.
+Dans la lignée de ce premier média historique de l’image animée qu’est le 
+cinéma, l’audiovisuel a connu un essor considérable tout au long du xxe 
+siècle, depuis la radiodiffusion jusqu’à la télévision hertzienne, câblée puis 
+numérisée. Ces médias audiovisuels majeurs apparus au cours du xxe siècle, 
+radio et télévision, ont ainsi progressivement été intégrés dans les recherches. 
+Ils ont dès les années 1980 fait l’objet d’historiographies approfondies qui se 
+sont poursuivies au cours des ans. L’intérêt croissant de sciences humaines et 
+sociales dans le voisinage des sic (histoire, science politique) a ainsi favorisé 
+les recherches visant à éclairer le rôle politique, social et économique de la 
+radio et de la télévision. Certaines revues ont ainsi vu le jour pour éclairer tant 
+l’histoire des médias que le rôle déterminant de ces derniers dans l’évolution 
+des sociétés contemporaines : sur ce plan, les médias audiovisuels, qualifiés 
+de médias de masse, ont été considérés comme des catalyseurs essentiels 
+ou, à tout le moins, comme des indicateurs déterminants des changements 
+sociaux. Ce faisant, la question des « effets » de ces médias – centrés sur la 
+médiatisation des images et des sons – a été perçue comme un problème 
+social lancinant posé aux sciences de la communication. Des chercheur·e·s 
+aux franges de la psychologie sociale travaillent continuellement ces 
+questions, questions qui se sont par ailleurs orientées au fil des ans vers la 
+problématique de la « construction des problèmes publics » (voir le chapitre 
+« Communication publique et politique ») et de la constitution des événements 
+médiatiques collectifs. D’autres préfèrent mettre l’accent sur les « usages » 
+par les publics des différents médias audiovisuels dans différents espaces 
+sociaux (éducation, pratiques culturelles, loisirs amateurs, transmission des 
+valeurs). Les médiatisations audiovisuelles sont ainsi un enjeu important de la 
+recherche en sic, sur différents plans : 
+• 
+médiatisations du politique et questions relatives à l’évolution de la 
+communication politique contemporaine, de plus en plus aux prises avec 
+les sondages ;
+42
+D�namiques des recherches en sciences de l�information et de la communication
+• 
+médiatisation des questions sociales et morales, relayées pour le grand 
+public par les émissions radio puis télédiffusées depuis les années 1960 ;
+• 
+formes télévisuelles nouvelles apparues dans les années 2000, visant 
+les cibles jeunes, puis familiales (téléréalité, télécoaching…) ;
+• 
+croissance de la production et de la consommation de séries télévisées, 
+désormais diffusées sur de multiples supports et plateformes.
+Images médiatiques, techniques numériques et jeu vidéo
+Les recherche sur la numérisation des infrastructures de production et de 
+diffusion des médias de l’image, du son et de l’audiovisuel sont désormais une 
+orientation majeure des recherches en sic. Cinéma, radio, télévision comme 
+l’édition de livres (notamment par le croisement de la bande dessinée et des jeux 
+vidéo) et l’ensemble des médias de l’image fixe voient leurs contours redéfinis 
+par l’arrivée de nouveaux acteurs issus du domaine de la communication : 
+fournisseurs d’accès, plateformes, portails… Autant d’entreprises venant 
+bouleverser les pratiques médiatiques et les temporalités quotidiennes. 
+Par conséquent, l’analyse des pratiques médiatiques revêt une importance 
+grandissante dans un contexte de mutation des productions, des 
+consommations et donc des médias eux-mêmes. Les questions relatives 
+à la permanence des médias traditionnels sont débattues par les sic dans le 
+souci d’éviter les dérives des déterminismes technologiques, c’est-à-dire la 
+propension des commentateurs de l’ « innovation » à voir dans les techniques 
+numériques une rupture totale avec les médias dits « historiques ». Ne faut-il pas 
+rattacher le selfie à la tradition des autoportraits et des photos de vacances ? La 
+différence est-elle technologique, ou sociale (démocratisation de l’autoportrait, 
+par exemple) ? C’est davantage dans une perspective de compréhension des 
+complémentarités, redéfinitions et transformations des pratiques, institutions 
+et productions médiatiques que les chercheur·e·s se situent, venant relativiser 
+les discours enflammés sur la « révolution numérique ». 
+Soulignons enfin qu’au voisinage des études portant spécifiquement 
+sur les médias audiovisuels ou sur les médias de l’image en général, des 
+travaux portent sur les filières voisines de la musique et du jeu vidéo, dont 
+les évolutions affectent ces derniers. La musique, omniprésente dans les 
+programmes audiovisuels et radiophoniques, de même que dans les fictions 
+cinématographiques et audiovisuelles, fait l’objet d’analyses relatives à ses 
+pratiques de consommation, circulations intermédiatiques ou encore enjeux 
+sémiotiques. De même, les jeux vidéo, champ d’étude à part entière, ont des 
+43
+2 | 
+Images, cinéma, médias audiovisuels et industries culturelles  
+implications dans les contenus des médias de l’image, aux prises avec des 
+processus de « ludification » croissants des récits médiatiques. On relève par 
+exemple que leur étude réinterroge les cadres théoriques mobilisables pour 
+analyser les processus de médiation fictionnelle, en posant des questions 
+inédites à la narratologie du fait des procédures d’implication et d’action qu’ils 
+mettent en œuvre. De même ceux-ci servent aujourd’hui de modèles pour 
+des arts ou formes médiatiques contemporaines : les webdocumentaires, ces 
+documentaires dont l’internaute est le héros-enquêteur, sont-ils un nouvel 
+espace d’investigation, dégagé des contraintes du formatage télévisuel, ou 
+le nouveau champ d’expansion des pratiques ludiques, qui viennent « jouer » 
+avec les questions sociales et politiques traitées par le documentaire ? La 
+question des valeurs, messages, idéologies, visions du monde transmis à 
+travers les contenus de l’industrie vidéoludique, répondant à des logiques 
+très fortes de globalisation, et des modalités de transmission de ces contenus 
+(rôle du récepteur, rôle du support,…) est également un champ d’investigation 
+émergent des études menées sur le domaine.
+Irruption des techniques numériques, essor de nouveaux domaines de 
+l’image : ces divers mouvements, qui affectent les médias de l’image dans leurs 
+différentes dimensions – contenus, pratiques professionnelles, consommations 
+et usages –, sont aussi le signe de mutations des infrastructures socio-
+économiques dans un contexte libéralisé et internationalisé, auquel les sic 
+prêtent une attention particulière.
+Des industries culturelles et des filières
+L’analyse de la structuration industrielle du cinéma et des médias audiovisuels 
+ainsi que de leurs enjeux socio-politiques renvoie à une double tradition de 
+recherches connaissant des actualisations permanentes, renforcées par 
+les multiples mutations socio-techniques numériques : celle de l’économie 
+politique de la communication et celle de la socio-économie des médias 
+inscrites en sic (et pas seulement au sein des sciences économiques).
+Les industries culturelles et médiatiques  
+et leur fonctionnement
+Issue initialement de la tradition de l’économie politique et de la philosophie 
+critique, l’économie politique de la communication propose une perspective 
+multidimensionnelle ayant pour objectif de dénouer les enjeux stratégiques 
+44
+D�namiques des recherches en sciences de l�information et de la communication
+des acteurs publics et privés de la communication et des médias. Cette 
+démarche, qui étudie les rapports de force et de pouvoir dans les relations 
+sociales et économiques, a trouvé une expression en sic, caractérisée par une 
+porosité entre économie et sic. Les approches en communication développent 
+des recherches spécifiques en ce domaine en croisant analyses de données 
+économiques du secteur des médias et de la consommation culturelle (analyses 
+socio-économiques) et recherches sur les pratiques culturelles et stratégies 
+des acteurs entrepreneuriaux et étatiques, notamment par l’étude des 
+discours d’escorte et des paradigmes les légitimant (analyses critiques). Ainsi 
+ces traditions de recherche souvent complémentaires, parfois antagonistes – 
+théorie des industries culturelles, socio-économie des médias, approches socio-
+professionnelles – ont-elles produit de multiples apports, dont entre autres :
+• 
+l’analyse de la structuration en filières des industries culturelles et 
+médiatiques et évaluation des mutations des filières existantes ou 
+émergentes,
+• 
+l’analyse de l’évolution et des mutations des modalités de valorisation 
+économique de ces industries (notamment les modèles d’affaires/
+business models),
+• 
+l’analyse des modes de régulation et des politiques publiques en 
+matière de communication,
+• 
+l’analyse des paradigmes structurant les logiques d’acteurs du domaine.
+Plusieurs unités de recherche œuvrent et collaborent dans cette perspective, 
+dont les travaux récents soulignent certains processus en cours en matière 
+d’industrialisation et de marchandisation de la communication et des médias, 
+marqués, par exemple, par la commercialisation croissante des données et 
+informations, l’internationalisation des industries culturelles notamment 
+celles liées à l’image (télévisions d’information continue, essor du marché des 
+images amateur, etc.) ou encore la publicitarisation croissante des médias 
+(omniprésence du cadrage publicitaire des contenus). Revenons sur quelques-
+uns de ces processus et sur quelques travaux en sic relatifs à ces derniers.
+Les mutations des filières des industries culturelles  
+et la valorisation des biens symboliques
+La mutation des industries culturelles et médiatiques se caractérise par 
+l’émergence de nouvelles filières. À côté du livre, de la presse, du disque, du 
+cinéma et de l’audiovisuel apparaissent ainsi le jeu vidéo ou encore l’ « info-
+45
+2 | 
+Images, cinéma, médias audiovisuels et industries culturelles  
+médiation », dont la structuration est en cours et dont les contours font l’objet 
+de débats pour les spécialistes. Si le jeu vidéo est une nouvelle filière apparue 
+dès les années 1970 dont les caractéristiques ont été relativement nettes avant 
+l’explosion des pratiques vidéoludiques sur écrans connectés (smartphones), 
+l’info-médiation (voir le chapitre « Médias et journalisme »), qui consiste en une 
+ingénierie de l’appariement (mise en rapport de contenus et de consommateurs 
+de ces contenus, voir les moteurs de recherche web) présente des contours 
+plus difficiles à saisir. Cette nouvelle filière fortement évolutive et faisant l’objet 
+d’attentions particulières de la part des chercheur·e·s vient bouleverser les 
+médias de l’image : plateformes et médias audiovisuels en ligne participent 
+de la redéfinition des offres et consommations des images fixes et animées, 
+questions dont les chercheur·e·s en sic se saisissent.
+Ainsi, du fait de ces mutations, la question de la recherche de nouveaux modèles 
+d’affaires par les industries culturelles est essentielle, dans un domaine où la 
+valorisation des produits culturels est toujours incertaine et instable, eu égard 
+à la mutation des supports et des réseaux et à la volatilité des publics. Les 
+nombreux travaux en ce domaine s’intéressent aux nouveaux modes de création 
+de valeur (recommandation, notoriété sur les réseaux) comme aux nouvelles 
+sources de financement (crowdfunding par exemple) et aux nouveaux contenus 
+(User Generated Content, métadonnées…). Ces questions socio-économiques 
+posent avec acuité toute une série de problèmes sociaux et politiques, que de 
+par leur dimension interdisciplinaire les sic permettent d’envisager dans leur 
+globalité. Les questions de l’activisme sur les réseaux – le « médiactivisme » 
+–, du pluralisme dans une économie informationnelle fortement redondante 
+(problématique diversité vs standardisation des contenus) ou encore celle de la 
+protection des données personnelles sont autant de questions aux enjeux socio-
+politiques et économiques majeurs que les recherches de la discipline abordent 
+dans des projets d’envergure et des débats scientifiques contradictoires.
+Confrontée à ces mutations potentiellement majeures, la puissance publique 
+se saisit des diverses questions évoquées précédemment à travers de multiples 
+stratégies que les analyses en sic tentent d’éclairer : politiques publiques de 
+régulation, législations sur les droits d’auteurs et droits voisins, redéfinition 
+du service public de radio-télévision ou encore mesures incitatives en 
+matière d’« économie créative ». Cette dernière notion a fait l’objet de travaux 
+dans la lignée des approches critiques, la référence à la « création » doublée 
+des techniques «  numériques  » semblant jouer pour les gouvernants dans 
+les années 2010 une fonction similaire à celle de la « nouvelle économie » à 
+l’aube des années 2000. En effet, se développent au niveau international et 
+en particulier à l’échelle européenne des logiques publiques et industrielles 
+visant à promouvoir les « industries créatives » comme nouveau secteur des 
+46
+D�namiques des recherches en sciences de l�information et de la communication
+économies avancées, secteur incluant les « anciennes » industries culturelles : 
+après la « convergence » et la « collaboration », un nouveau paradigme politico-
+économique (en d’autres termes une idéologie) émerge autour de la « création », 
+structurant politiques industrielles ou académiques en matière de recherche. 
+Comprendre ces positionnements politico-économiques libéraux, mettant la 
+« création » – dont les médias de l’image sont un secteur avancé - au cœur des 
+politiques industrielles, est l’une des tâches essentielles du projet des sic, dont 
+un objectif majeur est d’éclairer les impensés de nos sociétés contemporaines.
+*
+Les sic portent ainsi un regard à la fois distancié, mais aussi parfois engagé via 
+des recherches-actions, sur les mutations contemporaines des médias et des 
+industries culturelles, tout en inscrivant ces recherches dans le temps long, 
+multiséculaire, des traditions culturelles (codes, genres, modes de lecture) 
+et des évolutions socio-techniques. En 2016, à Metz, le congrès de la Société 
+française des sciences de l’information et de la communication (sfsic) s’était 
+précisément donné pour objectif d’éclairer la question du «  temps et des 
+temporalités » en matière d’information-communication. De ce fait, ce champ 
+disciplinaire rend possible des rapprochements productifs entre questions 
+liées à la culture et à l’avenir des sociétés et questions liées à l’organisation 
+économique et politique des industries culturelles et médiatiques. Images, 
+cinéma et médias audiovisuels sont aujourd’hui au cœur d’enjeux sociaux, 
+économiques et politiques que seule une approche multidimensionnelle 
+comme celle des sic est à même d’éclairer, par l’hybridation des approches 
+socio-sémiotiques et socio-économiques évoquées dans ces pages.
+Unités de recherche
+Carism 
+Centre d’analyse et de recherche interdisciplinaires sur les médias  
+ 
+EA 2293, Université Paris 2 Panthéon-Assas 
+ 
+http://carism.u-paris2.fr
+Cémti  
+Centre d’études sur les médias, les technologies et l’internationalisation 
+ 
+EA 3388, Université Paris 8 Vincennes-Saint-Denis  
+https://cemticritic.eu
+Cérep  
+Centre d’études et de recherches sur les emplois et les professionnalisations 
+ 
+EA 4692, Université de Reims – Champagne Ardennes 
+ 
+http://www.univ-reims.fr/cerep
+47
+2 | 
+Images, cinéma, médias audiovisuels et industries culturelles  
+CHCSC  
+Centre d’histoire culturelle des sociétés contemporaines 
+ 
+EA 2448, Université Versailles Saint-Quentin-en-Yvelines, Université Paris-Saclay 
+ 
+http://www.chcsc.uvsq.fr
+Cim  
+Communication, information, médias 
+ 
+EA 1484, Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/ea-1484-communication-information-medias-cim--3444.kjsp
+CNE 
+Centre Norbert Elias 
+ 
+UMR 8562, EHESS, Université d’Avignon et des Pays de Vaucluse, Aix-Marseille Université, CNRS 
+http://centre-norbert-elias.ehess.fr
+Crem 
+Centre de recherche sur les médiations. Communication, langue, art, culture 
+ 
+EA 3476, Université de Lorraine 
+ 
+http://crem.univ-lorraine.fr
+Cresat  
+Centre de recherches sur les économies, les sociétés, les arts et les techniques 
+ 
+EA 3436, Université de Haute-Alsace 
+ 
+https://www.cresat.uha.fr
+DeVisu  
+Laboratoire en design visuel et urbain 
+ 
+EA 2445, Université polytechnique Hauts-de-France  
+http://www.uphf.fr/DEVISU/
+Élico  
+Équipe de recherche de Lyon en sciences de l’information et de la communication 
+ 
+EA 4147, Université Lyon 2 Lumière, Université Lyon 1 Claude Bernard, Université Lyon 3 
+Jean Moulin, Enssib, IEP de Lyon 
+ 
+ 
+ 
+ 
+ 
+http://www.elico-recherche.eu
+Gériico  
+Groupe d’études et de recherche interdisciplinaire en information et communication   
+EA 4073, Université de Lille 
+ 
+https://geriico-recherche.univ-lille3.fr
+Gresec  
+Groupe de recherche sur les enjeux de la communication 
+ 
+EA 608, Université Grenoble Alpes 
+ 
+http://gresec.univ-grenoble-alpes.fr
+Gripic  
+Groupe de recherches interdisciplinaires sur les processus d’information et de 
+communication 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+EA 1498, Sorbonne Université  
+http://www.gripic.fr
+Imsic  
+Institut méditerranéen des sciences de l’information et de communication  
+EA 7492, Aix Marseille Université, Université de Toulon 
+ 
+https://ejcam.univ-amu.fr/fr/laboratoire-imsic
+Ircav  
+Institut de recherche sur le cinéma et l’audiovisuel 
+ 
+EA 185, Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/ircav-institut-de-recherche-sur-le-cinema-et-l-
+audiovisuel-ea-185-3445.kjsp
+48
+D�namiques des recherches en sciences de l�information et de la communication
+Irméccen  
+Institut de recherche médias, cultures, communication et numérique 
+ 
+Université Sorbonne Nouvelle Paris 3 
+ 
+http://www.univ-paris3.fr/irmeccen-447954.kjsp
+LabSIC  
+Laboratoire des sciences de l’information et de la communication 
+ 
+EA 1803, Université Paris 13 
+ 
+http://labsic.univ-paris13.fr
+Lérass  
+Laboratoire d’études et de recherches appliquées en sciences sociales 
+ 
+EA 82, Université Toulouse Paul Sabatier, Université Toulouse Jean Jaurès, Université Paul 
+Valéry Montpellier 3 
+ 
+ 
+ 
+ 
+ 
+ 
+https://www.lerass.com 
+LLSETI 
+Laboratoire Langages, littératures, sociétés – Études transfrontalières et internationales 
+EA 3706, Université Savoie Mont Blanc 
+ 
+https://www.llseti.univ-smb.fr
+Mica  
+Médiation, information, communication, arts 
+ 
+EA 4426, Université Bordeaux Montaigne  
+http://mica.u-bordeaux3.fr
+Paragraphe 
+EA 349, Université Paris 8 Vincennes-Saint-Denis, Université de Cergy-Pontoise 
+ 
+http://www.univ-paris8.fr/EA-349-Laboratoire-Paragraphe
+Prim  
+Pratiques et ressources de l’information et des médiations 
+ 
+EA 7503, Université de Tours  
+https://www.univ-tours.fr/site-de-l-universite/pratiques-et-ressources-de-l-
+information-et-des-mediations-prim--576167.kjsp
+SIC.Lab Méditerranée 
+ 
+Laboratoire de recherche en sciences de l’information et de la communication Méditerranée 
+EA 3820, Université Côte d’Azur 
+ 
+http://siclab.fr
+Sélection de travaux
+Programmes et contrats de recherche
+Médias : audiovisuel, jeux, cinéma, webdoc
+• 
+Arpège. La reconfiguration des pratiques culturelles et du genre à l’ère du numérique 
+(Ministère de la Culture et de la Communication,  Labex Icca, LabSIC, 2011-2013).
+• 
+Bobines (Les) de l’Est (Feder, CPER Ariane, Crem, 2015-2017).
+• 
+Chaire EGL. Chaire de mécénat Expressive Game Lab (MSH Lorraine, Crem, Loria, 2015).
+• 
+Digital Stories (Pictanovo, Gériico, 2012-2013).
+• 
+E-Selling game (Pictanovo, Gériico, Skema Business School, 2012-2014).
+• 
+Fanas. Femmes et usages du numérique en Arabie Saoudite (Idex Sorbonne Paris Cité, 
+LabSIC, 2014-2017).
+49
+2 | 
+Images, cinéma, médias audiovisuels et industries culturelles  
+• 
+Find Me Kakuma (Région Nord-Pas-de-Calais, DeVisu, Calhiste, 2017-2018).
+• 
+Goblinz Story (Région Grand Est, Goblinz Studio, Crem, 2018-2020).
+• 
+Images, réalités et fictions des rapports Nord-Sud (PHC Tassili, LLCHA-Université Oran 2, 
+Cérep, 2016-2019).
+• 
+Info Imajin Lorraine. Immersions médiations : dispositifs artistiques et jeux interactifs 
+patrimoniaux en Lorraine (Région Lorraine, Crem, Synagogue de Delme-Centre d’art 
+contemporain, Faux Mouvement, TCRM-Blida, Service du patrimoine de la ville de Metz, 
+Castel-Coucou, 2015-2017).
+• 
+Les Voiles de l'inspiration (Pictanovo, Gériico, 2013-2014).
+• 
+MedFilm. Instruire, informer, communiquer, éduquer. Le film médico-sanitaire en France, 
+1900-1960 (ANR, Sage, Crem, Misha, 2010-2014).
+• 
+Médias locaux et publics (Vosges Télévision, Crem, 2015-2016).
+• 
+Mobile et création (Labex Icca, Ircav, 2012-2018).
+• 
+Plateforme 14. Une famille dans la Grande Guerre. Recherche, création, pédagogie. (Labex 
+Icca, Mission du Centenaire, ECPAD, DMPA, La Poste, BDIC, BNF, réseau UDPN, Ircav, 
+depuis 2012-2018).
+• 
+Pimi. Patrimoines, images, médias, identités (CNRS, Pics France-Brésil, Larhra, Telemme, 
+Cim, Universidade Federal da Bahia, Universidade Federal do Rio de Janeiro, Universidade 
+Federal de Santa Maria, Universidade Federal de Minas Gerais, Ina, 2014-2017).
+• 
+13 fois Dunkerque (Région Nord-Pas-de-Calais, DeVisu, Les Docs du Nord, Œil pour Œil, 
+2013-2014). 13 fois Dunkerque. Voyage dans la ville de Dunkerque tant d’un point de vue humain 
+et culturel qu’architectural et urbanistique. Proposition de trois déclinaisons artistiques : un 
+documentaire classique, une application i-phone/i-pad et un web-documentaire (Région 
+Nord-Pas-de-Calais, DeVisu, Les Docs du Nord, Œil pour Œil, 2013-2014).
+• 
+13-Novembre. Programme de recherche transdisciplinaire (ANR, PIA, CNRS, Inserm, Hésam 
+Université, NIMH, Cerlis, CESSP, Crem, BCL, ISP, Dipralang, Ihrim, Iode, Praxiling, Thalim, 
+ISC-PIF, Équipex Matrice, Santé publique France, Ina, Ecpad, EPHE, Archives Nationales, 
+SIAF, Université Paris 1 Panthéon-Sorbonne, Université Caen Normandie, GIP Cyceron, 
+CHU Caen Normandie, Le Parisien-Aujourd'hui en France, Crédoc, Universcience, OSE, 
+2016-2028).
+• 
+ValfonduV. Numérisation et valorisation du fonds Éric Duvivier (Région Lorraine, Crem, 
+2012-2013).
+• 
+ViMEC. VidéoMapping European Center (Interreg V France-Wallonie, Feder, DeVisu, 
+Rencontres audiovisuelles Lille, 2017-2019).
+Industries culturelles : modèles, mutations
+• 
+Collab. Les plateformes de Crowdsourcing & Crowdfunding culturel : démocratisation ou 
+renforcement des logiques industrielles et créatives ? (ANR, Cémti, Crem, 2014-2018).
+• 
+Cluster93. Territoire et économie de l’audiovisuel en Seine-Saint-Denis (Labex Icca, ANR, 
+Ircav, Cap Digital, Campus Condorcet, 2016-2018).
+• 
+Ipri. Internet, pluralisme et redondance de l’information (ANR, Cim, 2009-2012).
+• 
+L’autoproduction dans les secteurs culturels et médiatiques (Labex Icca, LabSIC, 2013-2015).
+• 
+La co-production dans les industries culturelles. Approche transfrontalière et interculturelle 
+(ANR Idefi NovaTris, Cresat, 2015-2016).
+• 
+La jeune Edition en Europe (Labex Icca, LabSIC, 2015-2017).
+• 
+Le financement participatif dans les arts, la culture et les médias (Labex Icca, Ircav, Deps 
+– Ministère de la Culture et de la Communication, 2015).
+• 
+Le modèle français (Labex Icca, LabSIC, Ircav, 2017-2018).
+50
+D�namiques des recherches en sciences de l�information et de la communication
+• 
+Les spectateurs du festival Séries Mania et Paris Virtual film festival  et Les spectateurs 
+du Forum des Images (Forum des Images, Cresat, 2015-2016).
+• 
+Modipic. Mobilisations différenciées des plateformes par les industries culturelles : de la 
+production à la diffusion des contenus (Labex Icca, LabSIC, Gresec, 2015-2017).
+• 
+Net Art et autoproduction. Acteurs et enjeux de la recherche : reconnaissance, créativité 
+et industries du numérique (Labex Icca, LabSIC, 2015-2017).
+• 
+OT-Media. Observatoire transmedia (ANR, Ina, Cim, AFP, Inria, Latts, Lia, Syllabs, 2010-2014).
+• 
+Pil. Pluralisme de l’information en ligne (ANR, Lego-IMT Atlantique, Irméccen, Cerege, 
+Université de La Rochelle, 2018-2021).
+• 
+Plateformes numériques (Labex Icca, LabSIC, Ircav, 2017-2018).
+• 
+Regards croisés sur l’expérience utilisateur (UX) (Université Paul-Valéry Montpellier 3,  
+Lérass, 2017).
+• 
+Travail et créativité (II) : vers un essaimage des modèles des industries culturelles ? Approche 
+comparative internationale (Labex Icca, LabSIC, 2017 – 2018).
+• 
+Une « french touch » du jeu vidéo ? – Comprendre le contexte national des politiques 
+industrielles et culturelles en matière de production de jeux vidéo (Labex Icca, LabSIC, 
+2017-2018).
+• 
+Une nouvelle forme d’innovation Sociale : la grappe  ou le collectif d’entreprises des industries 
+créatives sur son territoire (PICRI IDF, LabSIC, Cemti et al., Les Faubourgs numériques, 
+ParisMix, Mila, 2013-2016).
+Ouvrages collectifs et dossiers de revues
+Alexandre O., Noël S., Pinto A., dirs, Culture et (in)dépendance. Les enjeux de l’indépendance 
+dans les industries culturelles, Berne, P. Lang, 2017. 
+Andonova Y., Lénel P., Monjaret A., Savignac E., Seurrat A., dirs, Le Travail de la gamification. 
+Enjeux, modalité et rhétoriques de la translation du jeu au travail, Bruxelles, P. Lang, 2017.
+Auzel D., Laborderie P., dirs, Les Ciné-clubs à l'affiche, Arles, A. Bizalion, 2018.
+Badillo P.-Y., Roux D., dirs, Le Futur est-il un e-media?, Paris, Éd. Economica, 2014.
+Ballarini L., Costantini S., Kaiser M., Matthews J., Rouzé V., dirs, Financement participatif. Les 
+nouveaux territoires du capitalisme, Nancy, Pun-Éd. universitaires de Lorraine, 2018.
+Ballarini L., Delavaud G., dirs, Nouveaux territoires médiatiques, Paris, Mare & Martin, 2014.
+Baroni R., Jost F., dirs, « Repenser le récit avec les séries télévisées. », Télévision, 7 (1), 2016.
+Bonenfant M., Genvo S., dirs, « Questionner les mises en forme ludiques du web : gamification, 
+ludification et ludicisation », Sciences du jeu, 2, 2014. 
+Bouquillion Ph., Moreau F., dirs, Plateformes, Berne, P. Lang, 2018.
+Bouquillion Ph., Miège B., Mœglin P., dirs, L’Industrialisation des biens symboliques : les industries 
+créatives en regard des industries culturelles, Grenoble, Presses universitaires de Grenoble, 
+2013.
+Bousquet F., dir., Les Mutations de l’information et des médias locaux, Toulouse, Presses 
+universitaires du Mirail, 2012.
+Cailler B., Sapiega J., dirs, « Histoire du transmédia », Cahiers de Champs Visuels, 10- 11, 2014.
+Chambat-Houillon M.-F., Cohen E., dirs, « Archives et patrimoines visuels et sonores », 
+Sociétés & Représentations, 35 (1), 2013.
+Coulomb-Gully M., Esquenazi J.-P., Desmarchelier D., dirs, « Fictions politiques. » Mots. Les 
+langages du politique (99), 2012.
+Creton L., Kitsopanidou K., dirs, Les Salles de cinéma : enjeux, défis et perspectives, Paris, A. 
+Colin, 2013.
+Creton L.,  Kitsopanidou K., dirs, Crowdfunding, industries culturelles et démarche participative. 
+De nouveaux financements pour la création, Berne, P. Lang, 2016. 
+Dacheux É., dir., Bande dessinée et lien social, Paris, CNRS Éd., 2014.

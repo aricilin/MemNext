@@ -1,6 +1,7 @@
 
 from Seed import Seed
 import csv
+import json
 
 
 
@@ -50,3 +51,24 @@ class CsvSerializer(SeedSerializer):
             writer.writeheader()
             for seed in self.data:
                 writer.writerow(seed.__dict__)
+
+
+
+class JsonSerializer(SeedSerializer):
+    def __init__(self, filename=None):
+        self.filename = filename
+        self.data = []
+
+
+# reading from a json file
+
+    def read_json(self):
+        with open(self.filename, mode='r') as json_file:
+            data = json.load(json_file)
+            for seed in data:
+                self.data.append(Seed(**seed))
+# writing to a json file
+
+    def write_json(self):
+        with open(self.filename, mode='w') as json_file:
+            json.dump([seed.__dict__ for seed in self.data], json_file)              
