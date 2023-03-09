@@ -1,4 +1,6 @@
 from Seed import Seed
+import spacy
+import utils
 
 class SeedExtractor:
 
@@ -21,6 +23,27 @@ class SeedExtractor:
         :rtype: list[Seed]
 
         """
+        nlp = spacy.load("fr_core_news_sm")
+
+
+        text = open(inputText,"r")
+
+        doc = nlp(text.read())
+
+        #if an entity is not in nameList and its label is 'PERSON' print it
+        nameList = []
+        for entity in doc.ents:
+            if entity.text not in nameList:
+                print(entity.text, entity.label_)
+                nameList.append(entity.text)
+
+        
+
+        
+
+
+
+
 
     def write(self, seedList, file, format):
         """
