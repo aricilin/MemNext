@@ -4,8 +4,6 @@ import spacy
 class SeedExtractor:
 
 
-
-
     def __init__(self):
         """
         Constructor
@@ -41,15 +39,17 @@ class SeedExtractor:
             if entity.text not in nameList:
                 #print(entity.text, entity.label_)
                 
+                seedName = entity.text.replace("\n", " ")
+
                 match entity.label_:
                     case "PER":
-                        seed = Seed(quality=1, name=entity.text)
+                        seed = Seed(quality=1, name=seedName)
 
                     case "ORG":
-                        seed = Seed(quality=6, name=entity.text)
+                        seed = Seed(quality=6, name=seedName)
 
                     case _:
-                        seed = Seed(quality=0, name=entity.text)
+                        seed = Seed(quality=0, name=seedName)
                 
                 seedList.append(seed)
                 seedNumber += 1
