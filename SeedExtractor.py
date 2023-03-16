@@ -1,6 +1,5 @@
 from Seed import Seed
 import spacy
-import utils
 
 class SeedExtractor:
 
@@ -23,19 +22,46 @@ class SeedExtractor:
         :rtype: list[Seed]
 
         """
-        nlp = spacy.load("fr_core_news_sm")
+        #nlp = spacy.load("fr_core_news_sm")
+        nlp = spacy.load("fr_core_news_lg")
 
+        print(nlp.get_pipe("ner").labels)
 
         text = open(inputText,"r")
 
         doc = nlp(text.read())
 
-        #if an entity is not in nameList and its label is 'PERSON' print it
         nameList = []
+        seedList = []
+        seedNumber = 0
+
+        print("Found {} seeds".format(seedNumber), end='\r')
+
         for entity in doc.ents:
             if entity.text not in nameList:
-                print(entity.text, entity.label_)
+                #print(entity.text, entity.label_)
+                
+                match entity.label_:
+                    case "PER":
+                        seed = Seed(quality=1, name=entity.text)
+
+                    case "ORG":
+                        seed = Seed(quality=6, name=entity.text)
+
+                    case _:
+                        seed = Seed(quality=0, name=entity.text)
+                
+                seedList.append(seed)
+                seedNumber += 1
+                print("Found {} seeds".format(seedNumber), end='\r')
+
                 nameList.append(entity.text)
+        
+        print("Found {} seeds".format(seedNumber))
+
+
+        return seedList
+
 
         
 
