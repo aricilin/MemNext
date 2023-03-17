@@ -8,5 +8,7 @@ Contents
 
 .. toctree::
 
+   Seed
+   SeedSerializer
    SeedExtractor
-   TestExtraction
+   Test

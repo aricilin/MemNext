@@ -1,0 +1,13 @@
+Dans seed.py vous pouvez trouvez la class seed et ses methods. Il y a validation pour quelques attibutes. Il faut retester la valdiateur pour key.
+Dans read_write.py On peut trouver le code pour ecrire et lire depuis un fichier csv.
+
+Dans test.py c'est le mix de 2 classe pour faciliter le test. On lit depuis un csv on utilise un methode, on cree un seed basic et on l'ajoute dans le csv
+
+Attention! Comme le tests sont vite fait il faut supprimer le dernier ligne ajouté dans le csv avant de refaire de test sinon le validateur vont faire un error. 
+
+
+
+les applications NameExtract extraient les noms de personnes contenues dans un fichier texte, 
+Attention avant utilisation installer spacy https://spacy.io/usage,
+                                      NLTK https://www.nltk.org/install.html
+ici spacy utilise l'entrainement plus précis anglais, il est possible de changer la langue et de prendre l'entrainement plus léger mais moins précis
