@@ -1,5 +1,4 @@
 #coding: utf-8
-import PyPDF2
 import sys
 
 #check arg number
