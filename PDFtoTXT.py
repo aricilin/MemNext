@@ -7,7 +7,7 @@ if (len(sys.argv) != 3):
     print("utilisation :PDFtoTXT.py PDF nom_output ")
     exit()
 
-f_out=open(sys.argv[2],"w")
+f_out=open(sys.argv[2],"w",encoding="utf-8")
 
 
 """ # Open the PDF file in binary mode
@@ -34,7 +34,7 @@ with fitz.open(sys.argv[1]) as doc:
      
      for page in doc:
           #append characeter in each page
-         f_out.write (page.get_text().encode("utf-8").decode("windows-1252"))
+         f_out.write (page.get_text())
 
 #closing files        
 f_out.close()
