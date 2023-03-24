@@ -1,11 +1,12 @@
 import tkinter as tk
 from tkinter import filedialog
 import re
+import ast
 
 
 def select_file():
-    global file_path, filename, sentences, current_sentence, text_box,train_data,train_list,visual_list
-    
+    global file_path, filename, sentences, current_sentence, text_box,train_data,visual_list
+    train_data.clear()
     file_path = filedialog.askopenfilename()
     filename =  file_path.split('/')[len(file_path.split('/'))-1]
     with open(file_path, "r", encoding="utf-8") as f:
@@ -18,29 +19,39 @@ def select_file():
     current_sentence = 0
     root.title(f"Seed Marker {filename}")
     show_sentence()
+    try:
+        train_data=load_data()
+    except FileNotFoundError:
+        return
+    show_data()
+   
 
 def prev_sentence():
     global current_sentence, sentences, text_box
     if current_sentence > 0:
         current_sentence -= 1
         show_sentence()
+        show_data()
+
 
 def next_sentence():
     global current_sentence, sentences, text_box
     if current_sentence < len(sentences) - 1:
         current_sentence += 1
         show_sentence()
+        show_data()
+
 
 def show_sentence():
     global current_sentence, sentences, text_box,sentence,train_data
     sentence = sentences[current_sentence]
     text_box.delete('1.0', tk.END)
     text_box.insert(tk.END, sentence)
-    train_list.clear()
     visual_list.clear()
     affichage["text"]=""
+    show_data()
 
-def phrase_in_data ():
+def sentence_in_data ():
     global sentence,train_data
     for i in range (len(train_data)):
         if train_data[i][0]==sentence:
@@ -63,7 +74,7 @@ def Mark_Seed(x):
     visual_list.append((word,seed))
     affichage['text']=f"{visual_list}"
     text_box.tag_add(x, "sel.first", "sel.last")
-    position = phrase_in_data()
+    position = sentence_in_data()
     with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
         if len(train_data) == 0 or position ==-1: #no data or sentence not in the training data
             train_data.append((sentence,[tuple]))
@@ -73,6 +84,18 @@ def Mark_Seed(x):
                 train_data[position][1].append(tuple)
             output.write(str(train_data))  
 
+def load_data():
+    with open(f"training/{filename}","r",encoding="utf-8") as local:
+        data=local.readline()
+        data= ast.literal_eval(data)
+        return data
+
+def show_data():
+    global train_data
+    position=sentence_in_data()
+    if position !=-1:
+        for start, end, tag in train_data[position][1]:
+            text_box.tag_add(tag, f'1.{start}',f'1.{end}')
 
 
 
@@ -83,7 +106,6 @@ current_sentence = 0
 sentences = []
 file_path = ""
 filename = ""
-train_list=[]
 train_data=[]
 visual_list=[]
 button_Mark_Seed=[]
