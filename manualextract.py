@@ -1,13 +1,18 @@
 import tkinter as tk
 from tkinter import filedialog
+import re
 
 
 def select_file():
     global file_path, filename, sentences, current_sentence, text_box,train_data,train_list,visual_list
+    
     file_path = filedialog.askopenfilename()
     filename =  file_path.split('/')[len(file_path.split('/'))-1]
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
+        # pretraitement regex pour ajouter un espace après un point suivit d'un charater
+        content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
+        content = re.sub(r'\[[^\]]+\]', '', content)
         sentences = content.split(". ")
         sentences = [s.strip() for s in sentences if s.strip()]
     current_sentence = 0
@@ -16,6 +21,7 @@ def select_file():
     train_data.clear()
     root.title(f"Seed Marker {filename}")
     show_sentence()
+
 
 def prev_sentence():
     global current_sentence, sentences, text_box
