@@ -66,12 +66,16 @@ class Seed:
 
     # check the quality and return true if valid
     def validate_quality(self, quality):
+        if quality != None:
+            return quality
         if quality not in range(10):
             raise ValueError("Quality must be an integer between 0 and 9")
         return quality
 
     # check the key and return true if valid
     def validate_key(self, key):
+        if key == None:
+            return key
         if isinstance(key, str) and re.match(r'^[A-Za-z0-9_-]+$', key):
             return key
         else:
