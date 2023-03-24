@@ -14,7 +14,7 @@ def select_file():
     train_list.clear()
     visual_list.clear()
     train_data.clear()
-    root.title(f"extraction manuelle {filename}")
+    root.title(f"Seed Marker {filename}")
     show_sentence()
 
 def prev_sentence():
@@ -39,21 +39,22 @@ def show_sentence():
     affichage["text"]=""
     
 
-def add():
+def Mark_Seed(x):
     global sentence, text_input, train_list,train_data,visual_list
-    word = text_input.get().split(':')[0]
-    seed=text_input.get().split(':')[1]
+    word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
     position = sentence.find(word)
+    seed = button_Mark_Seed[x]["text"]
     train_list.append((position,position+len(word),seed))
     visual_list.append((word,seed))
     print (train_list)
     affichage['text']=f"{visual_list}"
 
-def Fin():
+
+def end():
     global train_data,train_list,sentence
     train_data.append((sentence,train_list))
     print (train_data)
-    affichage['text']="page finie"
+    affichage['text']="page endie"
 
 def Save():
     global filename, train_data,train_list,sentence
@@ -63,16 +64,16 @@ def Save():
                 affichage["text"]="rien à enregistrer"
                 return
             else:
-                Fin()
+                end()
         elif train_data[-1]!=(sentence,train_list):
-            Fin()
+            end()
         
         output.write(str(train_data))
         affichage["text"]="fichier enregistré"
 
 # create the main window and GUI elements
 root = tk.Tk()
-root.title("extraction manuelle")
+root.title("Seed Marker")
 current_sentence = 0
 sentences = []
 file_path = ""
@@ -80,28 +81,46 @@ filename = ""
 train_list=[]
 train_data=[]
 visual_list=[]
+button_Mark_Seed=[]
+
+# create Frames
 
 frame = tk.Frame(root)
 frame_choix =tk.Frame(root)
+frame_bar=tk.Frame(root)
 
-button_select_file = tk.Button(frame, text="Select File", command=select_file).grid(row=0,column=1,padx=10)
+# create Elements
+
+button_save = tk.Button(frame,text='enregistrer',command=Save)
+button_save.grid(row=0,column=0,padx=10)
+button_select_file = tk.Button(frame, text="Choisir un fichier", command=select_file)
+button_select_file.grid(row=0,column=1,padx=10)
 text_box = tk.Text(root, width=80, height=10)
-button_back = tk.Button(frame_choix, text="Previous", command=prev_sentence).grid(row=0,column=0,padx=10)
-button_next = tk.Button(frame_choix, text="Next", command=next_sentence).grid(row=0,column=2,padx=10)
-text_input = tk.Entry(root, width=80,textvariable="mot:seed")
-button_add = tk.Button(frame_choix, text="Ajouter", command=add).grid(row=0,column=1,padx=10)
-button_send = tk.Button(root,text="Fin page",command=Fin)
+
+button_back = tk.Button(frame_bar, text="Précédent", command=prev_sentence)
+button_back.grid(row=0,column=0,padx=10)
+button_next = tk.Button(frame_bar, text="Suivant", command=next_sentence)
+button_next.grid(row=0,column=2,padx=10)
+text_input = tk.Entry(frame_bar, width=60,textvariable="mot:seed")
+text_input.grid(row=0,column=1)
+
+for x in range (10):
+    
+    button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}", command= lambda a = x:Mark_Seed(a)))
+    button_Mark_Seed[x].grid(row=0,column=x,padx=10)
+
+
 affichage = tk.Label (root,text="")
-button_save = tk.Button(frame,text='enregistrer',command=Save).grid(row=0,column=0,padx=10)
+
 
 # pack the GUI elements
 
-frame.pack(expand=True)
+frame.pack(expand=True,pady=5)
 text_box.pack()
-text_input.pack()
+frame_bar.pack(expand=True,pady=5)
 frame_choix.pack(expand=True)
 affichage.pack()
-button_send.pack(padx=5, pady=5)
+
 
 
 
