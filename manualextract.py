@@ -22,7 +22,6 @@ def select_file():
     root.title(f"Seed Marker {filename}")
     show_sentence()
 
-
 def prev_sentence():
     global current_sentence, sentences, text_box
     if current_sentence > 0:
@@ -44,16 +43,22 @@ def show_sentence():
     visual_list.clear()
     affichage["text"]=""
     
-
 def Mark_Seed(x):
-    global sentence, text_input, train_list,train_data,visual_list
-    word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
-    position = sentence.find(word)
+    global sentence, train_list,train_data,visual_list
+    try :# presence of selected object
+        word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
+    except tk.TclError:
+        return
     seed = button_Mark_Seed[x]["text"]
-    train_list.append((position,position+len(word),seed))
+    first  = text_box.count("1.0", "sel.first")
+    try:
+        train_list.append((first[0],first[0]+len(word),seed))
+    except TypeError:
+        train_list.append((0,len(word),seed))
     visual_list.append((word,seed))
     print (train_list)
     affichage['text']=f"{visual_list}"
+    text_box.tag_add(x, "sel.first", "sel.last")
 
 
 def end():
@@ -77,6 +82,7 @@ def Save():
         output.write(str(train_data))
         affichage["text"]="fichier enregistré"
 
+
 # create the main window and GUI elements
 root = tk.Tk()
 root.title("Seed Marker")
@@ -88,6 +94,18 @@ train_list=[]
 train_data=[]
 visual_list=[]
 button_Mark_Seed=[]
+seed={
+    0 :{"color":"#F3F4ED"},
+    1 :{"color":"#F28482"},
+    2 :{"color":"#96BB7C"},
+    3 :{"color":"#76b5c5"},
+    4 :{"color":"#abdbe3"},
+    5 :{"color":"#D6EFC7"},
+    6 :{"color":"#F5CAC3"},
+    7 :{"color":"#7D1F35","foreground":"white"},
+    8 :{"color":"#158467", "foreground":"white"},
+    9 :{"color":"#22577A","foreground":"white"},
+}
 
 # create Frames
 
@@ -107,12 +125,14 @@ button_back = tk.Button(frame_bar, text="Précédent", command=prev_sentence)
 button_back.grid(row=0,column=0,padx=10)
 button_next = tk.Button(frame_bar, text="Suivant", command=next_sentence)
 button_next.grid(row=0,column=2,padx=10)
-text_input = tk.Entry(frame_bar, width=60,textvariable="mot:seed")
-text_input.grid(row=0,column=1)
+text_comm = tk.Entry(frame_bar, width=60)
+text_comm.grid(row=0,column=1)
 
-for x in range (10):
-    
-    button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}", command= lambda a = x:Mark_Seed(a)))
+for x in range (len(seed)):
+    try:
+        button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}",bg=seed[x]['color'],fg=seed[x]['foreground'], command= lambda a = x:Mark_Seed(a)))
+    except KeyError:
+        button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}",bg=seed[x]['color'], command= lambda a = x:Mark_Seed(a)))
     button_Mark_Seed[x].grid(row=0,column=x,padx=10)
 
 
@@ -125,9 +145,16 @@ frame.pack(expand=True,pady=5)
 text_box.pack()
 frame_bar.pack(expand=True,pady=5)
 frame_choix.pack(expand=True)
-affichage.pack()
+affichage.pack(pady=5)
 
 
+# configure text tags
+
+for x in range(len(seed)):
+    try: 
+        text_box.tag_configure(f"{x}",background=f"{seed[x]['color']}",foreground=seed[x]["foreground"])
+    except KeyError:
+        text_box.tag_configure(f"{x}",background=f"{seed[x]['color']}")
 
 
 root.mainloop()
