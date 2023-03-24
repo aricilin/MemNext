@@ -16,9 +16,6 @@ def select_file():
         sentences = content.split(". ")
         sentences = [s.strip() for s in sentences if s.strip()]
     current_sentence = 0
-    train_list.clear()
-    visual_list.clear()
-    train_data.clear()
     root.title(f"Seed Marker {filename}")
     show_sentence()
 
@@ -42,45 +39,41 @@ def show_sentence():
     train_list.clear()
     visual_list.clear()
     affichage["text"]=""
+
+def phrase_in_data ():
+    global sentence,train_data
+    for i in range (len(train_data)):
+        if train_data[i][0]==sentence:
+            return i
+    return -1
     
 def Mark_Seed(x):
-    global sentence, train_list,train_data,visual_list
+    global sentence,train_data,visual_list
     try :# presence of selected object
         word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
     except tk.TclError:
         return
     seed = button_Mark_Seed[x]["text"]
     first  = text_box.count("1.0", "sel.first")
-    try:
-        train_list.append((first[0],first[0]+len(word),seed))
+    
+    try:#creating tuple
+        tuple = (first[0],first[0]+len(word),seed)
     except TypeError:
-        train_list.append((0,len(word),seed))
+        tuple = (0,len(word),seed)
     visual_list.append((word,seed))
-    print (train_list)
     affichage['text']=f"{visual_list}"
     text_box.tag_add(x, "sel.first", "sel.last")
+    position = phrase_in_data()
+    with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
+        if len(train_data) == 0 or position ==-1: #no data or sentence not in the training data
+            train_data.append((sentence,[tuple]))
+            output.write(str(train_data))
+        elif position!=-1:# sentence in training data
+            if tuple not in train_data[position][1]:
+                train_data[position][1].append(tuple)
+            output.write(str(train_data))  
 
 
-def end():
-    global train_data,train_list,sentence
-    train_data.append((sentence,train_list))
-    print (train_data)
-    affichage['text']="page endie"
-
-def Save():
-    global filename, train_data,train_list,sentence
-    with open(f"training/{filename}","w",encoding="utf-8") as output:
-        if len(train_data)==0  :
-            if len(train_list)==0:
-                affichage["text"]="rien à enregistrer"
-                return
-            else:
-                end()
-        elif train_data[-1]!=(sentence,train_list):
-            end()
-        
-        output.write(str(train_data))
-        affichage["text"]="fichier enregistré"
 
 
 # create the main window and GUI elements
@@ -115,17 +108,17 @@ frame_bar=tk.Frame(root)
 
 # create Elements
 
-button_save = tk.Button(frame,text='enregistrer',command=Save)
-button_save.grid(row=0,column=0,padx=10)
-button_select_file = tk.Button(frame, text="Choisir un fichier", command=select_file)
-button_select_file.grid(row=0,column=1,padx=10)
+#button_save = tk.Button(frame,text='enregistrer',command=Save, bg='brown', fg='white')
+#button_save.grid(row=0,column=0,padx=10)
+button_select_file = tk.Button(root, text="Choisir un fichier", command=select_file, bg='grey', fg='white')
+button_select_file.pack(pady=5)
 text_box = tk.Text(root, width=80, height=10)
 
-button_back = tk.Button(frame_bar, text="Précédent", command=prev_sentence)
+button_back = tk.Button(frame_bar, text="Précédent", command=prev_sentence, bg='grey', fg='white')
 button_back.grid(row=0,column=0,padx=10)
-button_next = tk.Button(frame_bar, text="Suivant", command=next_sentence)
+button_next = tk.Button(frame_bar, text="Suivant", command=next_sentence, bg='grey', fg='white')
 button_next.grid(row=0,column=2,padx=10)
-text_comm = tk.Entry(frame_bar, width=60)
+text_comm = tk.Entry(frame_bar, width=40)
 text_comm.grid(row=0,column=1)
 
 for x in range (len(seed)):
@@ -141,7 +134,6 @@ affichage = tk.Label (root,text="")
 
 # pack the GUI elements
 
-frame.pack(expand=True,pady=5)
 text_box.pack()
 frame_bar.pack(expand=True,pady=5)
 frame_choix.pack(expand=True)
