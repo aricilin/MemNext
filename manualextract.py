@@ -48,7 +48,6 @@ def show_sentence():
     text_box.delete('1.0', tk.END)
     text_box.insert(tk.END, sentence)
     visual_list.clear()
-    affichage["text"]=""
     show_data()
 
 def sentence_in_data ():
@@ -72,9 +71,9 @@ def Mark_Seed(x):
     except TypeError:
         tuple = (0,len(word),seed)
     visual_list.append((word,seed))
-    affichage['text']=f"{visual_list}"
     text_box.tag_add(x, "sel.first", "sel.last")
     position = sentence_in_data()
+    seed_nb[int(x)]['text']+=1
     with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
         if len(train_data) == 0 or position ==-1: #no data or sentence not in the training data
             train_data.append((sentence,[tuple]))
@@ -91,11 +90,17 @@ def load_data():
         return data
 
 def show_data():
+    for i in range (len(seed_nb)):
+        seed_nb[i]['text']=0
     global train_data
     position=sentence_in_data()
     if position !=-1:
         for start, end, tag in train_data[position][1]:
             text_box.tag_add(tag, f'1.{start}',f'1.{end}')
+            seed_nb[int(tag)]['text']+=1
+
+
+
 
 
 
@@ -118,7 +123,7 @@ seed={
     5 :{"color":"#D6EFC7"},
     6 :{"color":"#F5CAC3"},
     7 :{"color":"#7D1F35","foreground":"white"},
-    8 :{"color":"#158467", "foreground":"white"},
+    8 :{"color":"#158467","foreground":"white"},
     9 :{"color":"#22577A","foreground":"white"},
 }
 
@@ -150,6 +155,10 @@ for x in range (len(seed)):
         button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}",bg=seed[x]['color'], command= lambda a = x:Mark_Seed(a)))
     button_Mark_Seed[x].grid(row=0,column=x,padx=10)
 
+seed_nb=[]
+for x in range(len(seed)):
+    seed_nb.append(tk.Label(frame_choix,text=0))
+    seed_nb[x].grid(row=1,column=x,padx=10)
 
 affichage = tk.Label (root,text="")
 
@@ -157,8 +166,10 @@ affichage = tk.Label (root,text="")
 # pack the GUI elements
 
 text_box.pack()
-frame_bar.pack(expand=True,pady=5)
 frame_choix.pack(expand=True)
+frame_bar.pack(expand=True,pady=5)
+
+
 affichage.pack(pady=5)
 
 
