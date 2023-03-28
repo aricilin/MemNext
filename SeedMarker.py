@@ -6,17 +6,42 @@ import ast
 
 
 def select_file():
-    global file_path, filename, sentences, current_sentence, text_box,train_data,visual_list
+    global file_path, filename, sentences, current_sentence, text_box,train_data,visual_list,last_filepath
     train_data.clear()
+    
     file_path = filedialog.askopenfilename()
     filename =  file_path.split('/')[len(file_path.split('/'))-1]
-    with open(file_path, "r", encoding="utf-8") as f:
-        content = f.read()
-        # pretraitement regex pour ajouter un espace après un point suivit d'un charater
-        content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
-        content = re.sub(r'\[[^\]]+\]', '', content)
-        sentences = content.split(". ")
-        sentences = [s.strip() for s in sentences if s.strip()]
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            last_filepath=file_path
+            content = f.read()
+            # pretraitement regex pour ajouter un espace après un point suivit d'un charater
+            content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
+            content = re.sub(r'\[[^\]]+\]', '', content)
+            sentences = content.split(". ")
+            sentences = [s.strip() for s in sentences if s.strip()]
+    except FileNotFoundError:
+            file_path=last_filepath
+            filename =file_path.split('/')[len(file_path.split('/'))-1]
+            with open(file_path, "r", encoding="utf-8") as f:
+                content = f.read()
+                # pretraitement regex pour ajouter un espace après un point suivit d'un charater
+                content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
+                content = re.sub(r'\[[^\]]+\]', '', content)
+                sentences = content.split(". ")
+                sentences = [s.strip() for s in sentences if s.strip()]
+    except PermissionError:
+        file_path=last_filepath
+        filename =file_path.split('/')[len(file_path.split('/'))-1]
+
+        with open(file_path, "r", encoding="utf-8") as f:
+                content = f.read()
+                # pretraitement regex pour ajouter un espace après un point suivit d'un charater
+                content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
+                content = re.sub(r'\[[^\]]+\]', '', content)
+                sentences = content.split(". ")
+                sentences = [s.strip() for s in sentences if s.strip()]
+
     current_sentence = 0
     root.title(f"Seed Marker {filename}")
     show_sentence()
