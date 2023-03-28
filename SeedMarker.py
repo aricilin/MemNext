@@ -62,25 +62,38 @@ def sentence_in_data ():#return the position of the sentence in the saved data o
     
 def Mark_Seed(x):#tag the seed in the text and saved it in the files
     global sentence,train_data,visual_list
+    
+
     try :# presence of selected object
         word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
-    except tk.TclError:
-        return
+        first  = text_box.count("1.0", "sel.first")
+        text_box.tag_add(x, "sel.first", "sel.last")
+        last =text_box.index("sel.last")
+        first = first[0]
+    except TypeError:
+        word = text_box.get(1.0, tk.SEL_LAST)
+        first  = text_box.count("1.0", "sel.first")
+        text_box.tag_add(x, "sel.first", "sel.last")
+        last =text_box.index("sel.last")
+        first = first[0]
+    except tk.TclError:# one click selection with insert position 
+        word = text_box.get("insert wordstart", "insert wordend")
+        first = (int(text_box.index("insert wordstart").split('.')[1]))
+        last = text_box.index("insert wordend")
+
     seed = button_Mark_Seed[x]["text"]
-    first  = text_box.count("1.0", "sel.first")
     position = sentence_in_data()
-    
     visual_list.append((word,seed))
-    text_box.tag_add(x, "sel.first", "sel.last")
     seed_nb[int(x)]['text']+=1
     nb=0
-    if position!=-1:
+    if position!=-1:#correction of offset positions by suppr button
         for i in (train_data[position][1]):
-            if i[1]<first[0]:
+            
+            if i[1]<first:
                 nb+=1
     try:#creating tuple
-        tuple = (first[0]-nb,first[0]-nb+len(word),seed)
-    except TypeError:#error dist first char
+        tuple = (first-nb,first-nb+len(word),seed)
+    except TypeError:#error dist first char of text with selection
         tuple = (0,len(word),seed)
     with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
         if len(train_data) == 0 or position ==-1: #no data or sentence not in the training data
@@ -90,7 +103,9 @@ def Mark_Seed(x):#tag the seed in the text and saved it in the files
             if tuple not in train_data[position][1]:
                 train_data[position][1].append(tuple)
             output.write(str(train_data))
-    text_box.window_create(text_box.index("sel.last"), window = tk.Button(text_box, text="x",command= lambda :suppr(tuple)))  
+    text_box.window_create(last, window = tk.Button(text_box, text="x",command= lambda :suppr(tuple)))  
+    show_sentence()
+    show_data()
     
 
 def load_data():
@@ -105,10 +120,19 @@ def show_data():#highlight the text with the saved data
         seed_nb[i]['text']=0
     position = sentence_in_data()
     if position !=-1:
+        
         for start, end, tag in train_data[position][1]:
-            text_box.tag_add(tag, f'1.{start}',f'1.{end}')
+            nb=0
+            if position!=-1:#correction of offset positions by suppr button
+                
+                for i in (train_data[position][1]):
+                    if (start==i[0] and end==i[1]):
+                        break
+                    if i[1]<start:
+                        nb+=1
+            text_box.tag_add(tag, f'1.{start+nb}',f'1.{end+nb}')
             tuple = (start,end,str(tag))
-            button_suppr_list.append(text_box.window_create(text_box.index(f'1.{end}'), window = tk.Button(text_box, text="x",command= lambda x=tuple :suppr(x))))
+            button_suppr_list.append(text_box.window_create(text_box.index(f'1.{end+nb}'), window = tk.Button(text_box, text="x",command= lambda x=tuple :suppr(x))))
             seed_nb[int(tag)]['text']+=1
 
 def suppr(tuple):
