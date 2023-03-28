@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
+import tkinter.scrolledtext as st
 import re
 import ast
 
@@ -23,10 +24,12 @@ def select_file():
         train_data=load_data()
     except FileNotFoundError:
         return
+    except SyntaxError:
+        return
     show_data()
    
 
-def prev_sentence():
+def prev_sentence():#show the previous sentence
     global current_sentence, sentences, text_box
     if current_sentence > 0:
         current_sentence -= 1
@@ -34,7 +37,7 @@ def prev_sentence():
         show_data()
 
 
-def next_sentence():
+def next_sentence():#show the next sentence
     global current_sentence, sentences, text_box
     if current_sentence < len(sentences) - 1:
         current_sentence += 1
@@ -42,22 +45,22 @@ def next_sentence():
         show_data()
 
 
-def show_sentence():
+def show_sentence():#print the sentence in the text_box
     global current_sentence, sentences, text_box,sentence,train_data
     sentence = sentences[current_sentence]
     text_box.delete('1.0', tk.END)
     text_box.insert(tk.END, sentence)
     visual_list.clear()
-    show_data()
+    
 
-def sentence_in_data ():
+def sentence_in_data ():#return the position of the sentence in the saved data or -1
     global sentence,train_data
     for i in range (len(train_data)):
         if train_data[i][0]==sentence:
             return i
     return -1
     
-def Mark_Seed(x):
+def Mark_Seed(x):#tag the seed in the text and saved it in the files
     global sentence,train_data,visual_list
     try :# presence of selected object
         word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
@@ -65,15 +68,20 @@ def Mark_Seed(x):
         return
     seed = button_Mark_Seed[x]["text"]
     first  = text_box.count("1.0", "sel.first")
+    position = sentence_in_data()
     
-    try:#creating tuple
-        tuple = (first[0],first[0]+len(word),seed)
-    except TypeError:
-        tuple = (0,len(word),seed)
     visual_list.append((word,seed))
     text_box.tag_add(x, "sel.first", "sel.last")
-    position = sentence_in_data()
     seed_nb[int(x)]['text']+=1
+    nb=0
+    if position!=-1:
+        for i in (train_data[position][1]):
+            if i[1]<first[0]:
+                nb+=1
+    try:#creating tuple
+        tuple = (first[0]-nb,first[0]-nb+len(word),seed)
+    except TypeError:#error dist first char
+        tuple = (0,len(word),seed)
     with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
         if len(train_data) == 0 or position ==-1: #no data or sentence not in the training data
             train_data.append((sentence,[tuple]))
@@ -81,7 +89,9 @@ def Mark_Seed(x):
         elif position!=-1:# sentence in training data
             if tuple not in train_data[position][1]:
                 train_data[position][1].append(tuple)
-            output.write(str(train_data))  
+            output.write(str(train_data))
+    text_box.window_create(text_box.index("sel.last"), window = tk.Button(text_box, text="x",command= lambda :suppr(tuple)))  
+    
 
 def load_data():
     with open(f"training/{filename}","r",encoding="utf-8") as local:
@@ -89,17 +99,46 @@ def load_data():
         data= ast.literal_eval(data)
         return data
 
-def show_data():
+def show_data():#highlight the text with the saved data
+    global button_suppr_list,train_data
     for i in range (len(seed_nb)):
         seed_nb[i]['text']=0
-    global train_data
-    position=sentence_in_data()
+    position = sentence_in_data()
     if position !=-1:
         for start, end, tag in train_data[position][1]:
             text_box.tag_add(tag, f'1.{start}',f'1.{end}')
+            tuple = (start,end,str(tag))
+            button_suppr_list.append(text_box.window_create(text_box.index(f'1.{end}'), window = tk.Button(text_box, text="x",command= lambda x=tuple :suppr(x))))
             seed_nb[int(tag)]['text']+=1
 
+def suppr(tuple):
+    global sentence,train_data
+    position=sentence_in_data()
+    print(f'{position} \n {tuple}')
+    train_data[position][1].remove(tuple)
+    with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
+        output.write(str(train_data))
+    show_sentence()
+    show_data()
 
+
+
+def open_popup():#deletion window
+   def delete():
+    global train_data
+    position= sentence_in_data()
+    train_data.pop(position)
+    top.destroy()
+    show_sentence()
+    show_data()
+    with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
+        output.write(str(train_data))
+   top= tk.Toplevel(root)
+   top.geometry("750x250")
+   top.title("confirmation")
+   tk.Label(top,font=('Helvetica 14 bold'), text= "Voulez vraiment effacer les graines de la page actuelle ?").pack()
+   tk.Button(top,text="Annuler",command=top.destroy,bg="blue",fg="white").place_configure(x=150,y=80,width=200,height=100)
+   tk.Button(top,text="Supprimer",command=delete,bg="red",fg="white").place_configure(x=450,y=80,width=200,height=100)
 
 
 
@@ -107,14 +146,15 @@ def show_data():
 # create the main window and GUI elements
 root = tk.Tk()
 root.title("Seed Marker")
-current_sentence = 0
+current_sentence=0
 sentences = []
 file_path = ""
 filename = ""
 train_data=[]
 visual_list=[]
+button_suppr_list=[]
 button_Mark_Seed=[]
-seed={
+seeds={
     0 :{"color":"#F3F4ED"},
     1 :{"color":"#F28482"},
     2 :{"color":"#96BB7C"},
@@ -139,7 +179,10 @@ frame_bar=tk.Frame(root)
 #button_save.grid(row=0,column=0,padx=10)
 button_select_file = tk.Button(root, text="Choisir un fichier", command=select_file, bg='grey', fg='white')
 button_select_file.pack(pady=5)
-text_box = tk.Text(root, width=80, height=10)
+
+text_box = st.ScrolledText(root,wrap="word", width=80, height=10)
+
+
 
 button_back = tk.Button(frame_bar, text="Précédent", command=prev_sentence, bg='grey', fg='white')
 button_back.grid(row=0,column=0,padx=10)
@@ -148,38 +191,39 @@ button_next.grid(row=0,column=2,padx=10)
 text_comm = tk.Entry(frame_bar, width=40)
 text_comm.grid(row=0,column=1)
 
-for x in range (len(seed)):
+for x in range (len(seeds)):
     try:
-        button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}",bg=seed[x]['color'],fg=seed[x]['foreground'], command= lambda a = x:Mark_Seed(a)))
+        button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}",bg=seeds[x]['color'],fg=seeds[x]['foreground'], command= lambda  a=x:Mark_Seed(a)))
     except KeyError:
-        button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}",bg=seed[x]['color'], command= lambda a = x:Mark_Seed(a)))
-    button_Mark_Seed[x].grid(row=0,column=x,padx=10)
+        button_Mark_Seed.append ( tk.Button(frame_choix, text=f"{x}",bg=seeds[x]['color'], command= lambda a=x:Mark_Seed(a)))
+    button_Mark_Seed[x].grid(row=1,column=x,padx=10)
+    button_Mark_Seed[x].config(width=3)
 
 seed_nb=[]
-for x in range(len(seed)):
+for x in range(len(seeds)):
     seed_nb.append(tk.Label(frame_choix,text=0))
-    seed_nb[x].grid(row=1,column=x,padx=10)
+    seed_nb[x].grid(row=0,column=x,padx=10)
 
 affichage = tk.Label (root,text="")
+delete_button = tk.Button(root,bg="red",text="effacer la page",command=open_popup)
+
 
 
 # pack the GUI elements
-
-text_box.pack()
 frame_choix.pack(expand=True)
+text_box.pack()
 frame_bar.pack(expand=True,pady=5)
-
-
 affichage.pack(pady=5)
+delete_button.pack()
 
 
 # configure text tags
 
-for x in range(len(seed)):
+for x in range(len(seeds)):
     try: 
-        text_box.tag_configure(f"{x}",background=f"{seed[x]['color']}",foreground=seed[x]["foreground"])
+        text_box.tag_configure(f"{x}",background=f"{seeds[x]['color']}",foreground=seeds[x]["foreground"])
     except KeyError:
-        text_box.tag_configure(f"{x}",background=f"{seed[x]['color']}")
+        text_box.tag_configure(f"{x}",background=f"{seeds[x]['color']}")
 
 
 root.mainloop()

@@ -1,1 +1,0 @@
-[('Schank was married twice', [(0, 6, '1')]), ('His first marriage, to Diane Levine, ended when they divorced in 1998; he then married Annie Payeur in or around 1999', [(23, 35, '1'), (87, 99, '1')])]
