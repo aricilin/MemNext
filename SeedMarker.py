@@ -3,7 +3,7 @@ from tkinter import filedialog
 import tkinter.scrolledtext as st
 import re
 import ast
-
+import nltk
 
 def select_file():
     global file_path, filename, sentences, current_sentence, text_box,train_data,visual_list,last_filepath
@@ -18,8 +18,9 @@ def select_file():
             # pretraitement regex pour ajouter un espace après un point suivit d'un charater
             content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
             content = re.sub(r'\[[^\]]+\]', '', content)
-            sentences = content.split(". ")
-            sentences = [s.strip() for s in sentences if s.strip()]
+            sentences = nltk.sent_tokenize(content)    
+            """ sentences = content.split(". ")
+            sentences = [s.strip() for s in sentences if s.strip()] """
     except FileNotFoundError:
             file_path=last_filepath
             filename =file_path.split('/')[len(file_path.split('/'))-1]
@@ -28,8 +29,9 @@ def select_file():
                 # pretraitement regex pour ajouter un espace après un point suivit d'un charater
                 content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
                 content = re.sub(r'\[[^\]]+\]', '', content)
-                sentences = content.split(". ")
-                sentences = [s.strip() for s in sentences if s.strip()]
+                sentences = nltk.sent_tokenize(content)
+                """ sentences = content.split(". ")
+                sentences = [s.strip() for s in sentences if s.strip()] """
     except PermissionError:
         file_path=last_filepath
         filename =file_path.split('/')[len(file_path.split('/'))-1]
@@ -39,8 +41,9 @@ def select_file():
                 # pretraitement regex pour ajouter un espace après un point suivit d'un charater
                 content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
                 content = re.sub(r'\[[^\]]+\]', '', content)
-                sentences = content.split(". ")
-                sentences = [s.strip() for s in sentences if s.strip()]
+                sentences = nltk.sent_tokenize(content)
+                """ sentences = content.split(". ")
+                sentences = [s.strip() for s in sentences if s.strip()] """
 
     current_sentence = 0
     root.title(f"Seed Marker {filename}")
@@ -163,7 +166,7 @@ def show_data():#highlight the text with the saved data
 def suppr(tuple):
     global sentence,train_data
     position=sentence_in_data()
-    print(f'{position} \n {tuple}')
+    #print(f'{position} \n {tuple}') 
     train_data[position][1].remove(tuple)
     with open(f"training/{filename}","w",encoding="utf-8") as output: #saving data
         output.write(str(train_data))
@@ -229,7 +232,7 @@ frame_bar=tk.Frame(root)
 button_select_file = tk.Button(root, text="Choisir un fichier", command=select_file, bg='grey', fg='white')
 button_select_file.pack(pady=5)
 
-text_box = st.ScrolledText(root,wrap="word", width=80, height=10)
+text_box = st.ScrolledText(root,wrap="word", width=80, height=15)
 
 
 
