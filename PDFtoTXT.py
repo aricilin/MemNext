@@ -8,9 +8,6 @@ if (len(sys.argv) != 3):
 
 f_out=open(sys.argv[2],"w",encoding="utf-8")
 
- # install using: pip install PyMuPDF
-
-
 with fitz.open(sys.argv[1]) as doc:
     for page in doc:
         text = page.get_text()

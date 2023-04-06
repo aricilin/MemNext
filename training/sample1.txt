@@ -1,1 +1,1 @@
-[('Schank was married twice.', [(0, 6, '1')])]
+[('Schank was \nmarried twice.', [(0, 6, '1'), (12, 19, '0')]), ('His first marriage, to Diane Levine, ended when they divorced in 1998; he then married Annie Payeur in or around 1999.', [(23, 35, '1'), (87, 99, '1')]), ('In Florida, he was a neighbor of Jeffrey Epstein, and attended an artificial intelligence conference sponsored by him on his island in 2002, six years before Epstein was convicted of sex offenses in 2008.', [])]

@@ -1,0 +1,7 @@
+nltk
+regex
+fitz
+docx2txt
+odfpy
+lxml
+docx2txt
