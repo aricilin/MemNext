@@ -1,0 +1,7 @@
+nltk
+regex
+PyMuPDF
+docx2txt
+odfpy
+lxml
+docx2txt

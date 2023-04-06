@@ -1,0 +1,314 @@
+Univ. de Montpellier & LIRMM — TERM1 : proposition projet MemNexT [T!O] — Eric Lacombe,  nov. 2022
+
+
+
+
+
+Contexte : Projets TERM1
+
+p.1, extrait de : https://www.lirmm.fr/~lafourcade/TERM1/
+
+Travail d'Etude et de Recherche Master 1
+
+Le TER de Master compte pour 4 ECTS et a lieu au semestre 2 répartis sur environ 5 mois. La quantité de travail à effectuer par chaque étudiant pour le TER correspond donc à un peu moins d'1 homme-mois (bac+4) à plein temps. Le TER est un travail de groupe, il est demandé de former des groupes de 3 ou 4 personnes. Il n'y aura que de façon exceptionnelle des groupes de 1, 2 ou 5 étudiants. Chaque groupe prendra un nom de son choix.  La note du TER sera la moyenne de trois notes :
+
+Une note d'encadrant ;
+
+Une note de rapport donnée par le ou les rapporteurs ;
+
+Une note de soutenance.
+
+Définition d’un projet
+
+Avant le 1er décembre
+
+Un titre de mail commençant par "[TER_M1_2022] Proposition de sujet" ;
+
+Les adresses mails de 1 à 3 encadrants ;
+
+Un titre pour votre sujet ;
+
+Un résumé d'environ 200 mots ;
+
+Des prérequis si nécessaires ;
+
+Une url vers la présentation détaillée de votre sujet.
+
+
+
+
+
+
+Sommaire du document
+
+	Contexte : Projets TERM1	1
+
+	Travail d'Etude et de Recherche Master 1	1
+
+	Définition d’un projet	1
+
+	Co-encadrement	2
+
+	MemNexT vers une mémoire augmentée	3
+
+	Résumé	3
+
+	Introduction	4
+
+	Description	4
+
+	Références	9
+
+	Projets et produits	9
+
+	Concepts	10
+
+	Qui suis-je ?	10
+
+
+
+
+
+
+
+
+
+Co-encadrement
+
+Encadrants : Eric Lacombe +  Marianne Huchard? (&,|) (Mathieu Lafourcade | Arnaud Castelltort | François Scharffe)?
+
+
+
+Liens potentiels avec des thématiques de recherche d’autres encadrants
+
+Marianne Huchard : AFC, ARC
+
+Mathieu Lafourcade : réseaux lexicaux de Jeux de Mots, approche ludique
+
+Arnaud Castelltort : graphes temporels
+
+François Scharffe : graphe de connaissances
+
+Anne Laurent :  fouille de données
+
+Violaine Prince : TALN
+
+
+
+
+MemNexT vers une mémoire augmentée
+
+Mots-clés : mémoire augmentée, graphe organisationnel, graine d’information
+
+Convention : les quelques termes entre crochets, par exemple [→u], seront expliqués lors d’un atelier découverte.
+
+
+
+Résumé
+
+Le projet MemNext consiste à réaliser un prototype de mémoire augmentée sur un modèle simplifié du fonctionnement de notre propre mémoire, en s’appuyant sur un concept récent, la graine d’information (Lacombe, 2016…2022), définie comme une unité élémentaire de sens (sens = sensibilité + intelligibilité + direction), et leurs premières expérimentations prometteuses.
+
+Pour rappel, notre mémoire, réservoir de connaissance implicite et explicite, à la fois personnelle et commune, définit notre identité. Elle est :
+
+sensible,  à l’écoute du monde extérieur 
+
+relationnelle, interconnectant nos expériences 
+
+plastique, en reconfiguration permanente (constructivisme) 
+
+pro-active,  s’adaptant au contexte
+
+privée, avec une couche relevant du domaine de l’inconscient 
+
+partiellement immunisée, pour résister aux informations toxiques
+
+En considérant que l’Internet devient une mémoire de l’humanité, disposer d’une mémoire augmentée numérique en connexion mais possiblement indépendante de l’internet fait sens. C’est le défi posé par ce projet.
+
+Le projet est ouvert, cadré par une méthodologie de co-construction qui prend en compte les appétences, compétences et contraintes, essentiellement le délai. 
+
+
+
+
+
+
+Introduction
+
+MemNexT évoque à la fois :
+
+le Memex (1945), memory extender (« gonfleur de mémoire ») de Vannevar Bush, ordinateur analogique fictif. « Cette vision a directement influencé des pionniers de l'informatique moderne tels que Douglas Engelbart et a posé les fondations de l'hypertexte créé par Ted Nelson, à l'origine du World Wide Web. »
+
+le Mème (1976) de Richard Dawkins, « élément culturel reconnaissable, reproduit et transmis par l'imitation du comportement d'un individu par d'autres individus », d’où est dérivée la notion de Mème Internet
+
+la machine NeXT (1988) de Steve Jobs. « C’est sur une machine NeXT sous NeXTSTEP que Tim Berners-Lee développa WorldWideWeb, le premier navigateur web (plus tard rebaptisé Nexus), alors qu'il travaillait au CERN. »
+
+Cf. les références bibliographiques pour plus d’info, les citations (entre guillemets) sont extraites de Wikipédia
+
+Description
+
+POURQUOI 
+
+aider à l’émergence de solutions techniques simples à destination première de communautés d’acteurs travaillant en réseaux pour affronter collectivement les menaces actuelles (crises systémiques, biodiversité, climat…) avec de nouveaux outils de construction  de représentations qui font sens, accessibles, opérationnelles, et ludiques, partant du personnel pour aller vers le collectif.
+
+outiller de nouveaux paradigmes et perspectives en émergence pour une gestion de l’information recentrée sur les besoins plutôts que les désirs, comme le font souvent les réseaux sociaux pour de raisons commerciales (financement par la publicité) 
+
+Un paradigme est « une représentation du monde, une manière de voir les choses, un modèle cohérent du monde qui repose sur un fondement défini. ». Par exemple,  la graine d’information, directement manipulable par l’humain, avec ou sans numérique, introduit un nouveau paradigme, qui a se positionne à l’interface entre la page (“nourriture” pour l’humain) et la data (“nourriture” pour la machine).
+
+Le numérique appelle une perspective simplexe, de l’être-en-réseau. Le simplexe est au complexe, ce que le simple est au compliqué. Pour faire simple ;-) le compliqué est analysable par la méthode cartésienne, décomposable en éléments simples (domaine de la technique, champ des systèmes). Le complexe, qui combine des  interactions synchrones et asynchrones entre de multiples entités évolutives, auto-organisées sur de multiples niveaux (domaine du vivant, champ des écosystèmes), disposant d’un libre-arbitre et d’un inconscient (domaine du psychique), est dévitalisé lors d’un découpage.  La connaissance de l’individu par l’approche cartésienne reste toujours incomplète car l’individu isolé de son milieu est mutilé. L’être-en-réseau interroge la position de l’individu dans un groupe, dans le contexte du numérique (cf. Auber).
+
+Un développement concentré et monopolistique des technologies de l’information  tend vers le totalitarisme. Il est donc critique de redonner la main aux utilisateurs finaux, avec des solutions simples, répondant aux besoins essentiels. C’est cette philosophie qui porte les graines d’information.
+
+développer le plaisir d’apprendre en s’appuyant sur un potentiel : la combinaison d’une dynamique (groupe d’étudiants) accompagnés par une équipe d’encadrants expérimentés et complémentaires (dont, pour le porteur du projet, une expérience en gestion de contenus et conception de solutions innovantes. Cf. le § Qui suis-je ? en fin de document)
+
+COMMENT 
+Un premier cadrage est proposé à partir de cinq points de référence.
+
+Respect d’une série de principes
+
+FAIR : Findable, Accessible, Interoperability, Reusable
+
+Ouverture : Open Source, Creative Commons
+
+Ergonomique et ludique (fun) :  UXD et LivXD (User eXperience Design, Living Experience Design)
+
+Agile  (cf. Agile Manifesto)
+
+Deux temporalités du projet (cycle de vie) : 
+
+temporalité du projet : assuré par l’équipe du M1 2023 (étudiants et encadrants)
+
+temporalité de l’après-projet : reprise par une autre équipe ou ouverture à une communauté
+
+Deux populations :
+
+Interne  : équipe projet = étudiants + encadrants
+
+Externe : bénéficiaires, autres équipes, communautés
+
+Quatre parties :  
+
+La première est commune à tous les membres de l’équipe
+
+Les trois autres sont à réaliser au minimum en binôme (pilote, co-pilote) suivi par un binôme d’encadrants (animateur, co-animateur). Chacune intégrant des phases de spécification, codage et test.
+
+Prérequis
+
+Compétences génériques : ouverture d’esprit, curiosité, rigueur, bienveillance
+
+Centres d’intérêts pour une ou plusieurs de ces technologies (liste non exhaustive) : base de données graphes et NoSQL, technologie mobile (smartphone) et basse consommation (Raspberry), dataviz, architecture (de l’information, réseau, logicielle, microservices), réseau (de machine, de données, de neurones), live coding, SMA, sécurité, cryptographie
+
+Langages envisageables (non restrictif) : Javascript, Python, voire Processing, Pharo, Elixir, Kappa, Scratch…
+
+Les graines d’information sont utilisables pour chacune de ces parties mais leur périmètre d’usage sera à définir ensemble suite à l’atelier découverte
+
+QUOI
+
+Un projet découpé en quatre parties
+
+P1 — Méthodologie : agile, avec une approche de co-design circulaire
+
+objectif : co-définition de la stratégie, du périmètre du projet et des rôles (objectifs, périmètres d’intervention et responsabilités) avec prise en compte des dimensions écologique (GreenIT), éthique (by design) et des 3 formes d’apprentissage, instrumental, communicationnel et réflexif (Mezirow, 2001). Il s’agit de filtrer dans les multiples pistes de la proposition, celles qui sont techniquement réalisables dans le cadre du projet (appétences, compétences, délais)
+
+participants : tous (animateur : Eric Lacombe, co-animateur : à préciser)
+
+contenus : atelier découverte des graines d’information, animé par E. Lacombe. Les graines seront utilisées pour la co-définition du projet et fixer le rythme de rencontres
+
+P2 — Gestion globale du projet technique : environnement de travail et de gestion
+
+objectif : mettre en place un environnement simple, aisément duplicable pour gérer les différentes facettes du projet 
+
+enjeu : installation rapide, déploiement local ou distant des deux modules suivants, humain/technique (doc. dynamique) et technique/humain (micromodules). 
+
+P3 — Documentation dynamique : 2 livrables interconnectés 
+
+un référentiel  [→u] : centré sur le modèle de données, le vocabulaire et les traductions (concept métier - concept “graine”), les formats de données, les opérations et protocoles
+
+des notebooks [→m] : illustrant des scénarii d’usages, avec des exemples intégrant du code (cf. Observable). Les scénarii engloberont des scenarii de test des micromodules. Il ne s’agit pas d’une documentation sur l’usage des modules (intuitifs et auto documentés) mais sur leurs possibilités d’application 
+
+P4 — Développement de micromodules d’interconnexion
+
+Ensemble de micro services pour interconnecter des applications et outils existants, chacun en mesure de gérer des graines d’information. Ex: OpenTheso, StemicApp, base Neo4j, Whiteboards
+
+Trois enjeux de gestion : 
+
+imports et exports des jeux de graines
+
+dédoublonnage
+
+interfaces utilisateurs adaptées (de type chatbot)
+
+
+
+Compléments : de nombreux documents sont disponibles sur les graines d’information, ainsi que du code source. Ils sont progressivement mis à disposition dans le référentiel T!O accompagnés des explications nécessaires. 
+
+Références
+
+Pour ceux qui souhaitent approfondir la philosophie sous-jacente, voici quelques références, leur classement est chronologique. D’autres références à venir, sur demande…
+
+1945 : Vanevar Bush : As we may think, Anthony Masure, pour la traduction française : Comme nous pourrions penser // informatique
+
+1962 : Thomas S. Kuhn : La Structure des révolutions scientifiques // épistémologie
+
+1973 : Ivan Illich : La convivialité // philosophie
+
+1976 : Richard Dawkins : Le gène égoïste // biologie
+
+1977 : Christopher Alexander : A Pattern Language // architecture
+
+2000 : Lawrence Lessig : Code is Law, Framablog pour la traduction française : Le code fait loi - De la liberté dans le cyberespace // droit
+
+2001 : Jack Mezirow : Penser son expérience. Développer l’autoformation // éducation
+
+2009 : Alain Berthoz : La simplexité // neurophysiologie
+
+2010 : Luke Wroblewsky : Mobile First // informatique
+
+2014 : Simon Sinek : The Golden Circle // management
+https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action 
+
+Projets et produits
+
+Projets et produits, à des stades d’avancement divers, pouvant servir de source d’inspiration (par ordre alphabétique) : 
+
+ApiApp : https://vimeo.com/223478948/3e8605fa21 (Apidae, Eric Lacombe)
+
+Federated Wiki : http://fed.wiki.org/ (Ward Cunningham)
+
+Observable : https://observablehq.com/ (Mike Bostock)
+
+Obsidian : https://obsidian.md/
+
+Notion : https://www.notion.so/  
+
+Solid : https://solid.mit.edu/ (Tim Berners Lee)
+
+Également, en évolution continue : Référentiel T!O, Transformation information Organisation : https://thesaurus.mom.fr/opentheso/?idt=th72 
+
+Concepts
+
+Sujets et thématiques à interroger et débattre dans le cadre du projet : 
+
+asymétrie d’information, cryptographie, vie privée (Timothy C. May, Julien Assange)
+
+éthique des architectures informatiques : réseau, plateforme, ia, hardware, software, dataware
+
+perspectives anoptiques (Olivier Auber) 
+
+graine d’information, potentiel et limites 
+
+Qui suis-je ?
+
+Eric Lacombe est docteur en sciences de l’information et de la communication (thèse sur la transformation numérique des organisations en réseau, soutenue en 2021), chercheur associé au MICA — Axe ICIN (Médiations, Informations, Communication, Arts — Information Connaissance et Innovation numérique) et consultant, accompagnement à la transformation numérique des organisations (domaines d’intervention récents tourisme, archéologie, social) avec une expertise en  :
+
+Architecture de l'information : valorisation des contenus et de leurs relations, optimisation de leurs usages et pratiques.
+
+Design numérique & Ingénierie de projets innovants : accompagnement, étude, analyse, modélisation, prototypage, conception, évaluation.
+
+
+
+CV académique : https://cv.archives-ouvertes.fr/eric-lacombe 
+
+
+
+Pour info, ce projet n’a pas de lien avec : https://memex.garden/
+
+ /
