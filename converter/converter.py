@@ -1,4 +1,12 @@
 #Converter
+#pour docx2txt
+#pip install docx2txt
+#pour doc/docx
+#pip install python-docx
+#pour odt
+#pip install odfpy
+#pip install lxml
+#Il y a des liaison entre cette 2 librarys il faut les deux.
 #Cette Program sert a transformer des differents format en txt.
 #Supported Formats docx, doc, odt
 #il recupere le 'nom_de_fichier' et donne nom_de_fichier.txt
@@ -19,12 +27,12 @@ def converter(file):
     txt_file = os.path.splitext(file)[0] + ".txt"
 
     if file_extension == ".docx":
-        with open(txt_file, "w") as f:
+        with open(txt_file, "w", encoding='utf-8') as f:
             f.write(docx2txt.process(file))
 
     elif file_extension == ".odt":
         doc = load(file)
-        with open(txt_file, "w") as f:
+        with open(txt_file, "w", encoding='utf-8') as f:
             for para in doc.getElementsByType(text.P):
                 f.write(teletype.extractText(para))
                 #si on veut saute de lignes
@@ -35,7 +43,7 @@ def converter(file):
         #Antiword is a free software reader for proprietary Microsoft Word documents, and is available for most computer platforms.
         #https://en.wikipedia.org/wiki/Antiword
         cmd = ["antiword", file]
-        with open(txt_file, "w") as txt_file:
+        with open(txt_file, "w", encoding='utf-8') as txt_file:
             #subprocess sert a lancer le program antiword sur cmd
             subprocess.run(cmd, stdout=txt_file)
 
