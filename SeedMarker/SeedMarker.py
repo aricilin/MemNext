@@ -4,47 +4,40 @@ import tkinter.scrolledtext as st
 import re
 import ast
 import nltk
+import converter
+
 
 
 def select_file():
     global file_path, filename, sentences, current_sentence, text_box, train_data, visual_list, last_filepath
     train_data.clear()
 
-    file_path = filedialog.askopenfilename()
-    filename = file_path.split('/')[len(file_path.split('/'))-1]
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            last_filepath = file_path
-            content = f.read()
-            # pretraitement regex pour ajouter un espace après un point suivit d'un charater
-            content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
-            content = re.sub(r'\[[^\]]+\]', '', content)
-            sentences = nltk.sent_tokenize(content)
-            """ sentences = content.split(". ")
-            sentences = [s.strip() for s in sentences if s.strip()] """
-    except FileNotFoundError:
-        file_path = last_filepath
-        filename = file_path.split('/')[len(file_path.split('/'))-1]
-        with open(file_path, "r", encoding="utf-8") as f:
-            content = f.read()
-            # pretraitement regex pour ajouter un espace après un point suivit d'un charater
-            content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
-            content = re.sub(r'\[[^\]]+\]', '', content)
-            sentences = nltk.sent_tokenize(content)
-            """ sentences = content.split(". ")
-                sentences = [s.strip() for s in sentences if s.strip()] """
-    except PermissionError:
-        file_path = last_filepath
-        filename = file_path.split('/')[len(file_path.split('/'))-1]
+    
+    file_path = converter.converter(filedialog.askopenfilename())
 
-        with open(file_path, "r", encoding="utf-8") as f:
-            content = f.read()
-            # pretraitement regex pour ajouter un espace après un point suivit d'un charater
-            content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
-            content = re.sub(r'\[[^\]]+\]', '', content)
-            sentences = nltk.sent_tokenize(content)
-            """ sentences = content.split(". ")
-                sentences = [s.strip() for s in sentences if s.strip()] """
+    if file_path == -1: # unkown format case
+        text_box.delete('1.0', tk.END)
+        text_box.insert("1.0"," Erreur : Format inconnu")
+        return 
+    
+    
+    elif file_path == 0: #cancel case
+        if last_filepath == 0 :
+            text_box.delete('1.0', tk.END)
+            text_box.insert("1.0"," Cancel")
+            return
+        else :
+            file_path = last_filepath
+            
+    filename = file_path.split('/')[len(file_path.split('/'))-1]
+ 
+    with open(file_path, "r", encoding="utf-8") as f:
+        last_filepath = file_path
+        content = f.read()
+        # pretraitement regex pour ajouter un espace après un point suivit d'un charater
+        content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
+        content = re.sub(r'\[[^\]]+\]', '', content)
+        sentences = nltk.sent_tokenize(content)
 
     current_sentence = 0
     root.title(f"Seed Marker {filename}")
@@ -238,6 +231,7 @@ def open_popup():  # deletion window
 root = tk.Tk()
 root.title("Seed Marker")
 current_sentence = 0
+last_filepath=0
 sentences = []
 file_path = ""
 filename = ""

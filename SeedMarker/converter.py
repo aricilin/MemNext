@@ -14,7 +14,10 @@ def converter(file):
     txt_file = os.path.splitext(file)[0] + ".txt"
     foutput = "temp/"+txt_file.split('/')[len(txt_file.split('/'))-1]
 
-
+    if file_extension == ".txt":
+        return file
+    elif len(file)==0:
+        return 0
     with open(foutput, "w", encoding='utf-8') as f:   
         match file_extension:
             case ".docx":
@@ -27,6 +30,7 @@ def converter(file):
                     #si on veut saute de lignes
                     #text = teletype.extractText(para) + "\n"
                     #f.write(text)
+
 
             case ".doc":
                 #Antiword is a free software reader for proprietary Microsoft Word documents, and is available for most computer platforms.
@@ -45,8 +49,7 @@ def converter(file):
                             f.write(text[i])
                         if len(text) > 0:
                             f.write(text[-1])  # write the last character of the page (usually a newline character)
-
             case _:
-                return("Format inconnu")
-
-converter("../test/dyresic-web-08-2019.pdf")
+                return(-1)
+    # print (f"converter : {foutput}")
+    return foutput
