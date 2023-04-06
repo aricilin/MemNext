@@ -24,10 +24,13 @@ pos_tags = nltk.pos_tag(words)
 # use NLTK's named entity recognizer to identify named entities in the text
 chunks = nltk.ne_chunk(pos_tags)
 
-# if the chunk is a named entity (NE), its label is 'PERSON' and it's not in nameList, print it
+# iterate over each chunk in the named entity tree
 nameList =[]
-
+nb=0
 for chunk in chunks:
+    # if the chunk is a named entity (NE), its label is 'PERSON' and it's not in nameList, print it
     if hasattr(chunk, 'label') and chunk.label() == 'PERSON' and chunk not in nameList:
         print(' '.join(c[0] for c in chunk))
         nameList.append(chunk)
+        nb+=1
+print(nb,  " lignes")
