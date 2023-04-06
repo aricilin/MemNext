@@ -127,7 +127,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
                 nb += 1
 
     tuple = (first-nb, last-nb, seed)
-
+    
     with open(f"training/{filename}", "w", encoding="utf-8") as output:  # saving data
         if len(train_data) == 0 or position == -1:  # no data or sentence not in the training data
             train_data.append((sentence, [tuple]))
@@ -179,16 +179,12 @@ def show_data():  # highlight the text with the saved data
                         nb += 1
             firstp = f'{ligne1}.{start-of1+nb}'
             lastp = f'{ligne2}.{end-of2+nb}'
-            print(f"test1 {start,of1,nb}" )
-            print(f"test2 {end,of2,nb}" )
             #(firstp, lastp) = ligne_tkinter((start, end, nb))
 
             text_box.tag_add(tag, firstp, lastp)
-            print(tag, firstp, lastp)
             button_suppr_list.append(text_box.window_create(text_box.index(
                 lastp), window=tk.Button(text_box, text="x", command=lambda x=tuple: suppr(x))))
             seed_nb[int(tag)]['text'] += 1
-    print('\n \n')
 
 
 def ligne_tkinter(tuple):  # return the ligne of the selected char (by position)

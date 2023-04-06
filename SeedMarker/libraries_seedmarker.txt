@@ -1,6 +1,6 @@
 nltk
 regex
-fitz
+PyMuPDF
 docx2txt
 odfpy
 lxml
