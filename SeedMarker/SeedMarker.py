@@ -145,7 +145,10 @@ def show_data():  # highlight the text with the saved data
     for i in range(len(seed_nb)):
         seed_nb[i]['text'] = 0
     position = sentence_in_data()
-    if position != -1:
+    for i in range (len(train_data)):
+        for infos in train_data[i][1]:
+            seed_nb[int(infos[2])]['text'] += 1
+    if position != -1:#if there is data saved
         for start, end, tag in train_data[position][1]:
             tuple = (start, end, str(tag))
             nb = 0
@@ -177,7 +180,7 @@ def show_data():  # highlight the text with the saved data
             text_box.tag_add(tag, firstp, lastp)
             button_suppr_list.append(text_box.window_create(text_box.index(
                 lastp), window=tk.Button(text_box, text="x", command=lambda x=tuple: suppr(x))))
-            seed_nb[int(tag)]['text'] += 1
+            
 
 
 def ligne_tkinter(tuple):  # return the ligne of the selected char (by position)
