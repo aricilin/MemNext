@@ -2,10 +2,13 @@
 
 import os
 import docx2txt
-from odf import text, teletype
-from odf.opendocument import load
+import odf.text
+# from odf.opendocument import load
+import odf.teletype
+import odf.opendocument
 import subprocess
 import fitz
+
 
 #my function
 def converter(file):
@@ -24,9 +27,9 @@ def converter(file):
                 f.write(docx2txt.process(file))
 
             case ".odt":
-                doc = load(file)
-                for para in doc.getElementsByType(text.P):
-                    f.write(teletype.extractText(para))
+                doc = odf.opendocument.load(file)
+                for para in doc.getElementsByType(odf.text.P):
+                    f.write(odf.teletype.extractText(para))
                     #si on veut saute de lignes
                     #text = teletype.extractText(para) + "\n"
                     #f.write(text)
