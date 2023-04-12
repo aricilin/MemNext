@@ -299,11 +299,11 @@ delete_button = tk.Button(
 
 
 # pack the GUI elements
-frame_top.pack(expand=True)
+frame_top.pack()
 # frame_bar.pack(expand=True, pady=5) # comment barre
-frame_choix.pack(expand=True)
-text_box.pack()
-
+frame_choix.pack()
+text_box.pack(fill=tk.BOTH, expand=True)
+root.grid_propagate(True)
 # affichage.pack(pady=5)
 delete_button.pack()
 
