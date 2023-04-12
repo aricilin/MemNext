@@ -107,7 +107,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
         else:
             first = first[0]
         last = text_box.count("1.0", "insert wordend", "displayindices")[0]
-
+    vw = text_box.yview() # Save the current position(percentage) of the top left corner
     seed = button_Mark_Seed[x]["text"]
     position = sentence_in_data()
     visual_list.append((word, seed))
@@ -131,6 +131,8 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
             output.write(str(train_data))
     show_sentence()
     show_data()
+    print (vw)
+    text_box.yview_moveto(vw[0]+0.01)
 
 
 def load_data():
@@ -200,6 +202,7 @@ def ligne_tkinter(tuple):  # return the ligne of the selected char (by position)
 
 def suppr(tuple):
     global sentence, train_data
+    vw = text_box.yview() # Save the current position(percentage) of the top left corner
     position = sentence_in_data()
     #print(f'{position} \n {tuple}')
     train_data[position][1].remove(tuple)
@@ -207,6 +210,9 @@ def suppr(tuple):
         output.write(str(train_data))
     show_sentence()
     show_data()
+    print (vw)
+    text_box.yview_moveto(vw[0]+0.01)
+    
 
 
 def open_popup():  # deletion window
