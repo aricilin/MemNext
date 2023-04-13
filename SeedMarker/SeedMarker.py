@@ -5,7 +5,7 @@ import re
 import ast
 import nltk
 import converter
-
+nltk.download('punkt')
 
 
 def select_file():
@@ -66,13 +66,29 @@ def next_sentence():  # show the next sentence
         show_sentence()
         show_data()
 
+def last_sentence():  # show the next sentence
+    global current_sentence, sentences, text_box
+    if current_sentence < len(sentences)-1:
+        current_sentence =len(sentences) -1
+        show_sentence()
+        show_data()
+
+def first_sentence():  # show the next sentence
+    global current_sentence, sentences, text_box
+    if current_sentence > 0:
+        current_sentence =0
+        show_sentence()
+        show_data()
 
 def show_sentence():  # print the sentence in the text_box
     global current_sentence, sentences, text_box, sentence, train_data
+    text_box.configure(state='normal')
     sentence = sentences[current_sentence]
     text_box.delete('1.0', tk.END)
     text_box.insert(tk.END, sentence)
     visual_list.clear()
+    text_box.configure(state='disabled')
+
 
 
 def sentence_in_data():  # return the position of the sentence in the saved data or -1
@@ -107,7 +123,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
         else:
             first = first[0]
         last = text_box.count("1.0", "insert wordend", "displayindices")[0]
-
+    vw = text_box.yview() # Save the current position(percentage) of the top left corner
     seed = button_Mark_Seed[x]["text"]
     position = sentence_in_data()
     visual_list.append((word, seed))
@@ -131,6 +147,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
             output.write(str(train_data))
     show_sentence()
     show_data()
+    text_box.yview_moveto(vw[0]+0.01)
 
 
 def load_data():
@@ -142,10 +159,14 @@ def load_data():
 
 def show_data():  # highlight the text with the saved data
     global button_suppr_list, train_data, sentence
+    text_box.configure(state='normal')
     for i in range(len(seed_nb)):
         seed_nb[i]['text'] = 0
     position = sentence_in_data()
-    if position != -1:
+    for i in range (len(train_data)):
+        for infos in train_data[i][1]:
+            seed_nb[int(infos[2])]['text'] += 1
+    if position != -1:#if there is data saved
         for start, end, tag in train_data[position][1]:
             tuple = (start, end, str(tag))
             nb = 0
@@ -177,7 +198,9 @@ def show_data():  # highlight the text with the saved data
             text_box.tag_add(tag, firstp, lastp)
             button_suppr_list.append(text_box.window_create(text_box.index(
                 lastp), window=tk.Button(text_box, text="x", command=lambda x=tuple: suppr(x))))
-            seed_nb[int(tag)]['text'] += 1
+    text_box.configure(state='disabled')
+
+            
 
 
 def ligne_tkinter(tuple):  # return the ligne of the selected char (by position)
@@ -197,6 +220,7 @@ def ligne_tkinter(tuple):  # return the ligne of the selected char (by position)
 
 def suppr(tuple):
     global sentence, train_data
+    vw = text_box.yview() # Save the current position(percentage) of the top left corner
     position = sentence_in_data()
     #print(f'{position} \n {tuple}')
     train_data[position][1].remove(tuple)
@@ -204,27 +228,31 @@ def suppr(tuple):
         output.write(str(train_data))
     show_sentence()
     show_data()
-
+    text_box.yview_moveto(vw[0]+0.01)#keep position in text
+    
 
 def open_popup():  # deletion window
-    def delete():
-        global train_data
-        position = sentence_in_data()
-        train_data.pop(position)
-        top.destroy()
-        show_sentence()
-        show_data()
-        with open(f"training/{filename}", "w", encoding="utf-8") as output:  # saving data
-            output.write(str(train_data))
-    top = tk.Toplevel(root)
-    top.geometry("750x250")
-    top.title("confirmation")
-    tk.Label(top, font=('Helvetica 14 bold'),
-             text="Voulez vraiment effacer les graines de la page actuelle ?").pack()
-    tk.Button(top, text="Annuler", command=top.destroy, bg="blue",
-              fg="white").place_configure(x=150, y=80, width=200, height=100)
-    tk.Button(top, text="Supprimer", command=delete, bg="red",
-              fg="white").place_configure(x=450, y=80, width=200, height=100)
+    global current_sentence
+    position = sentence_in_data()
+    if current_sentence == position:
+        def delete():
+            global train_data
+            position = sentence_in_data()
+            train_data.pop(position)
+            top.destroy()
+            show_sentence()
+            show_data()
+            with open(f"training/{filename}", "w", encoding="utf-8") as output:  # saving data
+                output.write(str(train_data))
+        top = tk.Toplevel(root)
+        top.geometry("750x250")
+        top.title("confirmation")
+        tk.Label(top, font=('Helvetica 14 bold'),
+                text="Voulez vraiment effacer les graines de la page actuelle ?").pack()
+        tk.Button(top, text="Annuler", command=top.destroy, bg="blue",
+                fg="white").place_configure(x=150, y=80, width=200, height=100)
+        tk.Button(top, text="Supprimer", command=delete, bg="red",
+                fg="white").place_configure(x=450, y=80, width=200, height=100)
 
 
 # create the main window and GUI elements
@@ -260,18 +288,25 @@ frame_bar = tk.Frame(root)
 
 # create Elements
 
-button_select_file = tk.Button(frame_top, text="Choisir un fichier", command=select_file, bg='grey', fg='white')
-button_select_file.grid(row=0,column=1)
+button_select_file = tk.Button(frame_top, text='\u2193',font=("Courier", 15), command=select_file, bg='grey', fg='white')
+button_select_file.grid(row=0,column=2)
 
 text_box = st.ScrolledText(root, wrap="word", width=80, height=15)
 
+button_back = tk.Button(frame_top, text="<<",
+                        command=prev_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_back.grid(row=0, column=1, padx=10)
+button_next = tk.Button(frame_top, text=">>",
+                        command=next_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_next.grid(row=0, column=3, padx=10)
 
-button_back = tk.Button(frame_top, text="Précédent",
-                        command=prev_sentence, bg='grey', fg='white')
-button_back.grid(row=0, column=0, padx=10)
-button_next = tk.Button(frame_top, text="Suivant",
-                        command=next_sentence, bg='grey', fg='white')
-button_next.grid(row=0, column=2, padx=10)
+button_first = tk.Button(frame_top, text="<<=",
+                        command=first_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_first.grid(row=0, column=0, padx=10)
+button_last = tk.Button(frame_top, text="=>>",
+                        command=last_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_last.grid(row=0, column=4, padx=10)
+
 text_comm = tk.Entry(frame_bar, width=40)
 text_comm.grid(row=0, column=1)
 
@@ -292,15 +327,15 @@ for x in range(len(seeds)):
 
 affichage = tk.Label(root, text="")
 delete_button = tk.Button(
-    root, bg="red", text="effacer la page", command=open_popup)
+    root, bg="red", text='\u232B',font=("Courier", 15), command=open_popup)
 
 
 # pack the GUI elements
-frame_top.pack(expand=True)
+frame_top.pack()
 # frame_bar.pack(expand=True, pady=5) # comment barre
-frame_choix.pack(expand=True)
-text_box.pack()
-
+frame_choix.pack()
+text_box.pack(fill=tk.BOTH, expand=True)
+root.grid_propagate(True)
 # affichage.pack(pady=5)
 delete_button.pack()
 
@@ -314,5 +349,15 @@ for x in range(len(seeds)):
     except KeyError:
         text_box.tag_configure(f"{x}", background=f"{seeds[x]['color']}")
 
+# bind keyboard shortcut
+def key(event):
+    try:  
+        x=event.char
+        Mark_Seed(int(x))
+    except ValueError:
+        return
+
+
+text_box.bind("<Key>", key)
 
 root.mainloop()
