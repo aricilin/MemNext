@@ -227,24 +227,27 @@ def suppr(tuple):
 
 
 def open_popup():  # deletion window
-    def delete():
-        global train_data
-        position = sentence_in_data()
-        train_data.pop(position)
-        top.destroy()
-        show_sentence()
-        show_data()
-        with open(f"training/{filename}", "w", encoding="utf-8") as output:  # saving data
-            output.write(str(train_data))
-    top = tk.Toplevel(root)
-    top.geometry("750x250")
-    top.title("confirmation")
-    tk.Label(top, font=('Helvetica 14 bold'),
-             text="Voulez vraiment effacer les graines de la page actuelle ?").pack()
-    tk.Button(top, text="Annuler", command=top.destroy, bg="blue",
-              fg="white").place_configure(x=150, y=80, width=200, height=100)
-    tk.Button(top, text="Supprimer", command=delete, bg="red",
-              fg="white").place_configure(x=450, y=80, width=200, height=100)
+    global current_sentence
+    position = sentence_in_data()
+    if current_sentence == position:
+        def delete():
+            global train_data
+            position = sentence_in_data()
+            train_data.pop(position)
+            top.destroy()
+            show_sentence()
+            show_data()
+            with open(f"training/{filename}", "w", encoding="utf-8") as output:  # saving data
+                output.write(str(train_data))
+        top = tk.Toplevel(root)
+        top.geometry("750x250")
+        top.title("confirmation")
+        tk.Label(top, font=('Helvetica 14 bold'),
+                text="Voulez vraiment effacer les graines de la page actuelle ?").pack()
+        tk.Button(top, text="Annuler", command=top.destroy, bg="blue",
+                fg="white").place_configure(x=150, y=80, width=200, height=100)
+        tk.Button(top, text="Supprimer", command=delete, bg="red",
+                fg="white").place_configure(x=450, y=80, width=200, height=100)
 
 
 # create the main window and GUI elements
