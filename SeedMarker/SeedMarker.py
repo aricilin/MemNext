@@ -66,6 +66,19 @@ def next_sentence():  # show the next sentence
         show_sentence()
         show_data()
 
+def last_sentence():  # show the next sentence
+    global current_sentence, sentences, text_box
+    if current_sentence < len(sentences)-1:
+        current_sentence =len(sentences) -1
+        show_sentence()
+        show_data()
+
+def first_sentence():  # show the next sentence
+    global current_sentence, sentences, text_box
+    if current_sentence > 0:
+        current_sentence =0
+        show_sentence()
+        show_data()
 
 def show_sentence():  # print the sentence in the text_box
     global current_sentence, sentences, text_box, sentence, train_data
@@ -131,7 +144,6 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
             output.write(str(train_data))
     show_sentence()
     show_data()
-    print (vw)
     text_box.yview_moveto(vw[0]+0.01)
 
 
@@ -210,8 +222,7 @@ def suppr(tuple):
         output.write(str(train_data))
     show_sentence()
     show_data()
-    print (vw)
-    text_box.yview_moveto(vw[0]+0.01)
+    text_box.yview_moveto(vw[0]+0.01)#keep position in text
     
 
 
@@ -269,18 +280,25 @@ frame_bar = tk.Frame(root)
 
 # create Elements
 
-button_select_file = tk.Button(frame_top, text="Choisir un fichier", command=select_file, bg='grey', fg='white')
-button_select_file.grid(row=0,column=1)
+button_select_file = tk.Button(frame_top, text='\u2193',font=("Courier", 15), command=select_file, bg='grey', fg='white')
+button_select_file.grid(row=0,column=2)
 
 text_box = st.ScrolledText(root, wrap="word", width=80, height=15)
 
+button_back = tk.Button(frame_top, text="<<",
+                        command=prev_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_back.grid(row=0, column=1, padx=10)
+button_next = tk.Button(frame_top, text=">>",
+                        command=next_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_next.grid(row=0, column=3, padx=10)
 
-button_back = tk.Button(frame_top, text="Précédent",
-                        command=prev_sentence, bg='grey', fg='white')
-button_back.grid(row=0, column=0, padx=10)
-button_next = tk.Button(frame_top, text="Suivant",
-                        command=next_sentence, bg='grey', fg='white')
-button_next.grid(row=0, column=2, padx=10)
+button_first = tk.Button(frame_top, text="<<=",
+                        command=first_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_first.grid(row=0, column=0, padx=10)
+button_last = tk.Button(frame_top, text="=>>",
+                        command=last_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_last.grid(row=0, column=4, padx=10)
+
 text_comm = tk.Entry(frame_bar, width=40)
 text_comm.grid(row=0, column=1)
 
@@ -301,7 +319,7 @@ for x in range(len(seeds)):
 
 affichage = tk.Label(root, text="")
 delete_button = tk.Button(
-    root, bg="red", text="effacer la page", command=open_popup)
+    root, bg="red", text='\u232B',font=("Courier", 15), command=open_popup)
 
 
 # pack the GUI elements
