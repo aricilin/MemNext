@@ -82,10 +82,13 @@ def first_sentence():  # show the next sentence
 
 def show_sentence():  # print the sentence in the text_box
     global current_sentence, sentences, text_box, sentence, train_data
+    text_box.configure(state='normal')
     sentence = sentences[current_sentence]
     text_box.delete('1.0', tk.END)
     text_box.insert(tk.END, sentence)
     visual_list.clear()
+    text_box.configure(state='disabled')
+
 
 
 def sentence_in_data():  # return the position of the sentence in the saved data or -1
@@ -156,6 +159,7 @@ def load_data():
 
 def show_data():  # highlight the text with the saved data
     global button_suppr_list, train_data, sentence
+    text_box.configure(state='normal')
     for i in range(len(seed_nb)):
         seed_nb[i]['text'] = 0
     position = sentence_in_data()
@@ -194,6 +198,8 @@ def show_data():  # highlight the text with the saved data
             text_box.tag_add(tag, firstp, lastp)
             button_suppr_list.append(text_box.window_create(text_box.index(
                 lastp), window=tk.Button(text_box, text="x", command=lambda x=tuple: suppr(x))))
+    text_box.configure(state='disabled')
+
             
 
 
@@ -224,7 +230,6 @@ def suppr(tuple):
     show_data()
     text_box.yview_moveto(vw[0]+0.01)#keep position in text
     
-
 
 def open_popup():  # deletion window
     global current_sentence
@@ -344,5 +349,15 @@ for x in range(len(seeds)):
     except KeyError:
         text_box.tag_configure(f"{x}", background=f"{seeds[x]['color']}")
 
+# bind keyboard shortcut
+def key(event):
+    try:  
+        x=event.char
+        Mark_Seed(int(x))
+    except ValueError:
+        return
+
+
+text_box.bind("<Key>", key)
 
 root.mainloop()
