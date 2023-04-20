@@ -38,7 +38,10 @@ def select_file():
         content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
         content = re.sub(r'\[[^\]]+\]', '', content)
         sentences = nltk.sent_tokenize(content)
-
+        pagenb.configure(state='normal')
+        pagenb.delete(1.0,"end")
+        pagenb.insert(1.0,f"{len(sentences)}")
+        pagenb.configure(state='disabled')
     current_sentence = 0
     root.title(f"Seed Marker {filename}")
     show_sentence()
@@ -73,7 +76,7 @@ def last_sentence():  # show the next sentence
         show_sentence()
         show_data()
 
-def first_sentence():  # show the next sentence
+def first_sentence():  # show the first sentence
     global current_sentence, sentences, text_box
     if current_sentence > 0:
         current_sentence =0
@@ -88,6 +91,9 @@ def show_sentence():  # print the sentence in the text_box
     text_box.insert(tk.END, sentence)
     visual_list.clear()
     text_box.configure(state='disabled')
+    page.delete(1.0,"end")
+    page.insert(1.0,f"{current_sentence+1}")
+    
 
 
 
@@ -147,7 +153,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
             output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0]+0.01)
+    text_box.yview_moveto(vw[0])
 
 
 def load_data():
@@ -228,7 +234,7 @@ def suppr(tuple):
         output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0]+0.01)#keep position in text
+    text_box.yview_moveto(vw[0])#keep position in text
     
 
 def open_popup():  # deletion window
@@ -254,6 +260,41 @@ def open_popup():  # deletion window
         tk.Button(top, text="Supprimer", command=delete, bg="red",
                 fg="white").place_configure(x=450, y=80, width=200, height=100)
 
+def indata(x):#from a tkinter position return the groupe if in data else -1
+    global sentence,train_data
+    posi=sentence_in_data()
+    if posi==-1:#no data on page
+        return
+    
+
+def wordclic(event):
+    global sentence, train_data,rel
+    tuple=rel
+
+    secondword=text_box.index("current")
+    tuple+= " "+secondword
+    text_box.unbind("<Button-1>")
+    text_box.config(cursor="arrow")
+    rel_box.configure(state='normal')
+    rel_box.insert(tk.END,tuple)
+    rel_box.insert(tk.END,"\n")
+    rel_box.configure(state="disabled")
+
+
+def Mark_Rel(x):
+    global rel
+    word = text_box.get("insert wordstart", "insert wordend")
+    first = text_box.count("1.0", "insert wordstart", "displayindices")
+    if first == None:
+        first = 0
+    else:
+        first = first[0]
+    last = text_box.count("1.0", "insert wordend", "displayindices")[0]
+    
+    rel=word+" " +x
+    text_box.bind("<Button-1>", wordclic)
+    text_box.config(cursor="crosshair")
+
 
 # create the main window and GUI elements
 root = tk.Tk()
@@ -267,6 +308,7 @@ train_data = []
 visual_list = []
 button_suppr_list = []
 button_Mark_Seed = []
+button_rel_list=[]
 seeds = {
     0: {"color": "#F3F4ED"},
     1: {"color": "#F28482"},
@@ -281,34 +323,41 @@ seeds = {
 }
 
 # create Frames
-
-frame_top = tk.Frame(root)
-frame_choix = tk.Frame(root)
-frame_bar = tk.Frame(root)
+frame_left=tk.Frame(root)
+frame_top = tk.Frame(frame_left)
+frame_choix = tk.Frame(frame_left)
+frame_bar = tk.Frame(frame_left)
 
 # create Elements
-
-button_select_file = tk.Button(frame_top, text='\u2193',font=("Courier", 15), command=select_file, bg='grey', fg='white')
-button_select_file.grid(row=0,column=2)
-
-text_box = st.ScrolledText(root, wrap="word", width=80, height=15)
-
-button_back = tk.Button(frame_top, text="<<",
-                        command=prev_sentence,font=("Courier", 15), bg='grey', fg='white')
-button_back.grid(row=0, column=1, padx=10)
-button_next = tk.Button(frame_top, text=">>",
-                        command=next_sentence,font=("Courier", 15), bg='grey', fg='white')
-button_next.grid(row=0, column=3, padx=10)
-
-button_first = tk.Button(frame_top, text="<<=",
-                        command=first_sentence,font=("Courier", 15), bg='grey', fg='white')
-button_first.grid(row=0, column=0, padx=10)
-button_last = tk.Button(frame_top, text="=>>",
-                        command=last_sentence,font=("Courier", 15), bg='grey', fg='white')
-button_last.grid(row=0, column=4, padx=10)
-
 text_comm = tk.Entry(frame_bar, width=40)
 text_comm.grid(row=0, column=1)
+
+button_select_file = tk.Button(frame_top, text='\u2193',font=("Courier", 15), command=select_file, bg='grey', fg='white')
+button_select_file.grid(row=0,column=0,rowspan =2)
+page=tk.Text(frame_top,width=6,height=1)
+page.insert(1.0,"0")
+page.grid(row=0,column=3)
+pagenb=tk.Text(frame_top,width=6,height=1)
+pagenb.grid(row=1,column=3)
+pagenb.insert(1.0,"0")
+pagenb.configure(state='disabled')
+
+button_back = tk.Button(frame_top, text="<",command=prev_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_back.grid(row=0, column=2, padx=10,rowspan =2)
+button_next = tk.Button(frame_top, text=">", command=next_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_next.grid(row=0, column=4, padx=10,rowspan =2)
+
+button_first = tk.Button(frame_top, text="|<",command=first_sentence,font=("Courier", 15), bg='grey', fg='white')
+button_first.grid(row=0, column=1, padx=10,rowspan =2)
+button_last = tk.Button(frame_top, text=">|",command=last_sentence,font=("Courier", 15), bg='grey', fg='white')
+
+button_last.grid(row=0, column=5, padx=10,rowspan =2)
+
+text_box = st.ScrolledText(frame_left, wrap="word", width=150, height=30)
+
+rel_box = st.ScrolledText(frame_left, wrap="word", width=50)
+rel_box.configure(state='disabled')
+
 
 for x in range(len(seeds)):
     try:
@@ -320,6 +369,13 @@ for x in range(len(seeds)):
     button_Mark_Seed[x].grid(row=1, column=x, padx=10)
     button_Mark_Seed[x].config(width=3)
 
+# for x in ["--", "<>", "->", "<-", "><", "-<" , ">-", "<<", ">>"]:
+#     button_rel_list.append(tk.Button(
+#         frame_choix, text=f"{x}",command=lambda a=x: Mark_Rel(a)))
+#     pos=len(button_rel_list)-1
+#     button_rel_list[pos].grid(row=2, column=pos, padx=10,pady=5)
+#     button_rel_list[pos].config(width=3)
+    
 seed_nb = []
 for x in range(len(seeds)):
     seed_nb.append(tk.Label(frame_choix, text=0))
@@ -331,13 +387,15 @@ delete_button = tk.Button(
 
 
 # pack the GUI elements
-frame_top.pack()
+frame_top.pack(pady=5)
 # frame_bar.pack(expand=True, pady=5) # comment barre
 frame_choix.pack()
-text_box.pack(fill=tk.BOTH, expand=True)
-root.grid_propagate(True)
+text_box.pack(fill=tk.BOTH, expand=True,side="left")
 # affichage.pack(pady=5)
-delete_button.pack()
+frame_left.pack(fill=tk.BOTH,expand=True)
+frame_left.grid_propagate(True)
+# rel_box.pack(side="right",fill=tk.Y)
+delete_button.pack(side="bottom")
 
 
 # configure text tags
@@ -349,6 +407,7 @@ for x in range(len(seeds)):
     except KeyError:
         text_box.tag_configure(f"{x}", background=f"{seeds[x]['color']}")
 
+
 # bind keyboard shortcut
 def key(event):
     try:  
@@ -357,7 +416,17 @@ def key(event):
     except ValueError:
         return
 
+def change_page(event):
+    global current_sentence,sentences
+    value =int(page.get("1.0","end"))
+    if current_sentence != value:
+        current_sentence = value-1
+        show_sentence()
+        show_data()
+    return "break"
+        
 
 text_box.bind("<Key>", key)
+page.bind('<Return>', change_page)
 
 root.mainloop()
