@@ -135,11 +135,12 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
     visual_list.append((word, seed))
     seed_nb[int(x)]['text'] += 1
     nb = 0
-    if position != -1:  # correction of offset positions by suppr button
-        for i in (train_data[position][1]):
-
-            if i[1] < first:
+    if position != -1:  # correction of the offset position created by the suppr button
+        for tuple in (train_data[position][1]):
+            if tuple[1] < first-nb:
                 nb += 1
+    print(nb)
+
 
     tuple = (first-nb, last-nb, seed)
     lastseed=tuple
@@ -153,7 +154,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
             output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0])
+    text_box.yview_moveto(vw[0]+0.045)
 
 
 def load_data():
@@ -169,7 +170,7 @@ def show_data():  # highlight the text with the saved data
     for i in range(len(seed_nb)):
         seed_nb[i]['text'] = 0
     position = sentence_in_data()
-    for i in range (len(train_data)):
+    for i in range (len(train_data)):#position of the sentence in the data
         for infos in train_data[i][1]:
             seed_nb[int(infos[2])]['text'] += 1
     if position != -1:#if there is data saved
@@ -238,7 +239,7 @@ def suppr(tuple):#suppr the tuple from the traininga data
         output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0])#keep position in text
+    text_box.yview_moveto(vw[0]+0.045)#keep position in text
     
 
 def open_popup():  # deletion window
