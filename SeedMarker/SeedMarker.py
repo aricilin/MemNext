@@ -137,9 +137,10 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
     nb = 0
     if position != -1:  # correction of offset positions by suppr button
         for i in (train_data[position][1]):
-
             if i[1] < first:
+                print (word,first,last)
                 nb += 1
+    print (nb)
 
     tuple = (first-nb, last-nb, seed)
     lastseed=tuple
@@ -153,7 +154,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
             output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0])
+    text_box.yview_moveto(vw[0]+0.05)
 
 
 def load_data():
@@ -238,7 +239,7 @@ def suppr(tuple):#suppr the tuple from the traininga data
         output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0])#keep position in text
+    text_box.yview_moveto(vw[0]+0.05)#keep position in text
     
 
 def open_popup():  # deletion window
