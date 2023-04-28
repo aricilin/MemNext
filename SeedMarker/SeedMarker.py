@@ -132,15 +132,14 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
     vw = text_box.yview() # Save the current position(percentage) of the top left corner
     seed = button_Mark_Seed[x]["text"]
     position = sentence_in_data()
-    visual_list.append((word, seed))
+    # visual_list.append((word, seed))
     seed_nb[int(x)]['text'] += 1
     nb = 0
     if position != -1:  # correction of the offset position created by the suppr button
+        train_data[position][1].sort(key=lambda tup: tup[0])#sorting data 
         for tuple in (train_data[position][1]):
             if tuple[1] < first-nb:
                 nb += 1
-    print(nb)
-
 
     tuple = (first-nb, last-nb, seed)
     lastseed=tuple
@@ -154,7 +153,7 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
             output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0]+0.045)
+    text_box.yview_moveto(vw[0])
 
 
 def load_data():
@@ -201,7 +200,7 @@ def show_data():  # highlight the text with the saved data
                             nb += 1
                 firstp = f'{ligne1}.{start-of1+nb}'
                 lastp = f'{ligne2}.{end-of2+nb}'
-                #(firstp, lastp) = ligne_tkinter((start, end, nb))
+                #(firstp, lastp) = position_tkinter((start, end, nb))
 
                 text_box.tag_add(tag, firstp, lastp)
                 button_suppr_list.append(text_box.window_create(text_box.index(
@@ -211,22 +210,20 @@ def show_data():  # highlight the text with the saved data
                     
     text_box.configure(state='disabled')
 
-            
-
-
-def ligne_tkinter(tuple):  # return the ligne of the selected char (by position)
-    global sentence
-    ligne1 = ligne2 = 1
-    i = of1 = of2 = 0
-    while i < tuple[1]:
-        if sentence[i] == "\n":
-            ligne2 += 1
-            of2 += i+1
-            if i < tuple[0]:
-                ligne1 += 1
-                of1 += i+1
-        i += 1
-    return (f'{ligne1}.{tuple[0]-of1+tuple[2]}', f'{ligne2}.{tuple[1]-of2+tuple[2]}')
+#work in progress
+# def position_tkinter(tuple):  # return the start and end position in tkinter format of the selected tuple in absolute position 
+#     global sentence
+#     ligne1 = ligne2 = 1
+#     i = of1 = of2 = 0
+#     while i < tuple[1]:
+#         if sentence[i] == "\n":
+#             ligne2 += 1
+#             of2 += i+1
+#             if i < tuple[0]:
+#                 ligne1 += 1
+#                 of1 += i+1
+#         i += 1
+#     return (f'{ligne1}.{tuple[0]-of1}', f'{ligne2}.{tuple[1]-of2}')
 
 
 def suppr(tuple):#suppr the tuple from the traininga data
@@ -239,7 +236,7 @@ def suppr(tuple):#suppr the tuple from the traininga data
         output.write(str(train_data))
     show_sentence()
     show_data()
-    text_box.yview_moveto(vw[0]+0.045)#keep position in text
+    text_box.yview_moveto(vw[0])#keep position in text
     
 
 def open_popup():  # deletion window
