@@ -11,7 +11,7 @@
 
 # Usage
 
-Dans le dossier `training` les graines sont stockées en tuple (position de départ, position de fin, label). 
-Ces graines sont associées à leur phrase d'origine dans le fichier commé comme le fichier source. 
-Ainsi le fichier sera de la forme d'une liste de couple (phrase , liste de tuples(début,fin,label)). 
+Dans le dossier `training` les graines sont stockées en tuple (position de départ, position de fin, label).  
+Ces graines sont associées à leur phrase d'origine dans le fichier commé comme le fichier source.  
+Ainsi le fichier sera de la forme d'une liste de couple (phrase , liste de tuples(début,fin,label)).  
 Dans le dossier `temp` sont stockés les fichiers .txt extraits des sources de type autre. 
