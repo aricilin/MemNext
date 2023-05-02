@@ -13,7 +13,6 @@ with open("sample1.txt", 'r') as file:
 # Now, my_list contains the items from the text file as a list
 
 
-
 # the DocBin will store the example documents
 db = DocBin()
 for text, annotations in training_data:
@@ -24,4 +23,4 @@ for text, annotations in training_data:
         ents.append(span)
     doc.ents = ents
     db.add(doc)
-db.to_disk("./train.spacy") 
+db.to_disk(".train.spacy") 
