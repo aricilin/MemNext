@@ -46,61 +46,81 @@ class SeedExtractor:
                     case "1":
                         seed = Seed(quality=1,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case "2":
                         seed = Seed(quality=2,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case "3":
                         seed = Seed(quality=3,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
                     
                     case "4":
                         seed = Seed(quality=4,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case "5":
                         seed = Seed(quality=5,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case "6":
                         seed = Seed(quality=6,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case "7":
                         seed = Seed(quality=7,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case "8":
                         seed = Seed(quality=8,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case "9":
                         seed = Seed(quality=9,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
 
                     case _:
                         seed = Seed(quality=0,
                                     key=seedNumber,
-                                    name=seedName
+                                    name=seedName,
+                                    _position_start=entity.start,
+                                    _position_end=entity.end
                         )
                 
                 seedList.append(seed)

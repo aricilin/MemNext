@@ -5,7 +5,7 @@ from datetime import datetime
 class Seed:
     def __init__(self=None, quality=0, spectrum=None, code=None, key=None, index=None, name=None,
                  definition=None, begin=None, end=None, place=None, author=None, location=None,
-                 time=None, right=None, join=None):
+                 time=None, right=None, join=None, _position_start=None, _position_end=None):
         self.quality = self.validate_quality(quality)
         self.spectrum = spectrum
         self.code = code
@@ -21,6 +21,9 @@ class Seed:
         self.time = time
         self.right = right
         self.join = join
+
+        self._position_start = _position_start
+        self._position_end = _position_end
 
     # to  visualise
 
@@ -90,3 +93,12 @@ class Seed:
             return datetime.strptime(date_str, '%Y-%m-%d').date().isoformat()
         except ValueError:
             raise ValueError("Date must be in 'YYYY-MM-DD'.")
+
+
+
+    def distance(self, seed):
+        if  seed._position_start > self._position_end:
+            return seed._position_start - self._position_end
+        if self._position_start > seed._position_end:
+            return self._position_start - seed._position_end
+        return 0 
