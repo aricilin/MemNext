@@ -1,14 +1,20 @@
 from Seed import Seed
 import spacy
+from spacy.lang.fr import  French
 
 class SeedExtractor:
 
 
-    def __init__(self):
+    def __init__(self, modelPath):
         """
         Constructor
 
         """
+        config = spacy.Config().from_disk("{}/config.cfg".format(modelPath))
+        nlp = French.from_config(config) 
+        nlp.from_disk("{}/output/model-best".format(modelPath))
+        self.nlp = nlp
+
 
     def extract(self, inputText):
         """
@@ -20,14 +26,9 @@ class SeedExtractor:
         :rtype: list[Seed]
 
         """
-        #nlp = spacy.load("fr_core_news_sm")
-        nlp = spacy.load("fr_core_news_lg")
-
-        print(nlp.get_pipe("ner").labels)
-
         text = open(inputText,"r")
 
-        doc = nlp(text.read())
+        doc = self.nlp(text.read())
 
         nameList = []
         seedList = []
@@ -42,14 +43,65 @@ class SeedExtractor:
                 seedName = entity.text.replace("\n", " ")
 
                 match entity.label_:
-                    case "PER":
-                        seed = Seed(quality=1, name=seedName)
+                    case "1":
+                        seed = Seed(quality=1,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
 
-                    case "ORG":
-                        seed = Seed(quality=6, name=seedName)
+                    case "2":
+                        seed = Seed(quality=2,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
+
+                    case "3":
+                        seed = Seed(quality=3,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
+                    
+                    case "4":
+                        seed = Seed(quality=4,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
+
+                    case "5":
+                        seed = Seed(quality=5,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
+
+                    case "6":
+                        seed = Seed(quality=6,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
+
+                    case "7":
+                        seed = Seed(quality=7,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
+
+                    case "8":
+                        seed = Seed(quality=8,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
+
+                    case "9":
+                        seed = Seed(quality=9,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
 
                     case _:
-                        seed = Seed(quality=0, name=seedName)
+                        seed = Seed(quality=0,
+                                    key=seedNumber,
+                                    name=seedName
+                        )
                 
                 seedList.append(seed)
                 seedNumber += 1
