@@ -2,10 +2,10 @@ import spacy
 from spacy.tokens import DocBin
 import ast
 
-nlp = spacy.blank("en") 
+nlp = spacy.blank("fr") 
 
 
-with open("sample1.txt", 'r') as file:
+with open("entrainement.txt", 'r',encoding="utf-8") as file:
     # Read the contents of the file
     contents = file.read()
     # Split the contents by the delimiter (e.g., comma)
@@ -15,12 +15,18 @@ with open("sample1.txt", 'r') as file:
 
 # the DocBin will store the example documents
 db = DocBin()
+pt=0
 for text, annotations in training_data:
     doc = nlp(text)
     ents = []
     for start, end, label in annotations:
-        span = doc.char_span(start, end, label=label)
-        ents.append(span)
-    doc.ents = ents
+        try: 
+            span = doc.char_span(start, end, label=label)
+            ents.append(span)
+            doc.ents = ents
+        except TypeError: # error  ex tag cut a word
+            pt+=1
+            continue
     db.add(doc)
-db.to_disk(".train.spacy") 
+db.to_disk("./train.spacy") 
+print (pt)
