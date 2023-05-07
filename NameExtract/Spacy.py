@@ -2,6 +2,8 @@ import spacy
 from spacy import displacy
 import sys
 from spacy.lang.fr import  French
+import webbrowser
+
 #check arg number
 if (len(sys.argv) != 2):
     print("utilisation : NameExtractSpacy.py texte_source")
@@ -39,7 +41,15 @@ nb=0
 #         continue
 # print (nb, "lignes")
 
-
+#seeds colors option
 colors = {"0": "#F3F4ED", "1": "#F28482", "2": "#96BB7C", "3": "#76b5c5", "4": "#abdbe3", "5": "#D6EFC7", "6": "#F5CAC3", "7": "#7D1F35", "8": "#158467", "9": "#22577A"}
 options = { "colors": colors}
-displacy.serve(doc, style="ent", options=options)
+
+#auto opening of web browser
+url = "http://localhost:5000/"
+webbrowser.open(url)
+
+server=displacy.serve(doc, style="ent", options=options)
+
+
+
