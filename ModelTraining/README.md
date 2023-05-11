@@ -2,12 +2,17 @@
 
 - téléchargement du fichier config de base
 - update du fichier config
+- preprocess des données
 - entrainement du model via le jeu d'entrainement
 - évaluation du model via le jeu de test
 
 # Remplir le fichier config depuis la base
 
 `python -m spacy init fill-config base_config.cfg config.cfg`
+
+# pour préprocess les données 
+
+utilisation du fichier preprocess.py
 
 # Pour entrainer 
 
