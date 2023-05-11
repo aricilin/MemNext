@@ -8,21 +8,25 @@ import json
 class SeedSerializer:
 
 
-    def __init__(self, filename=None):
+    def __init__(self, filename=None, filename_links=None):
         self.filename = filename
+        self.filename_links = filename_links
 
     def read(self):
         raise NotImplementedError("This is an unimplemented abstract method")
 
     def write(self):
         raise NotImplementedError("This is an unimplemented abstract method")
+    
+    def writeLinks(self):
+        raise NotImplementedError("This is an unimplemented abstract method")
 
 
 
 
 class CsvSerializer(SeedSerializer):
-    def __init__(self, filename=None):
-        super().__init__(filename)
+    def __init__(self, filename=None, filename_links=None):
+        super().__init__(filename, filename_links)
 
     def read(self):
         seedList = []
@@ -43,17 +47,25 @@ class CsvSerializer(SeedSerializer):
         with open(self.filename, mode='w', newline='', encoding='utf8') as csv_file:
             fieldnames = ['quality', 'spectrum', 'code', 'key', 'index', 'name',
                           'definition', 'begin', 'end', 'place', 'author', 'location',
-                          'time', 'right', 'join']
+                          'time', 'right', 'join', '_position_start', '_position_end']
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
             writer.writeheader()
             for seed in seedList:
                 writer.writerow(seed.__dict__)
+    
+    def writeLinks(self, linkList):
+        with open(self.filename_links, mode='w', newline='', encoding='utf8') as csv_file:
+            fieldnames = ['seed1', 'seed2']
+            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+            writer.writeheader()
+            for link in linkList:
+                writer.writerow({'seed1': link[0], 'seed2': link[1]})
 
 
 
 class JsonSerializer(SeedSerializer):
-    def __init__(self, filename=None):
-        super().__init__(filename)
+    def __init__(self, filename=None, filename_links=None):
+        super().__init__(filename, filename_links)
 
 
     def read(self):

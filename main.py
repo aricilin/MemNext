@@ -7,8 +7,8 @@ modelPath = "./ModelTraining"
 distanceThreshold = 100
 
 
-if (len(sys.argv) != 3):
-    print("utilisation : main.py texte_source texte_sortie")
+if (len(sys.argv) != 4):
+    print("utilisation : main.py texte_source seeds_file links_file")
     exit()
 
 extractor = SeedExtractor(modelPath)
@@ -28,12 +28,13 @@ print("Linking complete, found {} relations".format(len(relationList)))
 output_file_extension = sys.argv[2].split(".")[-1].lower()
 match output_file_extension:
     case "csv":
-        serializer = CsvSerializer(sys.argv[2])
+        serializer = CsvSerializer(sys.argv[2], sys.argv[3])
     case "json":
-        serializer = JsonSerializer(sys.argv[2])
+        serializer = JsonSerializer(sys.argv[2], sys.argv[3])
     case _:
-        serializer = CsvSerializer(sys.argv[2])
+        serializer = CsvSerializer(sys.argv[2], sys.argv[3])
 
 
-print("Writing output to", serializer.filename)
+print("Writing output to", serializer.filename, ", ", serializer.filename_links)
 serializer.write(seedList)
+serializer.writeLinks(relationList)
