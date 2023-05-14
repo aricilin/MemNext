@@ -7,6 +7,7 @@ import nltk
 from spacy.tokens import Doc
 nltk.download('punkt')
 
+
 # check arg number
 if (len(sys.argv) != 2):
     print("utilisation : NameExtractSpacy.py texte_source")
@@ -29,7 +30,7 @@ text = open(sys.argv[1], "r", encoding="utf-8")
 
 filepath = sys.argv[1]
 filename = filepath.split('/')[len(filepath.split('/'))-1]
-filename = f"output/{filename}"
+foutput = f"output/{filename}"
 
 tuplelist = []
 outputlist=[]
@@ -48,8 +49,16 @@ for sentence in sentences:
 
 fulldoc= Doc.from_docs(listdoc)
 
-with open(filename, "w", encoding="utf-8") as f:
+with open(foutput, "w", encoding="utf-8") as f:
     f.write(str(outputlist))
+
+try :#save in training seedmarker
+    foutput = f"../SeedMarker/training/{filename}"
+    with open(foutput, "w", encoding="utf-8") as f:
+        f.write(str(outputlist))
+except FileNotFoundError:
+    exit
+
 
 # seeds colors option
 colors = {"0": "#F3F4ED", "1": "#F28482", "2": "#96BB7C", "3": "#76b5c5", "4": "#abdbe3",
