@@ -35,9 +35,10 @@ def select_file():
         last_filepath = file_path
         content = f.read()
         # pretraitement regex pour ajouter un espace après un point suivit d'un charater
-        content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
-        content = re.sub(r'\[[^\]]+\]', '', content)
-        sentences = nltk.sent_tokenize(content)
+        # content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
+        # content = re.sub(r'\[[^\]]+\]', '', content)
+        # sentences = nltk.sent_tokenize(content)
+        sentences = list(filter(lambda x : x != '', content.split('\n\n')))
         pagenb.configure(state='normal')
         pagenb.delete(1.0,"end")
         pagenb.insert(1.0,f"{len(sentences)}")

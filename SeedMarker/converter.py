@@ -8,9 +8,16 @@ import odf.teletype
 import odf.opendocument
 import subprocess
 import fitz
+import re
 
 
-#my function
+def cleantext (text):
+
+    text = re.sub(r"\n\s*\n", "\n\n", text)
+    # lambda function to replace line number with a newline
+    text = re.sub(r"^\d+$", lambda match: "\n", text, flags=re.MULTILINE)
+    return text
+
 def converter(file):
     #toto+.txt
     file_extension = os.path.splitext(file)[1]
@@ -43,16 +50,23 @@ def converter(file):
                 subprocess.run(cmd, stdout=txt_file)
             
             case ".pdf":
+                full=""
                 with fitz.open(file) as doc:
                     for page in doc:
                         text = page.get_text()
                         for i in range(len(text)-1):
                             if text[i] == '\n' and text[i+1].islower():
                                 continue  # skip writing newline character
-                            f.write(text[i])
+                            # f.write(text[i])
+                            full+=text[i]
                         if len(text) > 0:
-                            f.write(text[-1])  # write the last character of the page (usually a newline character)
+                            # f.write(text[-1])  # write the last character of the page (usually a newline character)
+                            full+= text[-1]
+                full=cleantext(full)
+                f.write(full)
             case _:
                 return(-1)
     # print (f"converter : {foutput}")
     return foutput
+
+
