@@ -5,7 +5,7 @@ import re
 import ast
 import nltk
 import converter
-nltk.download('punkt')
+# nltk.download('punkt')
 
 
 def select_file():
