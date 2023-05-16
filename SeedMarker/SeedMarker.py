@@ -413,11 +413,17 @@ for x in range(len(seeds)):
 
 # bind keyboard shortcut
 def key(event):
-    try:  
-        x=event.char
-        Mark_Seed(int(x))
-    except ValueError:
-        return
+    print(event)
+    #seed tagging event
+    if event.char in ['0','1','2','3','4','5','6','7','8','9']: 
+            x=event.char
+            Mark_Seed(int(x))
+    #movement shortcut
+    elif event.keysym in ["Right","Down"]:
+        next_sentence()
+    elif event.keysym in ["Up","Left"]:
+        prev_sentence()
+
 
 def change_page(event):
     global current_sentence,sentences
