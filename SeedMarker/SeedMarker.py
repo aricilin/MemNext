@@ -187,7 +187,7 @@ def show_data():  # highlight the text with the saved data
     if position != -1:#if there is data saved
         for start, end, tag in train_data[position][1]:
             tuple = (start, end, str(tag))
-            nb = 0
+            nb1=nb2 = 0
             ligne1 = ligne2 = 1
             endoflineposition =eol1 = eol2 = 0
             # of = offset to get the char position  (line.position)
@@ -208,10 +208,14 @@ def show_data():  # highlight the text with the saved data
                         # reached the word to print
                         if (start == couple[0] and end == couple[1]):
                             break
-                        if couple[1] > endoflineposition and couple[1] < start:
-                            nb += 1
-                firstp = f'{ligne1}.{start-of1+nb}'
-                lastp = f'{ligne2}.{end-of2+nb}'
+                        if couple[1] > of1 and couple[1] < start:
+                            nb1 += 1
+                            nb2+=1
+                            if ligne1 != ligne2 and couple[1] < of2 :
+                                nb2 -= 1
+                
+                firstp = f'{ligne1}.{start-of1+nb1}'
+                lastp = f'{ligne2}.{end-of2+nb2}'
                 #(firstp, lastp) = position_tkinter((start, end, nb))
 
                 text_box.tag_add(tag, firstp, lastp)
