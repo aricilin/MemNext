@@ -3,9 +3,8 @@ from spacy import displacy
 import sys
 from spacy.lang.fr import French
 import webbrowser
-import nltk
 from spacy.tokens import Doc
-nltk.download('punkt')
+
 
 
 # check arg number
@@ -34,7 +33,7 @@ foutput = f"output/{filename}"
 
 tuplelist = []
 outputlist=[]
-sentences = nltk.sent_tokenize(text.read())
+sentences = list(filter(lambda x : x != '', text.read().split('\n\n')))
 
 
 listdoc=[]
