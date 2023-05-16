@@ -110,15 +110,24 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
     global sentence, train_data, visual_list,lastseed
 
     try:  # presence of selected object
-        word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
+        # word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST) # update needed if used
 
         first = text_box.count("1.0", "sel.first", "displayindices")[0]
         last = text_box.count("1.0", "sel.last", "displayindices")[0]
-        #text_box.tag_add(x, f"{line}.{first}", "sel.last")
-        #last =text_box.index("sel.last")
-
+        # ugly while loops otherwise an indexerror happens
+        #completion selection
+        while(True):
+            if sentence[last].isalpha() or sentence[last]=="-":
+                last+=1
+            else:
+                break
+        while(True):
+            if sentence[first-1].isalpha() or sentence[first-1]=="-":
+                first-=1
+            else:
+                break
     except TypeError:  # position 0
-        word = text_box.get(1.0, tk.SEL_LAST)
+        # word = text_box.get(1.0, tk.SEL_LAST)
         first = 0
         last = text_box.count("1.0", "sel.last", "displayindices")[0]
 
@@ -413,7 +422,6 @@ for x in range(len(seeds)):
 
 # bind keyboard shortcut
 def key(event):
-    print(event)
     #seed tagging event
     if event.char in ['0','1','2','3','4','5','6','7','8','9']: 
             x=event.char
