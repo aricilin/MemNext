@@ -116,16 +116,6 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
         last = text_box.count("1.0", "sel.last", "displayindices")[0]
         # ugly while loops otherwise an indexerror happens
         #completion selection
-        while(True):
-            if sentence[last].isalpha() or sentence[last]=="-":
-                last+=1
-            else:
-                break
-        while(True):
-            if sentence[first-1].isalpha() or sentence[first-1]=="-":
-                first-=1
-            else:
-                break
     except TypeError:  # position 0
         # word = text_box.get(1.0, tk.SEL_LAST)
         first = 0
@@ -150,8 +140,20 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
         for tuple in (train_data[position][1]):
             if tuple[1] < first-nb:
                 nb += 1
-
-    tuple = (first-nb, last-nb, seed)
+    first -= nb
+    last -= nb
+    # auto completion + ugly loop or indexerror
+    while(True):
+        if sentence[last].isalpha() or sentence[last]=="-":
+            last+=1
+        else:
+            break
+    while(True):
+        if (sentence[first-1].isalpha() or sentence[first-1]=="-") and sentence[first-2]!= "\\" :
+            first-=1
+        else:
+            break
+    tuple = (first, last, seed)
     lastseed=tuple
     with open(f"training/{filename}", "w", encoding="utf-8") as output:  # saving data
         if len(train_data) == 0 or position == -1:  # no data or sentence not in the training data
