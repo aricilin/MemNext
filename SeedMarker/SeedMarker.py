@@ -256,9 +256,8 @@ def suppr(tuple):#suppr the tuple from the traininga data
     
 
 def open_popup():  # deletion window
-    global current_sentence
     position = sentence_in_data()
-    if current_sentence == position:
+    if  position!=-1:
         def delete():
             global train_data
             position = sentence_in_data()
@@ -432,8 +431,14 @@ def key(event):
     if event.char in ['0','1','2','3','4','5','6','7','8','9']: 
             x=event.char
             Mark_Seed(int(x))
-    #movement shortcut
+        #movement shortcut
     elif event.keysym in ["Right","Down"]:
+        next_sentence()
+    elif event.keysym in ["Up","Left"]:
+        prev_sentence()
+def move(event):#for no text clicked
+        #movement shortcut
+    if event.keysym in ["Right","Down"]:
         next_sentence()
     elif event.keysym in ["Up","Left"]:
         prev_sentence()
@@ -450,6 +455,7 @@ def change_page(event):
         
 
 text_box.bind("<Key>", key)
+page.bind("<Key>", move)
 page.bind('<Return>', change_page)
 
 root.mainloop()
