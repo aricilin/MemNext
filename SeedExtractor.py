@@ -1,6 +1,10 @@
 from Seed import Seed
 import spacy
-from spacy.lang.fr import  French
+from spacy import displacy
+import sys
+from spacy.lang.fr import French
+import webbrowser
+from spacy.tokens import Doc
 
 class SeedExtractor:
 
@@ -26,9 +30,9 @@ class SeedExtractor:
         :rtype: list[Seed]
 
         """
-        text = open(inputText,"r")
+        text = open(inputText, "r", encoding="utf-8")
 
-        doc = self.nlp(text.read())
+        #doc = self.nlp(text.read())
 
         nameList = []
         seedList = []
@@ -36,9 +40,24 @@ class SeedExtractor:
 
         print("Found {} seeds".format(seedNumber), end='\r')
 
-        for entity in doc.ents:
-            if entity.text not in nameList:
-                #print(entity.text, entity.label_)
+
+        filepath = inputText
+        filename = filepath.split('/')[len(filepath.split('/'))-1]
+        foutput = f"output/{filename}"
+
+        tuplelist = []
+        outputlist=[]
+        sentences = list(filter(lambda x : x != '', text.read().split('\n\n')))
+
+
+        listdoc=[]
+
+
+        for sentence in sentences:
+            doc = self.nlp(sentence)
+            for entity in doc.ents:
+                tuple = (entity.start_char, entity.end_char, entity.label_)
+                tuplelist.append(tuple)
                 
                 seedName = entity.text.replace("\n", " ")
 
@@ -128,11 +147,28 @@ class SeedExtractor:
                 print("Found {} seeds".format(seedNumber), end='\r')
 
                 nameList.append(entity.text)
+
+            listdoc.append(doc)
+            outputlist.append((sentence,tuplelist))
+            tuplelist=[]
+
+        fulldoc = Doc.from_docs(listdoc)
+
+        with open(foutput, "w", encoding="utf-8") as f:
+            f.write(str(outputlist))
+
+        try :#save in training seedmarker
+            foutput = f"./SeedMarker/training/extracted/{filename}"
+            with open(foutput, "w", encoding="utf-8") as f:
+                f.write(str(outputlist))
+        except FileNotFoundError:
+            exit
+
         
         print("Found {} seeds".format(seedNumber))
 
 
-        return seedList
+        return (seedList, fulldoc)
 
 
         
