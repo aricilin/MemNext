@@ -28,7 +28,7 @@ for text, annotations in training_data:
     doc = nlp(text)
     ents = []
     for start, end, label in annotations:
-        if label not in ["9"]:
+        if label not in ["8","2","9"]:
             try:
                 span = doc.char_span(start, end, label=label)
                 ents.append(span)
