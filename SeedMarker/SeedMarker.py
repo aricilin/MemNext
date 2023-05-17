@@ -380,10 +380,10 @@ rel_box.configure(state='disabled')
 for x in range(len(seeds)):
     try:
         button_Mark_Seed.append(tk.Button(
-            frame_choix, text=f"{x}", bg=seeds[x]['color'], fg=seeds[x]['foreground'], command=lambda a=x: Mark_Seed(a)))
+            frame_choix, text=f"{x}",font=('bold'), bg=seeds[x]['color'], fg=seeds[x]['foreground'], command=lambda a=x: Mark_Seed(a)))
     except KeyError:
         button_Mark_Seed.append(tk.Button(
-            frame_choix, text=f"{x}", bg=seeds[x]['color'], command=lambda a=x: Mark_Seed(a)))
+            frame_choix, text=f"{x}", bg=seeds[x]['color'],font=('bold'), command=lambda a=x: Mark_Seed(a)))
     button_Mark_Seed[x].grid(row=1, column=x, padx=10)
     button_Mark_Seed[x].config(width=3)
 
