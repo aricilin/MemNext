@@ -52,7 +52,7 @@ with open(foutput, "w", encoding="utf-8") as f:
     f.write(str(outputlist))
 
 try :#save in training seedmarker
-    foutput = f"../SeedMarker/training/extracted/{filename}"
+    foutput = f"../SeedMarker/training/{filename}"
     with open(foutput, "w", encoding="utf-8") as f:
         f.write(str(outputlist))
 except FileNotFoundError:

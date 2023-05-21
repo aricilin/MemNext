@@ -14,18 +14,19 @@
 
 utilisation du fichier preprocess.py
 
+
 # Pour entrainer 
 
-chemin train et chemin test (ici le même)
+donner le chemin de deux fichiers préprocessés un entrainement et un évaluation 
 
-`python -m spacy train config.cfg  --output output/   --paths.train ./train.spacy --paths.dev ./train.spacy`
+`python -m spacy train config.cfg  --output output/   --paths.train ./train.spacy --paths.dev ./test.spacy`
 
 
 # Pour evaluer 
 
-ici le jeu de test est le jeu d'entrainement  _./train.spacy_
+ici le jeu de test est :  _./test.spacy_
 
-`python -m spacy evaluate output/model-best ./train.spacy  --output output/metrics.json`
+`python -m spacy evaluate output/model-best ./test.spacy  --output output/metrics.json`
 
 
 
