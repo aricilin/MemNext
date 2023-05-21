@@ -63,7 +63,7 @@ class SeedExtractor:
 
                 match entity.label_:
                     case "1":
-                        seed = Seed(quality=1,
+                        seed = Seed(quality="q1",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -71,7 +71,7 @@ class SeedExtractor:
                         )
 
                     case "2":
-                        seed = Seed(quality=2,
+                        seed = Seed(quality="q2",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -79,7 +79,7 @@ class SeedExtractor:
                         )
 
                     case "3":
-                        seed = Seed(quality=3,
+                        seed = Seed(quality="q3",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -87,7 +87,7 @@ class SeedExtractor:
                         )
                     
                     case "4":
-                        seed = Seed(quality=4,
+                        seed = Seed(quality="q4",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -95,7 +95,7 @@ class SeedExtractor:
                         )
 
                     case "5":
-                        seed = Seed(quality=5,
+                        seed = Seed(quality="q5",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -103,7 +103,7 @@ class SeedExtractor:
                         )
 
                     case "6":
-                        seed = Seed(quality=6,
+                        seed = Seed(quality="q6",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -111,7 +111,7 @@ class SeedExtractor:
                         )
 
                     case "7":
-                        seed = Seed(quality=7,
+                        seed = Seed(quality="q7",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -119,7 +119,7 @@ class SeedExtractor:
                         )
 
                     case "8":
-                        seed = Seed(quality=8,
+                        seed = Seed(quality="q8",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -127,7 +127,7 @@ class SeedExtractor:
                         )
 
                     case "9":
-                        seed = Seed(quality=9,
+                        seed = Seed(quality="q9",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,
@@ -135,7 +135,7 @@ class SeedExtractor:
                         )
 
                     case _:
-                        seed = Seed(quality=0,
+                        seed = Seed(quality="q0",
                                     key=str(seedNumber),
                                     name=seedName,
                                     _position_start=entity.start,

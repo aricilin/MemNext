@@ -71,8 +71,8 @@ class Seed:
     def validate_quality(self, quality):
         if quality != None:
             return quality
-        if quality not in range(10):
-            raise ValueError("Quality must be an integer between 0 and 9")
+        if quality not in ["q1","q2", "q3", "q4","q5", "q6", "q7","q8", "q9", "q0"]:
+            raise ValueError("Quality must be qX")
         return quality
 
     # check the key and return true if valid
