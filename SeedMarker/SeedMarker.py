@@ -5,7 +5,7 @@ import re
 import ast
 import nltk
 import converter
-nltk.download('punkt')
+# nltk.download('punkt')
 
 
 def select_file():
@@ -35,9 +35,10 @@ def select_file():
         last_filepath = file_path
         content = f.read()
         # pretraitement regex pour ajouter un espace après un point suivit d'un charater
-        content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
-        content = re.sub(r'\[[^\]]+\]', '', content)
-        sentences = nltk.sent_tokenize(content)
+        # content = re.sub(r'(?<=[.])(?=[\[ \n])', r' ', content)
+        # content = re.sub(r'\[[^\]]+\]', '', content)
+        # sentences = nltk.sent_tokenize(content)
+        sentences = list(filter(lambda x : x != '', content.split('\n\n')))
         pagenb.configure(state='normal')
         pagenb.delete(1.0,"end")
         pagenb.insert(1.0,f"{len(sentences)}")
@@ -109,15 +110,14 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
     global sentence, train_data, visual_list,lastseed
 
     try:  # presence of selected object
-        word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST)
+        # word = text_box.get(tk.SEL_FIRST, tk.SEL_LAST) # update needed if used
 
         first = text_box.count("1.0", "sel.first", "displayindices")[0]
         last = text_box.count("1.0", "sel.last", "displayindices")[0]
-        #text_box.tag_add(x, f"{line}.{first}", "sel.last")
-        #last =text_box.index("sel.last")
-
+        # ugly while loops otherwise an indexerror happens
+        #completion selection
     except TypeError:  # position 0
-        word = text_box.get(1.0, tk.SEL_LAST)
+        # word = text_box.get(1.0, tk.SEL_LAST)
         first = 0
         last = text_box.count("1.0", "sel.last", "displayindices")[0]
 
@@ -140,8 +140,20 @@ def Mark_Seed(x):  # tag the seed in the text and saved it in the files
         for tuple in (train_data[position][1]):
             if tuple[1] < first-nb:
                 nb += 1
-
-    tuple = (first-nb, last-nb, seed)
+    first -= nb
+    last -= nb
+    # auto completion + ugly loop or indexerror
+    while(True):
+        if sentence[last].isalpha() or sentence[last]=="-":
+            last+=1
+        else:
+            break
+    while(True):
+        if (sentence[first-1].isalpha() or sentence[first-1]=="-") and sentence[first-2]!= "\\" :
+            first-=1
+        else:
+            break
+    tuple = (first, last, seed)
     lastseed=tuple
     with open(f"training/{filename}", "w", encoding="utf-8") as output:  # saving data
         if len(train_data) == 0 or position == -1:  # no data or sentence not in the training data
@@ -175,7 +187,7 @@ def show_data():  # highlight the text with the saved data
     if position != -1:#if there is data saved
         for start, end, tag in train_data[position][1]:
             tuple = (start, end, str(tag))
-            nb = 0
+            nb1=nb2 = 0
             ligne1 = ligne2 = 1
             endoflineposition =eol1 = eol2 = 0
             # of = offset to get the char position  (line.position)
@@ -196,10 +208,14 @@ def show_data():  # highlight the text with the saved data
                         # reached the word to print
                         if (start == couple[0] and end == couple[1]):
                             break
-                        if couple[1] > endoflineposition and couple[1] < start:
-                            nb += 1
-                firstp = f'{ligne1}.{start-of1+nb}'
-                lastp = f'{ligne2}.{end-of2+nb}'
+                        if couple[1] > of1 and couple[1] < start:
+                            nb1 += 1
+                            nb2+=1
+                            if ligne1 != ligne2 and couple[1] < of2 :
+                                nb2 -= 1
+                
+                firstp = f'{ligne1}.{start-of1+nb1}'
+                lastp = f'{ligne2}.{end-of2+nb2}'
                 #(firstp, lastp) = position_tkinter((start, end, nb))
 
                 text_box.tag_add(tag, firstp, lastp)
@@ -240,9 +256,8 @@ def suppr(tuple):#suppr the tuple from the traininga data
     
 
 def open_popup():  # deletion window
-    global current_sentence
     position = sentence_in_data()
-    if current_sentence == position:
+    if  position!=-1:
         def delete():
             global train_data
             position = sentence_in_data()
@@ -364,10 +379,10 @@ rel_box.configure(state='disabled')
 for x in range(len(seeds)):
     try:
         button_Mark_Seed.append(tk.Button(
-            frame_choix, text=f"{x}", bg=seeds[x]['color'], fg=seeds[x]['foreground'], command=lambda a=x: Mark_Seed(a)))
+            frame_choix, text=f"{x}",font=('bold'), bg=seeds[x]['color'], fg=seeds[x]['foreground'], command=lambda a=x: Mark_Seed(a)))
     except KeyError:
         button_Mark_Seed.append(tk.Button(
-            frame_choix, text=f"{x}", bg=seeds[x]['color'], command=lambda a=x: Mark_Seed(a)))
+            frame_choix, text=f"{x}", bg=seeds[x]['color'],font=('bold'), command=lambda a=x: Mark_Seed(a)))
     button_Mark_Seed[x].grid(row=1, column=x, padx=10)
     button_Mark_Seed[x].config(width=3)
 
@@ -412,11 +427,22 @@ for x in range(len(seeds)):
 
 # bind keyboard shortcut
 def key(event):
-    try:  
-        x=event.char
-        Mark_Seed(int(x))
-    except ValueError:
-        return
+    #seed tagging event
+    if event.char in ['0','1','2','3','4','5','6','7','8','9']: 
+            x=event.char
+            Mark_Seed(int(x))
+        #movement shortcut
+    elif event.keysym in ["Right","Down"]:
+        next_sentence()
+    elif event.keysym in ["Up","Left"]:
+        prev_sentence()
+def move(event):#for no text clicked
+        #movement shortcut
+    if event.keysym in ["Right","Down"]:
+        next_sentence()
+    elif event.keysym in ["Up","Left"]:
+        prev_sentence()
+
 
 def change_page(event):
     global current_sentence,sentences
@@ -429,6 +455,7 @@ def change_page(event):
         
 
 text_box.bind("<Key>", key)
+page.bind("<Key>", move)
 page.bind('<Return>', change_page)
 
 root.mainloop()
