@@ -195,7 +195,6 @@ def show_data():  # highlight the text with the saved data
             try:
                 while i < end:
                     if sentence[i] == "\n":
-                        endoflineposition = i
                         ligne2 += 1
                         of2 = i + 1
 
@@ -216,30 +215,13 @@ def show_data():  # highlight the text with the saved data
                 
                 firstp = f'{ligne1}.{start-of1+nb1}'
                 lastp = f'{ligne2}.{end-of2+nb2}'
-                #(firstp, lastp) = position_tkinter((start, end, nb))
 
                 text_box.tag_add(tag, firstp, lastp)
-                button_suppr_list.append(text_box.window_create(text_box.index(
-                    lastp), window=tk.Button(text_box, text="x", command=lambda x=tuple: suppr(x))))
+                button_suppr_list.append(text_box.window_create(text_box.index(lastp), window=tk.Button(text_box, text="x", command=lambda x=tuple: suppr(x))))
             except IndexError:
                     suppr(lastseed)
                     
     text_box.configure(state='disabled')
-
-#work in progress
-# def position_tkinter(tuple):  # return the start and end position in tkinter format of the selected tuple in absolute position 
-#     global sentence
-#     ligne1 = ligne2 = 1
-#     i = of1 = of2 = 0
-#     while i < tuple[1]:
-#         if sentence[i] == "\n":
-#             ligne2 += 1
-#             of2 += i+1
-#             if i < tuple[0]:
-#                 ligne1 += 1
-#                 of1 += i+1
-#         i += 1
-#     return (f'{ligne1}.{tuple[0]-of1}', f'{ligne2}.{tuple[1]-of2}')
 
 
 def suppr(tuple):#suppr the tuple from the traininga data
@@ -284,31 +266,54 @@ def indata(x):#from a tkinter position return the groupe if in data else -1
         return
     
 
-def wordclic(event):
-    global sentence, train_data,rel
-    tuple=rel
-
+def wordclic(event):#p2 mark relation
+    global sentence, train_data,rel,current_sentence
+    posi1=rel[0] +1
     secondword=text_box.index("current")
-    tuple+= " "+secondword
+    #get seeds
+    x2=1
+    i=of2=0
+    while x2< int(secondword.split('.')[0]):
+        if sentence[i] == "\n":
+            x2 += 1
+            of2 = i + 1
+        i += 1
+    posi2 = int(secondword.split('.')[1])+of2
+    of1=of2=0
+    if current_sentence != -1:  # correction of offset positions created by suppr button
+        for couple in (train_data[current_sentence][1]):
+            # reached the word to print
+            if posi1 >= couple[0] and posi1 <=couple[1]:
+                mot1 = sentence[couple[0]:couple[1]]
+            elif posi1 > couple[1]:
+                of1+=1
+            if posi2 >= couple[0] and posi2 <=couple[1]:
+                mot2 = sentence[couple[0]:couple[1]]
+            elif posi2 > couple[1]:
+                of2+=1
+
+    tuple=mot1 + " "+rel[1] +" "+ mot2
     text_box.unbind("<Button-1>")
     text_box.config(cursor="arrow")
     rel_box.configure(state='normal')
     rel_box.insert(tk.END,tuple)
+    button_suppr_list.append(rel_box.window_create(rel_box.index(tk.END), window=tk.Button(rel_box, text="x", command=lambda x=tuple: suppr(x))))#TODO finir suppression -> faire une liste de tuples et le supprimer de la liste + refresh affichage cf suppr / show seed
     rel_box.insert(tk.END,"\n")
     rel_box.configure(state="disabled")
 
 
 def Mark_Rel(x):
     global rel
-    word = text_box.get("insert wordstart", "insert wordend")
     first = text_box.count("1.0", "insert wordstart", "displayindices")
     if first == None:
         first = 0
     else:
         first = first[0]
-    last = text_box.count("1.0", "insert wordend", "displayindices")[0]
-    
-    rel=word+" " +x
+    try:
+        print (first)
+    except UnboundLocalError:
+        exit
+    rel=(first,x)
     text_box.bind("<Button-1>", wordclic)
     text_box.config(cursor="crosshair")
 
@@ -372,7 +377,7 @@ button_last.grid(row=0, column=5, padx=10,rowspan =2)
 
 text_box = st.ScrolledText(frame_left, wrap="word", width=150, height=30)
 
-rel_box = st.ScrolledText(frame_left, wrap="word", width=50)
+rel_box = st.ScrolledText(frame_left, wrap="word", width=70)
 rel_box.configure(state='disabled')
 
 
@@ -386,12 +391,12 @@ for x in range(len(seeds)):
     button_Mark_Seed[x].grid(row=1, column=x, padx=10)
     button_Mark_Seed[x].config(width=3)
 
-# for x in ["--", "<>", "->", "<-", "><", "-<" , ">-", "<<", ">>"]:
-#     button_rel_list.append(tk.Button(
-#         frame_choix, text=f"{x}",command=lambda a=x: Mark_Rel(a)))
-#     pos=len(button_rel_list)-1
-#     button_rel_list[pos].grid(row=2, column=pos, padx=10,pady=5)
-#     button_rel_list[pos].config(width=3)
+for x in ["--", "<>", "->", "<-", "><", "-<" , ">-", "<<", ">>"]:
+    button_rel_list.append(tk.Button(
+        frame_choix, text=f"{x}",command=lambda a=x: Mark_Rel(a)))
+    pos=len(button_rel_list)-1
+    button_rel_list[pos].grid(row=2, column=pos, padx=10,pady=5)
+    button_rel_list[pos].config(width=3)
     
 seed_nb = []
 for x in range(len(seeds)):
@@ -411,7 +416,7 @@ text_box.pack(fill=tk.BOTH, expand=True,side="left")
 # affichage.pack(pady=5)
 frame_left.pack(fill=tk.BOTH,expand=True)
 frame_left.grid_propagate(True)
-# rel_box.pack(side="right",fill=tk.Y)
+rel_box.pack(side="right",fill=tk.Y)
 delete_button.pack(side="bottom")
 
 
