@@ -278,19 +278,18 @@ def wordclic(event):#p2 mark relation
             x2 += 1
             of2 = i + 1
         i += 1
-    posi2 = int(secondword.split('.')[1])+of2
-    of1=of2=0
+    posi2 = int(secondword.split('.')[1])+of2 + 1
     if current_sentence != -1:  # correction of offset positions created by suppr button
         for couple in (train_data[current_sentence][1]):
             # reached the word to print
             if posi1 >= couple[0] and posi1 <=couple[1]:
                 mot1 = sentence[couple[0]:couple[1]]
-            elif posi1 > couple[1]:
-                of1+=1
+            if posi1 > couple[1]:
+                posi1-=1
             if posi2 >= couple[0] and posi2 <=couple[1]:
                 mot2 = sentence[couple[0]:couple[1]]
-            elif posi2 > couple[1]:
-                of2+=1
+            if posi2 > couple[1]:
+                posi2-=1
 
     tuple=mot1 + " "+rel[1] +" "+ mot2
     text_box.unbind("<Button-1>")
@@ -310,7 +309,7 @@ def Mark_Rel(x):
     else:
         first = first[0]
     try:
-        print (first)
+        print (x)
     except UnboundLocalError:
         exit
     rel=(first,x)
