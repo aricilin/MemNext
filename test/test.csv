@@ -1,5 +1,0 @@
-quality,spectrum,code,key,index,name,definition,begin,end,place,author,location,time,right,join
-8,1,ABC123,seed1,1,Seed 1,This is the definition of seed 1,2022-01-01,2022-12-31,California,John Doe,USA,2022-02-01,seed2,seed3
-7,2,DEF456,seed2,2,Seed 2,This is the definition of seed 2,2022-03-01,2022-11-30,New York,Jane Doe,USA,2022-03-15,seed4,seed1
-6,3,GHI789,seed3,3,Seed 3,This is the definition of seed 3,2022-04-01,2022-10-31,Texas,John Smith,USA,2022-04-15,seed1,seed5
-5,4,JKL012,seed4,4,Seed 4,This is the definition of seed 4,2022-05-01,2022-09-30,Florida,Jane Smith,USA,2022-05-15,seed5,seed2
